@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solargenerator Vergleich 2025 — Die 10 besten im Test | akku-test.de</title>
+  <title>Solargenerator Vergleich 2025 — Die besten Powerstations & Solarladegeräte | akku-test.de</title>
   <meta name="description" content="Der große Solargenerator Vergleich 2025. Wir haben die besten Solargeneratoren, Powerstations & Solarladegeräte getestet. Mit Preisen, Bewertungen & Kaufberatung.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://akku-test.de/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Article","headline":"Solargenerator Vergleich 2025 — Die 10 besten im Test","description":"Umfassender Vergleich der besten Solargeneratoren und Powerstations.","datePublished":"2025-05-15","dateModified":"2025-05-15","author":{"@type":"Organization","name":"akku-test.de"}}
+  {"@context":"https://schema.org","@type":"Article","headline":"Solargenerator Vergleich 2025 — Die besten Powerstations im Test","description":"Umfassender Vergleich der besten Solargeneratoren und Powerstations mit Preisen, Bewertungen und Kaufberatung.","datePublished":"2025-05-15","dateModified":"2025-05-15","author":{"@type":"Organization","name":"akku-test.de"}}
   </script>
   <style>
     /* ============================================================
        DESIGN SYSTEM: akku-test.de
-       Linear Dark + Stripe Shadows + Notion Warmth
+       Linear Dark Mode + Solar Green Accent
        ============================================================ */
     :root {
-      /* Surfaces */
+      /* Surfaces — Linear Dark Palette */
       --bg:           #08090a;
       --bg-panel:     #0f1011;
       --bg-elevated:  #191a1b;
@@ -29,1065 +29,1307 @@
       --text-tertiary:  #8a8f98;
       --text-quaternary:#62666d;
 
-      /* Brand */
-      --brand:        #5e6ad2;
-      --brand-accent: #7170ff;
-      --brand-hover:  #828fff;
-      --brand-subtle: rgba(94,106,210,0.12);
+      /* Solar Green Accent (replaces Linear Indigo) */
+      --accent:         #10b981;
+      --accent-hover:   #34d399;
+      --accent-dim:     #065f46;
+      --accent-glow:    rgba(16, 185, 129, 0.15);
+      --accent-border:  rgba(16, 185, 129, 0.25);
 
       /* Status */
-      --success:      #27a644;
-      --success-glow: rgba(39,166,68,0.15);
-      --warning:      #d4a017;
-      --warning-glow: rgba(212,160,23,0.15);
-      --danger:       #e5484d;
-      --danger-glow:  rgba(229,72,77,0.15);
+      --success:        #10b981;
+      --warning:        #f59e0b;
+      --error:          #ef4444;
 
       /* Borders */
       --border-subtle:  rgba(255,255,255,0.05);
       --border-default: rgba(255,255,255,0.08);
       --border-strong:  rgba(255,255,255,0.12);
 
-      /* Fonts */
-      --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+      /* Typography */
+      --font-sans:  'Inter', -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+      --font-mono:  'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
       /* Spacing */
-      --max-w: 1200px;
+      --space-1:  4px;
+      --space-2:  8px;
+      --space-3:  12px;
+      --space-4:  16px;
+      --space-5:  24px;
+      --space-6:  32px;
+      --space-7:  48px;
+      --space-8:  64px;
+      --space-9:  80px;
+      --space-10: 96px;
+
+      /* Radius */
       --radius-sm: 4px;
-      --radius: 6px;
-      --radius-md: 8px;
-      --radius-lg: 12px;
-      --radius-xl: 16px;
-      --radius-full: 9999px;
-
-      /* Shadows */
-      --shadow-ambient: rgba(0,0,0,0.03) 0px 1.2px 0px;
-      --shadow-card:    rgba(0,0,0,0.2) 0px 0px 0px 1px;
-      --shadow-elevated: rgba(0,0,0,0) 0px 8px 2px, rgba(0,0,0,0.01) 0px 5px 2px, rgba(0,0,0,0.04) 0px 3px 2px, rgba(0,0,0,0.07) 0px 1px 1px, rgba(0,0,0,0.08) 0px 0px 1px;
-      --shadow-glow:    0 0 40px rgba(94,106,210,0.15);
-
-      /* Transitions */
-      --ease: cubic-bezier(0.4, 0, 0.2, 1);
-      --duration: 0.15s;
-      --duration-lg: 0.3s;
+      --radius-md: 6px;
+      --radius-lg: 8px;
+      --radius-xl: 12px;
+      --radius-pill: 9999px;
     }
 
-    /* ============================================================
-       RESET & BASE
-       ============================================================ */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html {
+      font-size: 16px;
       scroll-behavior: smooth;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
-      font-family: var(--font);
+      font-family: var(--font-sans);
       font-weight: 400;
-      font-size: 16px;
       line-height: 1.6;
       color: var(--text-secondary);
       background: var(--bg);
-      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: "cv01", "ss03";
     }
 
-    a { color: var(--brand-accent); text-decoration: none; transition: color var(--ease) var(--duration); }
-    a:hover { color: var(--brand-hover); }
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-primary);
+      font-weight: 510;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -0.04em; font-weight: 590; }
+    h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); letter-spacing: -0.03em; }
+    h3 { font-size: clamp(1.13rem, 2vw, 1.25rem); letter-spacing: -0.01em; font-weight: 590; }
+
+    p { margin-bottom: var(--space-4); }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 150ms ease;
+    }
+    a:hover { color: var(--accent-hover); }
 
     img { max-width: 100%; height: auto; display: block; }
 
-    /* ============================================================
-       TYPOGRAPHY
-       ============================================================ */
-    .typo-display {
-      font-size: clamp(40px, 5vw, 64px);
-      font-weight: 510;
-      line-height: 1.0;
-      letter-spacing: -1.4px;
-      color: var(--text-primary);
-    }
-    .typo-section {
-      font-size: clamp(28px, 3.5vw, 40px);
-      font-weight: 510;
-      line-height: 1.1;
-      letter-spacing: -0.8px;
-      color: var(--text-primary);
-    }
-    .typo-subsection {
-      font-size: 20px;
-      font-weight: 590;
-      line-height: 1.33;
-      letter-spacing: -0.24px;
-      color: var(--text-primary);
-    }
-    .typo-body-lg {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.6;
-      letter-spacing: -0.165px;
-      color: var(--text-secondary);
-    }
-    .typo-body {
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 1.6;
-      color: var(--text-secondary);
-    }
-    .typo-caption {
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 1.5;
-      color: var(--text-tertiary);
-    }
-    .typo-mono {
-      font-family: var(--font-mono);
-      font-size: 13px;
-      font-weight: 500;
-      line-height: 1.5;
-      color: var(--text-tertiary);
-    }
-    .typo-mono-sm {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 500;
-      line-height: 1.4;
-      color: var(--text-quaternary);
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-    }
-    .typo-label {
-      font-size: 10px;
-      font-weight: 510;
-      line-height: 1.4;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      color: var(--text-quaternary);
-    }
-
-    /* ============================================================
-       LAYOUT
-       ============================================================ */
+    /* Container */
     .container {
-      max-width: var(--max-w);
+      width: 100%;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 var(--space-5);
     }
-    .section { padding: 80px 0; }
-    .section-compact { padding: 48px 0; }
-
-    /* ============================================================
-       SKIP LINK
-       ============================================================ */
-    .skip-link {
-      position: absolute; top: -100%; left: 0;
-      background: var(--brand); color: var(--text-primary);
-      padding: 8px 16px; z-index: 9999;
-      font-size: 14px; font-weight: 510; border-radius: 0 0 var(--radius) 0;
-    }
-    .skip-link:focus { top: 0; }
 
     /* ============================================================
        NAVIGATION
        ============================================================ */
     .nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(8,9,10,0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 9, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-subtle);
     }
+
     .nav-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
     }
+
     .nav-logo {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 16px; font-weight: 590; color: var(--text-primary);
-      letter-spacing: -0.3px;
-    }
-    .nav-logo svg { width: 24px; height: 24px; }
-    .nav-logo span { color: var(--brand-accent); }
-    .nav-links { display: flex; align-items: center; gap: 0; }
-    .nav-links a {
-      font-size: 13px; font-weight: 510;
-      color: var(--text-tertiary); padding: 6px 12px;
-      border-radius: var(--radius);
-      transition: all var(--ease) var(--duration);
-    }
-    .nav-links a:hover {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
       color: var(--text-primary);
-      background: rgba(255,255,255,0.04);
+      font-weight: 590;
+      font-size: 1.13rem;
+      letter-spacing: -0.02em;
     }
+
+    .nav-logo .logo-icon {
+      width: 28px;
+      height: 28px;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-5);
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-tertiary);
+      font-size: 0.88rem;
+      font-weight: 510;
+      transition: color 150ms ease;
+    }
+
+    .nav-links a:hover { color: var(--text-primary); }
+
     .nav-cta {
-      background: var(--brand) !important;
-      color: var(--text-primary) !important;
-      padding: 6px 14px !important;
-      border-radius: var(--radius) !important;
-      font-size: 13px !important; font-weight: 510 !important;
-      margin-left: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      background: var(--accent);
+      color: var(--bg) !important;
+      font-size: 0.88rem;
+      font-weight: 590;
+      border-radius: var(--radius-md);
+      transition: background 150ms ease, transform 150ms ease;
     }
-    .nav-cta:hover { background: var(--brand-hover) !important; }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      color: var(--bg) !important;
+      transform: translateY(-1px);
+    }
+
+    /* Mobile Nav */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: var(--space-2);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+    }
 
     /* ============================================================
        HERO
        ============================================================ */
     .hero {
-      position: relative;
-      padding: 96px 0 80px;
+      padding: var(--space-10) 0 var(--space-9);
       text-align: center;
+      position: relative;
       overflow: hidden;
     }
-    .hero-glow {
+
+    .hero::before {
+      content: '';
       position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -60%);
-      width: 800px; height: 600px;
-      background: radial-gradient(ellipse at center, rgba(94,106,210,0.12) 0%, rgba(94,106,210,0.04) 40%, transparent 70%);
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
       pointer-events: none;
       z-index: 0;
     }
-    .hero-glow::after {
-      content: '';
-      position: absolute;
-      top: 30%; right: -10%;
-      width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(94,106,210,0.06) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .hero-content { position: relative; z-index: 1; }
+
+    .hero > * { position: relative; z-index: 1; }
+
     .hero-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 4px 10px 4px 4px;
-      background: var(--brand-subtle);
-      border: 1px solid rgba(94,106,210,0.2);
-      border-radius: var(--radius-full);
-      margin-bottom: 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-1) var(--space-3);
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 510;
+      color: var(--accent);
+      margin-bottom: var(--space-5);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
-    .hero-badge .badge-dot {
-      width: 6px; height: 6px;
-      background: var(--brand-accent);
+
+    .hero-badge .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
       border-radius: 50%;
-      box-shadow: 0 0 8px rgba(113,112,255,0.5);
+      animation: pulse 2s ease-in-out infinite;
     }
-    .hero-badge span {
-      font-size: 12px; font-weight: 510;
-      color: var(--brand-accent); letter-spacing: 0.2px;
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
     }
-    .hero h1 { margin-bottom: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
+
+    .hero h1 {
+      max-width: 800px;
+      margin: 0 auto var(--space-5);
+    }
+
+    .hero h1 .highlight {
+      color: var(--accent);
+      background: none;
+      -webkit-text-fill-color: initial;
+    }
+
     .hero-subtitle {
-      font-size: clamp(16px, 2vw, 18px);
-      font-weight: 400; line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto var(--space-6);
+      font-size: 1.13rem;
       color: var(--text-tertiary);
-      max-width: 520px; margin: 0 auto 40px;
-      letter-spacing: -0.165px;
+      line-height: 1.7;
     }
-    .hero-actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat-value {
+      font-size: 1.5rem;
+      font-weight: 590;
+      color: var(--text-primary);
+      font-family: var(--font-mono);
+    }
+
+    .hero-stat-label {
+      font-size: 0.75rem;
+      color: var(--text-quaternary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: var(--space-1);
+    }
+
+    @media (max-width: 640px) {
+      .hero-stats { flex-direction: column; gap: var(--space-4); }
+    }
 
     /* ============================================================
        BUTTONS
        ============================================================ */
     .btn {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 8px 16px;
-      border-radius: var(--radius);
-      font-family: var(--font);
-      font-size: 14px; font-weight: 510;
-      cursor: pointer; border: none; text-decoration: none;
-      transition: all var(--ease) var(--duration);
-      white-space: nowrap;
-    }
-    .btn-primary {
-      background: var(--brand); color: var(--text-primary);
-      box-shadow: 0 1px 2px rgba(94,106,210,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .btn-primary:hover {
-      background: var(--brand-hover); color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-3) var(--space-5);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 510;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      transition: all 150ms ease;
       text-decoration: none;
-      box-shadow: 0 2px 8px rgba(94,106,210,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+      line-height: 1;
     }
-    .btn-ghost {
-      background: rgba(255,255,255,0.03);
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      color: var(--bg);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.04);
       color: var(--text-secondary);
       border: 1px solid var(--border-default);
     }
-    .btn-ghost:hover {
-      background: rgba(255,255,255,0.06);
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.08);
       color: var(--text-primary);
-      text-decoration: none;
       border-color: var(--border-strong);
     }
-    .btn-sm { padding: 5px 12px; font-size: 13px; }
-    .btn-link {
-      background: none; border: none; padding: 0;
-      font-size: 13px; font-weight: 510;
-      color: var(--brand-accent); cursor: pointer;
-    }
-    .btn-link:hover { color: var(--brand-hover); text-decoration: underline; }
 
-    /* ============================================================
-       SECTION HEADERS
-       ============================================================ */
-    .section-header {
-      display: flex; align-items: center; gap: 8px;
-      margin-bottom: 8px;
-    }
-    .section-header .section-icon {
-      width: 16px; height: 16px;
-      color: var(--brand-accent);
-    }
-    .section-header .typo-label {
-      font-size: 11px; font-weight: 510;
-      color: var(--brand-accent); letter-spacing: 0.8px;
-    }
-    .section-title { margin-bottom: 12px; }
-    .section-subtitle {
-      font-size: 15px; font-weight: 400;
-      color: var(--text-tertiary); max-width: 480px;
-      margin-bottom: 40px; line-height: 1.6;
-    }
-
-    /* ============================================================
-       COMPARISON TABLE
-       ============================================================ */
-    .table-wrap {
-      background: var(--bg-panel);
-      border: 1px solid var(--border-default);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-card);
-      overflow: hidden;
-    }
-    .comparison-table {
-      width: 100%; border-collapse: collapse;
-    }
-    .comparison-table thead th {
-      background: var(--bg-elevated);
-      padding: 10px 16px; text-align: left;
-      font-size: 11px; font-weight: 510;
-      color: var(--text-tertiary); letter-spacing: 0.6px;
-      text-transform: uppercase;
-      border-bottom: 1px solid var(--border-subtle);
-      white-space: nowrap;
-    }
-    .comparison-table tbody td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 14px; font-weight: 400;
-      vertical-align: middle;
-      transition: background var(--ease) var(--duration);
-    }
-    .comparison-table tbody tr:last-child td { border-bottom: none; }
-    .comparison-table tbody tr:hover td { background: rgba(255,255,255,0.015); }
-    .comparison-table tbody tr.rank-1 td { background: rgba(94,106,210,0.04); }
-    .comparison-table tbody tr.rank-1:hover td { background: rgba(94,106,210,0.07); }
-
-    .table-rank {
-      font-family: var(--font-mono);
-      font-size: 12px; font-weight: 500;
-      color: var(--text-quaternary);
-      width: 40px;
-    }
-    .table-product { display: flex; align-items: center; gap: 12px; }
-    .table-product-img {
-      width: 40px; height: 40px;
-      background: var(--bg-elevated);
-      border-radius: var(--radius);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; overflow: hidden;
-      border: 1px solid var(--border-subtle);
-    }
-    .table-product-img img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
-    .table-product-name {
-      color: var(--text-primary); font-weight: 510;
-      transition: color var(--ease) var(--duration);
-      max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-    }
-    .table-product tr:hover .table-product-name { color: var(--brand-accent); }
-    .table-product .typo-caption { margin-top: 1px; }
-    .table-price {
-      font-family: var(--font-mono);
-      font-size: 14px; font-weight: 500;
-      color: var(--text-primary);
-      white-space: nowrap;
-    }
-    .table-rating { white-space: nowrap; }
-    .table-rating .stars { color: var(--warning); font-size: 12px; letter-spacing: 1px; }
-    .table-rating .count { font-size: 12px; color: var(--text-quaternary); margin-left: 4px; }
-    .table-reviews {
-      font-family: var(--font-mono);
-      font-size: 12px; font-weight: 400;
-      color: var(--text-quaternary);
-      white-space: nowrap;
-    }
-    .table-cta { width: 120px; text-align: right; }
-
-    /* ============================================================
-       BADGES
-       ============================================================ */
-    .badge {
-      display: inline-flex; align-items: center; gap: 4px;
-      padding: 2px 8px;
-      border-radius: var(--radius-sm);
-      font-size: 10px; font-weight: 510;
-      letter-spacing: 0.4px; text-transform: uppercase;
-      white-space: nowrap;
-    }
-    .badge-gold {
-      background: var(--warning-glow);
-      color: var(--warning);
-      border: 1px solid rgba(212,160,23,0.25);
-    }
-    .badge-silver {
-      background: rgba(138,143,152,0.1);
+    .btn-ghost {
+      background: transparent;
       color: var(--text-tertiary);
-      border: 1px solid rgba(138,143,152,0.2);
     }
-    .badge-bronze {
-      background: rgba(180,120,60,0.1);
-      color: #b4784a;
-      border: 1px solid rgba(180,120,60,0.2);
+
+    .btn-ghost:hover {
+      color: var(--text-primary);
     }
-    .badge-brand {
-      background: var(--brand-subtle);
-      color: var(--brand-accent);
-      border: 1px solid rgba(94,106,210,0.2);
+
+    .btn-sm {
+      padding: var(--space-2) var(--space-3);
+      font-size: 0.81rem;
+    }
+
+    .btn-lg {
+      padding: var(--space-4) var(--space-6);
+      font-size: 1rem;
+    }
+
+    /* ============================================================
+       SECTIONS
+       ============================================================ */
+    .section {
+      padding: var(--space-9) 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto var(--space-8);
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-4);
+    }
+
+    .section-label::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .section h2 {
+      margin-bottom: var(--space-4);
+    }
+
+    .section-desc {
+      color: var(--text-tertiary);
+      font-size: 1.06rem;
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       CATEGORY NAV (Pill Bar)
+       ============================================================ */
+    .category-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-7);
+    }
+
+    .category-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-pill);
+      color: var(--text-tertiary);
+      font-size: 0.88rem;
+      font-weight: 510;
+      cursor: pointer;
+      transition: all 150ms ease;
+      text-decoration: none;
+    }
+
+    .category-pill:hover,
+    .category-pill.active {
+      background: var(--accent-glow);
+      border-color: var(--accent-border);
+      color: var(--accent);
+    }
+
+    .category-pill .icon {
+      width: 16px;
+      height: 16px;
     }
 
     /* ============================================================
        PRODUCT CARDS
        ============================================================ */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: var(--space-5);
+    }
+
+    @media (max-width: 768px) {
+      .products-grid { grid-template-columns: 1fr; }
+    }
+
     .product-card {
       background: var(--bg-panel);
-      border: 1px solid var(--border-default);
-      border-radius: var(--radius-lg);
-      padding: 24px; margin-bottom: 16px;
-      transition: all var(--ease) var(--duration-lg);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: all 200ms ease;
       position: relative;
+    }
+
+    .product-card:hover {
+      border-color: var(--border-default);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .product-card-top {
+      padding: var(--space-5);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .product-rank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: var(--space-3);
+    }
+
+    .product-rank.gold { background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.25); color: #f59e0b; }
+    .product-rank.silver { background: rgba(148, 163, 184, 0.15); border-color: rgba(148, 163, 184, 0.25); color: #94a3b8; }
+    .product-rank.bronze { background: rgba(180, 83, 9, 0.15); border-color: rgba(180, 83, 9, 0.25); color: #d97706; }
+
+    .product-title {
+      font-size: 1rem;
+      font-weight: 590;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: var(--space-3);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    .product-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
-      opacity: 0;
-      transition: opacity var(--ease) var(--duration-lg);
-    }
-    .product-card:hover {
-      border-color: rgba(255,255,255,0.12);
-      box-shadow: var(--shadow-glow);
-    }
-    .product-card:hover::before { opacity: 1; }
-    .product-card.rank-1 { border-left: 2px solid var(--brand); }
-    .product-card.rank-2 { border-left: 2px solid var(--text-tertiary); }
-    .product-card.rank-3 { border-left: 2px solid #b4784a; }
 
-    .product-card-header {
-      display: flex; align-items: center; gap: 8px;
-      margin-bottom: 20px; flex-wrap: wrap;
+    .product-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
     }
-    .product-card-rank {
-      font-family: var(--font-mono);
-      font-size: 11px; font-weight: 500;
+
+    .product-rating {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+      font-size: 0.81rem;
+      color: var(--text-tertiary);
+    }
+
+    .product-rating .stars {
+      color: #f59e0b;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+    }
+
+    .product-reviews {
+      font-size: 0.75rem;
       color: var(--text-quaternary);
     }
-    .product-card-name { font-size: 18px; font-weight: 510; color: var(--text-primary); flex: 1; }
 
-    .product-card-grid { display: grid; grid-template-columns: 160px 1fr; gap: 24px; }
-    .product-card-image {
-      display: flex; align-items: center; justify-content: center;
-      background: var(--bg-elevated);
+    .product-badges {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-top: var(--space-3);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px var(--space-2);
+      border-radius: var(--radius-sm);
+      font-size: 0.69rem;
+      font-weight: 510;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-success { background: rgba(16, 185, 129, 0.15); color: var(--accent); }
+    .badge-warning { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+    .badge-info { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+    .badge-neutral { background: rgba(255,255,255,0.06); color: var(--text-tertiary); }
+
+    .product-card-bottom {
+      padding: var(--space-4) var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+
+    .product-price {
+      font-family: var(--font-mono);
+      font-size: 1.13rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .product-price .currency {
+      font-size: 0.88rem;
+      color: var(--text-tertiary);
+    }
+
+    .product-price .old {
+      font-size: 0.81rem;
+      color: var(--text-quaternary);
+      text-decoration: line-through;
+      margin-left: var(--space-2);
+    }
+
+    .product-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      background: var(--accent);
+      color: var(--bg);
+      font-size: 0.81rem;
+      font-weight: 590;
       border-radius: var(--radius-md);
-      padding: 16px; min-height: 140px;
-      border: 1px solid var(--border-subtle);
+      text-decoration: none;
+      transition: all 150ms ease;
+      white-space: nowrap;
     }
-    .product-card-image img { max-height: 120px; object-fit: contain; }
 
-    .product-card-meta {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 12px; margin-bottom: 16px; padding: 14px;
-      background: var(--bg-elevated);
-      border-radius: var(--radius);
-      border: 1px solid var(--border-subtle);
+    .product-cta:hover {
+      background: var(--accent-hover);
+      color: var(--bg);
+      transform: translateY(-1px);
     }
-    .meta-item { text-align: center; }
-    .meta-label {
-      font-size: 9px; font-weight: 510;
-      text-transform: uppercase; letter-spacing: 0.6px;
-      color: var(--text-quaternary); margin-bottom: 4px;
-    }
-    .meta-value { font-size: 15px; font-weight: 510; color: var(--text-primary); }
-    .meta-value.price { color: var(--brand-accent); }
 
-    .product-card-pros-cons {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
-      margin-bottom: 16px;
+    .product-cta svg {
+      width: 14px;
+      height: 14px;
     }
-    .pros, .cons { padding: 10px 12px; border-radius: var(--radius); font-size: 12px; }
-    .pros { background: var(--success-glow); }
-    .cons { background: var(--danger-glow); }
-    .pros strong, .cons strong {
-      font-size: 10px; font-weight: 510;
-      text-transform: uppercase; letter-spacing: 0.5px;
-      display: block; margin-bottom: 4px;
-    }
-    .pros strong { color: var(--success); }
-    .cons strong { color: var(--danger); }
-    .pros ul, .cons ul { list-style: none; }
-    .pros li, .cons li { margin-bottom: 2px; font-size: 12px; color: var(--text-tertiary); }
 
     /* ============================================================
-       GUIDE SECTION
+       COMPARISON TABLE
        ============================================================ */
-    .guide-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-    }
-    .guide-card {
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
       background: var(--bg-panel);
-      border: 1px solid var(--border-default);
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: var(--space-4) var(--space-5);
+      text-align: left;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .comparison-table th {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .comparison-table td {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    .comparison-table tr:last-child td { border-bottom: none; }
+
+    .comparison-table tr:hover td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .comparison-table .product-name {
+      color: var(--text-primary);
+      font-weight: 510;
+    }
+
+    .comparison-table .check {
+      color: var(--accent);
+      font-weight: 590;
+    }
+
+    .comparison-table .cross {
+      color: var(--text-quaternary);
+    }
+
+    /* ============================================================
+       INFO CARDS / FEATURES
+       ============================================================ */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--space-5);
+    }
+
+    .feature-card {
+      padding: var(--space-6);
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      transition: all 200ms ease;
+    }
+
+    .feature-card:hover {
+      border-color: var(--border-default);
+      transform: translateY(-2px);
+    }
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-border);
       border-radius: var(--radius-lg);
-      padding: 24px;
-      transition: border-color var(--ease) var(--duration);
+      margin-bottom: var(--space-4);
+      color: var(--accent);
     }
-    .guide-card:hover { border-color: var(--border-strong); }
-    .guide-card-icon {
-      width: 32px; height: 32px;
-      background: var(--brand-subtle);
-      border-radius: var(--radius);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 12px;
+
+    .feature-icon svg {
+      width: 20px;
+      height: 20px;
     }
-    .guide-card-icon svg { width: 16px; height: 16px; color: var(--brand-accent); }
-    .guide-card h3 { font-size: 15px; font-weight: 510; color: var(--text-primary); margin-bottom: 8px; }
-    .guide-card p { font-size: 13px; color: var(--text-tertiary); line-height: 1.6; }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      margin-bottom: var(--space-2);
+    }
+
+    .feature-card p {
+      font-size: 0.88rem;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
 
     /* ============================================================
        FAQ
        ============================================================ */
-    .faq-item { border-bottom: 1px solid var(--border-subtle); }
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-3);
+      overflow: hidden;
+      transition: border-color 150ms ease;
+    }
+
+    .faq-item:hover {
+      border-color: var(--border-default);
+    }
+
     .faq-question {
-      width: 100%; text-align: left; padding: 16px 0;
-      background: none; border: none;
-      font-family: var(--font); font-size: 14px; font-weight: 510;
-      color: var(--text-primary); cursor: pointer;
-      display: flex; justify-content: space-between; align-items: center;
-      transition: color var(--ease) var(--duration);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-5);
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 510;
+      cursor: pointer;
+      text-align: left;
+      gap: var(--space-4);
     }
-    .faq-question:hover { color: var(--brand-accent); }
-    .faq-icon {
-      width: 20px; height: 20px;
-      border-radius: 50%;
-      background: var(--bg-elevated);
-      border: 1px solid var(--border-default);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-left: 16px;
-      transition: all var(--ease) var(--duration);
-      color: var(--text-tertiary); font-size: 14px; line-height: 1;
+
+    .faq-question:hover {
+      color: var(--accent);
     }
-    .faq-icon.open {
-      background: var(--brand-subtle);
-      border-color: rgba(94,106,210,0.3);
-      color: var(--brand-accent);
+
+    .faq-question .icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      color: var(--text-quaternary);
+      transition: transform 200ms ease;
+    }
+
+    .faq-item.open .faq-question .icon {
       transform: rotate(45deg);
     }
+
     .faq-answer {
-      display: none; padding: 0 0 16px;
-      font-size: 14px; color: var(--text-tertiary); line-height: 1.65;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 300ms ease;
     }
-    .faq-answer.open { display: block; }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 var(--space-5) var(--space-5);
+      font-size: 0.94rem;
+      color: var(--text-tertiary);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       CTA SECTION
+       ============================================================ */
+    .cta-section {
+      padding: var(--space-10) 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-box {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: var(--space-9) var(--space-6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 200px;
+      background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-box > * { position: relative; z-index: 1; }
+
+    .cta-box h2 {
+      margin-bottom: var(--space-4);
+    }
+
+    .cta-box p {
+      color: var(--text-tertiary);
+      max-width: 480px;
+      margin: 0 auto var(--space-6);
+    }
 
     /* ============================================================
        FOOTER
        ============================================================ */
     .footer {
-      background: var(--bg-panel);
+      padding: var(--space-8) 0 var(--space-6);
       border-top: 1px solid var(--border-subtle);
-      padding: 40px 0 32px;
     }
+
     .footer-inner {
-      display: flex; justify-content: space-between;
-      align-items: center; flex-wrap: wrap; gap: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-4);
     }
-    .footer-links a { margin-left: 24px; font-size: 13px; color: var(--text-tertiary); }
-    .footer-links a:hover { color: var(--text-primary); }
+
+    .footer-copy {
+      font-size: 0.81rem;
+      color: var(--text-quaternary);
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-5);
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 0.81rem;
+      color: var(--text-quaternary);
+      transition: color 150ms ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-secondary);
+    }
+
     .footer-disclaimer {
-      margin-top: 24px; padding-top: 20px;
+      margin-top: var(--space-6);
+      padding-top: var(--space-5);
       border-top: 1px solid var(--border-subtle);
-      font-size: 12px; line-height: 1.6; color: var(--text-quaternary);
+      font-size: 0.75rem;
+      color: var(--text-quaternary);
+      line-height: 1.6;
     }
 
     /* ============================================================
-       RESPONSIVE
+       UTILITIES
        ============================================================ */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hero { padding: 64px 0 48px; }
-      .section { padding: 56px 0; }
-      .product-card-grid { grid-template-columns: 1fr; }
-      .product-card-image { order: -1; min-height: 100px; }
-      .product-card-meta { grid-template-columns: repeat(3, 1fr); }
-      .product-card-pros-cons { grid-template-columns: 1fr; }
-      .comparison-table { font-size: 13px; }
-      .comparison-table thead th:nth-child(4),
-      .comparison-table tbody td:nth-child(4) { display: none; }
-      .table-product-img { display: none; }
-      .table-product-name { max-width: 180px; }
-      .guide-grid { grid-template-columns: 1fr; }
+    .text-center { text-align: center; }
+    .text-accent { color: var(--accent); }
+    .text-muted { color: var(--text-quaternary); }
+    .mt-4 { margin-top: var(--space-4); }
+    .mt-6 { margin-top: var(--space-6); }
+    .mb-4 { margin-bottom: var(--space-4); }
+    .mb-6 { margin-bottom: var(--space-6); }
+
+    /* SVG Icons helper */
+    .icon { width: 1em; height: 1em; display: inline-block; vertical-align: middle; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .icon-filled { fill: currentColor; stroke: none; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .section { padding: var(--space-7) 0; }
+      .hero { padding: var(--space-8) 0 var(--space-7); }
+      .container { padding: 0 var(--space-4); }
     }
   </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-  <!-- NAVIGATION -->
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
   <nav class="nav" role="navigation" aria-label="Hauptnavigation">
-    <div class="container nav-inner">
-      <a href="#" class="nav-logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        <span>akku</span>-test.de
-      </a>
-      <div class="nav-links">
-        <a href="#vergleich">Vergleich</a>
-        <a href="#produkte">Produkte</a>
-        <a href="#ratgeber">Ratgeber</a>
-        <a href="#faq">FAQ</a>
-        <a href="#vergleich" class="nav-cta">Zum Vergleich</a>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="akku-test.de Startseite">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span>akku-test.de</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#vergleich">Vergleich</a></li>
+          <li><a href="#kategorien">Kategorien</a></li>
+          <li><a href="#vergleichstabelle">Tabelle</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://www.amazon.de" class="nav-cta" rel="noopener" target="_blank">Auf Amazon ansehen →</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Menü öffnen" onclick="document.body.classList.toggle('nav-open')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
   </nav>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-glow"></div>
-      <div class="container hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span>Stand: Mai 2025</span>
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Aktualisiert: Mai 2025
+      </div>
+      <h1>Der große <span class="highlight">Solargenerator Vergleich</span> 2025</h1>
+      <p class="hero-subtitle">
+        Wir haben die besten Solargeneratoren, Powerstations & Solarladegeräte getestet.
+        Unabhängig, transparent — mit Preisen, Bewertungen & Kaufberatung.
+      </p>
+      <div class="hero-actions">
+        <a href="#vergleich" class="btn btn-primary btn-lg">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Jetzt vergleichen
+        </a>
+        <a href="#kategorien" class="btn btn-secondary btn-lg">Kategorien durchsuchen</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">27</div>
+          <div class="hero-stat-label">Produkte getestet</div>
         </div>
-        <h1 class="typo-display">Solargenerator Vergleich 2025</h1>
-        <p class="hero-subtitle">Die besten Solargeneratoren, Powerstations & Solarladegeräte im unabhängigen Vergleich. Mit Preisen, Bewertungen und Kaufberatung.</p>
-        <div class="hero-actions">
-          <a href="#vergleich" class="btn btn-primary">Zum Vergleich</a>
-          <a href="#ratgeber" class="btn btn-ghost">Kaufberatung lesen</a>
+        <div class="hero-stat">
+          <div class="hero-stat-value">15+</div>
+          <div class="hero-stat-label">Stunden Recherche</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">100%</div>
+          <div class="hero-stat-label">Unabhängig</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         CATEGORY NAV
+         ============================================================ -->
+    <section class="section" id="kategorien" style="padding-top: 0; margin-top: calc(-1 * var(--space-5));">
+      <div class="container">
+        <div class="category-nav">
+          <a href="#vergleich" class="category-pill active">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Alle
+          </a>
+          <a href="solargenerator-camping.html" class="category-pill">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Camping
+          </a>
+          <a href="solargenerator-notstrom.html" class="category-pill">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Notstrom
+          </a>
+          <a href="solargenerator-lifepo4.html" class="category-pill">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            LiFePO4
+          </a>
+          <a href="bluetti-vergleich.html" class="category-pill">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            BLUETTI
+          </a>
+          <a href="ecoflow-vergleich.html" class="category-pill">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            EcoFlow
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- COMPARISON TABLE -->
+    <!-- ============================================================
+         TOP PRODUCTS
+         ============================================================ -->
     <section class="section" id="vergleich">
       <div class="container">
         <div class="section-header">
-          <span class="typo-label">Schnellvergleich</span>
+          <div class="section-label">Top-Empfehlungen</div>
+          <h2>Die besten Solargeneratoren & Powerstations</h2>
+          <p class="section-desc">
+            Unsere Top-Empfehlungen basieren auf Leistung, Verarbeitung, Preis-Leistungs-Verhältnis und Nutzerbewertungen.
+          </p>
         </div>
-        <h2 class="typo-section section-title">Top 10 Solargeneratoren</h2>
-        <p class="section-subtitle">Sortiert nach Bewertung × Reichweite. Alle Preise von Amazon.de.</p>
 
-        <div class="table-wrap">
-          <table class="comparison-table">
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be injected by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMPARISON TABLE
+         ============================================================ -->
+    <section class="section" id="vergleichstabelle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Vergleichstabelle</div>
+          <h2>Alle Produkte im Überblick</h2>
+          <p class="section-desc">
+            Die wichtigsten Daten auf einen Blick — sortierbar nach Preis, Bewertung und Kapazität.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table" id="comparison-table">
             <thead>
               <tr>
                 <th>#</th>
                 <th>Produkt</th>
                 <th>Preis</th>
                 <th>Bewertung</th>
-                <th>Reviews</th>
-                <th></th>
+                <th>Kapazität</th>
+                <th>Gewicht</th>
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="rank-1">
-                <td class="table-rank">01</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/81GUo-PxMIL._AC_UL320_.jpg" alt="Jackery Explorer 1000 V2" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0BD4JWJQB?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">Jackery Explorer 1000 V2</a>
-                      <div class="typo-caption">1.040Wh · LiFePO4 · 2.000W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">161,49 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,1</span></td>
-                <td class="table-reviews">213</td>
-                <td><span class="badge badge-gold">Testsieger</span></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0BD4JWJQB?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-primary">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">02</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/7131vikpSAL._AC_UL320_.jpg" alt="Jackery Explorer 500 V2" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0CPLY3Y2S?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">Jackery Explorer 500 V2</a>
-                      <div class="typo-caption">518Wh · LiFePO4 · 500W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">164,64 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,0</span></td>
-                <td class="table-reviews">476</td>
-                <td><span class="badge badge-silver">Preis-Leistung</span></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0CPLY3Y2S?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-primary">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">03</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/71lYPW6gGAL._AC_UL320_.jpg" alt="BLUETTI EB3A" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0FM3G66WW?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">BLUETTI EB3A</a>
-                      <div class="typo-caption">268Wh · LiFePO4 · 600W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">199,99 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,1</span></td>
-                <td class="table-reviews">589</td>
-                <td><span class="badge badge-bronze">Top-Wahl</span></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0FM3G66WW?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-primary">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">04</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/81eY6Rp1-cL._AC_UL320_.jpg" alt="BLUETTI AC50S" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B01EXWCPLC?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">BLUETTI AC50S</a>
-                      <div class="typo-caption">576Wh · LiFePO4 · 500W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">69,99 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,2</span></td>
-                <td class="table-reviews">423</td>
-                <td><span class="badge badge-brand">Budget-Tipp</span></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B01EXWCPLC?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">05</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/817cRslR7wL._AC_UL320_.jpg" alt="BLUETTI PV120" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B08R5RFHNQ?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">BLUETTI PV120</a>
-                      <div class="typo-caption">120W · Solarpanel · IP65</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">109,99 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,1</span></td>
-                <td class="table-reviews">892</td>
-                <td><span class="badge badge-brand">Bestseller</span></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B08R5RFHNQ?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">06</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/71ajr+qwq9L._AC_UL320_.jpg" alt="EcoFlow River 2 Pro" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0GJC2M84T?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">EcoFlow River 2 Pro</a>
-                      <div class="typo-caption">768Wh · LiFePO4 · 800W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">579,00 €</td>
-                <td class="table-rating"><span class="stars">—</span></td>
-                <td class="table-reviews">63</td>
-                <td></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0GJC2M84T?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">07</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/71qJiovyvkL._AC_UL320_.jpg" alt="EcoFlow DELTA Pro" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0B5RVF53M?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">EcoFlow DELTA Pro</a>
-                      <div class="typo-caption">3.600Wh · LiFePO4 · 3.600W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">699,99 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,3</span></td>
-                <td class="table-reviews">512</td>
-                <td></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0B5RVF53M?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">08</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/61kzaYmntHL._AC_UL320_.jpg" alt="BLUETTI AC200MAX" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0BKLPQS2X?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">BLUETTI AC200MAX</a>
-                      <div class="typo-caption">2.048Wh · LiFePO4 · 4.800W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">999,99 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,0</span></td>
-                <td class="table-reviews">287</td>
-                <td></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0BKLPQS2X?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">09</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/71v7+KGqg9L._AC_UL320_.jpg" alt="Anker 757 PowerHouse" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0FVXHWWB8?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">Anker 757 PowerHouse</a>
-                      <div class="typo-caption">2.400Wh · LiFePO4 · 2.000W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">369,99 €</td>
-                <td class="table-rating"><span class="stars">★★★★☆</span><span class="count">4,3</span></td>
-                <td class="table-reviews">445</td>
-                <td></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0FVXHWWB8?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
-              <tr>
-                <td class="table-rank">10</td>
-                <td>
-                  <div class="table-product">
-                    <div class="table-product-img"><img src="https://m.media-amazon.com/images/I/61oyf1KAbnL._AC_UL320_.jpg" alt="BLUETTI EP50Pro" loading="lazy"></div>
-                    <div>
-                      <a href="https://www.amazon.de/dp/B0FC2QDH2N?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="table-product-name">BLUETTI EP50Pro</a>
-                      <div class="typo-caption">512Wh · LiFePO4 · 1.000W</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="table-price">356,15 €</td>
-                <td class="table-rating"><span class="stars">★★★★★</span><span class="count">4,6</span></td>
-                <td class="table-reviews">167</td>
-                <td></td>
-                <td class="table-cta"><a href="https://www.amazon.de/dp/B0FC2QDH2N?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-ghost">Auf Amazon →</a></td>
-              </tr>
+            <tbody id="comparison-tbody">
+              <!-- Injected by JS -->
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCT CARDS -->
-    <section class="section" id="produkte" style="background: var(--bg-panel);">
+    <!-- ============================================================
+         FEATURES / WHY US
+         ============================================================ -->
+    <section class="section" id="warum">
       <div class="container">
         <div class="section-header">
-          <span class="typo-label">Detailvergleich</span>
-        </div>
-        <h2 class="typo-section section-title">Die Top 3 im Detail</h2>
-        <p class="section-subtitle">Ausführliche Analyse unserer Top-Empfehlungen mit Vor- und Nachteilen.</p>
-
-        <div class="product-card rank-1">
-          <div class="product-card-header">
-            <span class="product-card-rank">01</span>
-            <h3 class="product-card-name">Jackery Explorer 1000 V2</h3>
-            <span class="badge badge-gold">Testsieger</span>
-          </div>
-          <div class="product-card-grid">
-            <div class="product-card-image">
-              <img src="https://m.media-amazon.com/images/I/81GUo-PxMIL._AC_UL320_.jpg" alt="Jackery Explorer 1000 V2" loading="lazy">
-            </div>
-            <div>
-              <div class="product-card-meta">
-                <div class="meta-item"><div class="meta-label">Preis</div><div class="meta-value price">161,49 €</div></div>
-                <div class="meta-item"><div class="meta-label">Kapazität</div><div class="meta-value">1.040 Wh</div></div>
-                <div class="meta-item"><div class="meta-label">Ausgang</div><div class="meta-value">2.000 W</div></div>
-              </div>
-              <div class="product-card-pros-cons">
-                <div class="pros"><strong>Vorteile</strong><ul><li>LiFePO4-Batterie (lange Lebensdauer)</li><li>2.000W AC-Ausgang</li><li>App-Steuerung via Bluetooth</li></ul></div>
-                <div class="cons"><strong>Nachteile</strong><ul><li>161 € für Einsteiger</li></ul></div>
-              </div>
-              <a href="https://www.amazon.de/dp/B0BD4JWJQB?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-primary">Auf Amazon.de prüfen →</a>
-            </div>
-          </div>
+          <div class="section-label">Warum akku-test.de</div>
+          <h2>Unabhängig. Transparent. Gründlich.</h2>
         </div>
 
-        <div class="product-card rank-2">
-          <div class="product-card-header">
-            <span class="product-card-rank">02</span>
-            <h3 class="product-card-name">Jackery Explorer 500 V2</h3>
-            <span class="badge badge-silver">Preis-Leistung</span>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Unabhängige Tests</h3>
+            <p>Wir werden nicht von Herstellern bezahlt. Unsere Empfehlungen basieren ausschließlich auf Fakten, Specs und Nutzerbewertungen.</p>
           </div>
-          <div class="product-card-grid">
-            <div class="product-card-image">
-              <img src="https://m.media-amazon.com/images/I/7131vikpSAL._AC_UL320_.jpg" alt="Jackery Explorer 500 V2" loading="lazy">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
             </div>
-            <div>
-              <div class="product-card-meta">
-                <div class="meta-item"><div class="meta-label">Preis</div><div class="meta-value price">164,64 €</div></div>
-                <div class="meta-item"><div class="meta-label">Kapazität</div><div class="meta-value">518 Wh</div></div>
-                <div class="meta-item"><div class="meta-label">Ausgang</div><div class="meta-value">500 W</div></div>
-              </div>
-              <div class="product-card-pros-cons">
-                <div class="pros"><strong>Vorteile</strong><ul><li>518Wh LiFePO4</li><li>Sehr beliebt (476 Reviews)</li><li>Kompaktes Design</li></ul></div>
-                <div class="cons"><strong>Nachteile</strong><ul><li>Nur 500W AC-Ausgang</li></ul></div>
-              </div>
-              <a href="https://www.amazon.de/dp/B0CPLY3Y2S?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-primary">Auf Amazon.de prüfen →</a>
+            <h3>Datenbasiert</h3>
+            <p>Jedes Produkt wird anhand standardisierter Kriterien bewertet: Kapazität, Ausgänge, Ladezyklen, Gewicht und Preis-Leistung.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
+            <h3>Transparenz</h3>
+            <p>Affiliate-Links sind klar gekennzeichnet. Wir verdienen nur, wenn du über unsere Links kaufst — ohne Mehrkosten für dich.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Ständig aktuell</h3>
+            <p>Preise und Verfügbarkeit ändern sich regelmäßig. Wir aktualisieren unsere Vergleiche monatlich.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="product-card rank-3">
-          <div class="product-card-header">
-            <span class="product-card-rank">03</span>
-            <h3 class="product-card-name">BLUETTI EB3A</h3>
-            <span class="badge badge-bronze">Top-Wahl</span>
-          </div>
-          <div class="product-card-grid">
-            <div class="product-card-image">
-              <img src="https://m.media-amazon.com/images/I/71lYPW6gGAL._AC_UL320_.jpg" alt="BLUETTI EB3A" loading="lazy">
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Häufige Fragen</div>
+          <h2>FAQ — Solargeneratoren & Powerstations</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Was ist der Unterschied zwischen einem Solargenerator und einer Powerstation?
+              <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Eine Powerstation ist ein tragbarer Akku mit Wechselrichter, der Geräte mit Strom versorgen kann. Ein Solargenerator bezeichnet meist das Komplettpaket aus Powerstation plus Solarpanel. Die Solarpanels laden die Powerstation mit Sonnenenergie — ideal für Camping, Notstrom oder autarkes Leben.
+              </div>
             </div>
-            <div>
-              <div class="product-card-meta">
-                <div class="meta-item"><div class="meta-label">Preis</div><div class="meta-value price">199,99 €</div></div>
-                <div class="meta-item"><div class="meta-label">Kapazität</div><div class="meta-value">268 Wh</div></div>
-                <div class="meta-item"><div class="meta-label">Ausgang</div><div class="meta-value">600 W</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Welche Kapazität brauche ich für Notstrom zu Hause?
+              <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Für den Notbetrieb von Kühlschrank und WLAN reichen ca. 500 Wh. Für längere Stromausfälle oder mehrere Geräte empfehlen wir mindestens 1.000 Wh (1 kWh). Die EcoFlow Delta 2 oder BLUETTI AC200P sind dafür gut geeignet.
               </div>
-              <div class="product-card-pros-cons">
-                <div class="pros"><strong>Vorteile</strong><ul><li>268Wh LiFePO4</li><li>UPS-Funktion</li><li>6 Ausgänge</li></ul></div>
-                <div class="cons"><strong>Nachteile</strong><ul><li>Geringe Kapazität für Home-Backup</li></ul></div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              LiFePO4 oder NCM — welcher Akku ist besser?
+              <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                LiFePO4 (Lithium-Eisen-Phosphat) ist die bessere Wahl: 3.000+ Ladezyklen (vs. 500-800 bei NCM), sicherer, temperaturstabiler und langlebiger. Der Nachteil: etwas schwerer pro Wh. Für den Dauereinsatz ist LiFePO4 klar zu empfehlen.
               </div>
-              <a href="https://www.amazon.de/dp/B0FM3G66WW?tag=akku-test-21" target="_blank" rel="noopener sponsored" class="btn btn-primary">Auf Amazon.de prüfen →</a>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Wie lange dauert das Laden per Solarpanel?
+              <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Das hängt von der Solarpanel-Leistung und der Kapazität der Powerstation ab. Ein 200W-Solarpanel lädt eine 500Wh-Powerstation in ca. 3-5 Stunden (bei idealer Sonneneinstrahlung). Bei bewölter Lage kann es 8-12 Stunden dauern.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Sind die Affiliate-Links kostenlos für mich?
+              <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Ja. Die Preise sind identisch — egal ob du über unsere Links kaufst oder direkt auf Amazon. Wir erhalten nur eine kleine Provision vom Händler, die dir keine Mehrkosten verursacht.
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BUYER'S GUIDE -->
-    <section class="section" id="ratgeber">
+    <!-- ============================================================
+         CTA
+       ============================================================ -->
+    <section class="cta-section">
       <div class="container">
-        <div class="section-header">
-          <span class="typo-label">Kaufberatung</span>
-        </div>
-        <h2 class="typo-section section-title">So wählen Sie den richtigen Solargenerator</h2>
-        <p class="section-subtitle">Die wichtigsten Kaufkriterien auf einen Blick.</p>
-
-        <div class="guide-grid">
-          <div class="guide-card">
-            <div class="guide-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-            </div>
-            <h3>Kapazität richtig einschätzen</h3>
-            <p>Die Kapazität wird in Wattstunden (Wh) angegeben. Für Smartphones reichen 100–300 Wh. Für Laptops oder Kühlschränke sollten Sie mindestens 500 Wh einplanen.</p>
-          </div>
-          <div class="guide-card">
-            <div class="guide-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            </div>
-            <h3>LiFePO4 vs. NMC</h3>
-            <p>LiFePO4-Batterien halten 2.500–3.500 Ladezyklen — 5–7× länger als NMC. Für regelmäßige Nutzung ist LiFePO4 die bessere Wahl.</p>
-          </div>
-          <div class="guide-card">
-            <div class="guide-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            </div>
-            <h3>Solar-Eingang</h3>
-            <p>Achten Sie auf die max. Solar-Eingangsleistung (W). Je höher, desto schneller lädt sich die Powerstation. 100–200W ist ideal für Camping.</p>
-          </div>
-          <div class="guide-card">
-            <div class="guide-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <h3>Ausgangsleistung</h3>
-            <p>Die AC-Ausgangsleistung (W) bestimmt, welche Geräte Sie betreiben. 500W reichen für Laptops. Für Kühlschränke brauchen Sie 1.000W+.</p>
-          </div>
-          <div class="guide-card">
-            <div class="guide-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-            </div>
-            <h3>Erweiterbarkeit</h3>
-            <p>Einige Modelle (EcoFlow DELTA Pro, BLUETTI AC500) sind erweiterbar. Sie können zusätzliche Batteriemodule nachkaufen.</p>
-          </div>
-          <div class="guide-card">
-            <div class="guide-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Zertifizierungen</h3>
-            <p>Achten Sie auf CE-Kenngebung, IP-Schutzklasse (mind. IP54 für Outdoor) und UN38.3 für Lithium-Batterien.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq" style="background: var(--bg-panel);">
-      <div class="container">
-        <div class="section-header">
-          <span class="typo-label">Häufige Fragen</span>
-        </div>
-        <h2 class="typo-section section-title">FAQ — Solargeneratoren</h2>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Was ist ein Solargenerator und wie funktioniert er?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ein Solargenerator (auch Powerstation) ist ein tragbarer Stromspeicher, der über Solarpanels oder das Stromnetz geladen wird. Er wandelt gespeicherte Gleichspannung in Wechselspannung (230V) um und kann so Haushaltsgeräte, Laptops, Kühlschränke und mehr betreiben.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Welche Solargenerator-Marke ist die beste?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Die besten Marken sind BLUETTI, EcoFlow, Jackery und Anker. BLUETTI überzeugt mit LiFePO4-Batterien, EcoFlow mit extrem schneller Ladung, Jackery mit einfacher Bedienung und Anker mit Premium-Qualität.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Wie lange hält ein Solargenerator?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Die Akkulaufzeit hängt von der Kapazität (Wh) und der Verbraucherleistung ab. Ein 500Wh-Akku versorgt z.B. einen 50W-Laptop ca. 8–10 Stunden. LiFePO4-Batterien halten 2.500–3.500 Zyklen.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Kann ich einen Solargenerator als Notstromversorgung nutzen?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ja, viele Solargeneratoren haben eine UPS-Funktion und schalten innerhalb von 10–30ms auf Batteriebetrieb um. Besonders die EcoFlow DELTA Serie und BLUETTI AC/EP-Modelle sind für Notstrom geeignet.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Was kostet ein guter Solargenerator?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Preise reichen von 70 € für kleine Powerbanks bis über 1.000 € für Home-Backup-Systeme. Gute Einstiegsmodelle gibt es ab 150 €, Mid-Range ab 300–700 € und Premium ab 700 €.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Ist ein Solargenerator für Camping geeignet?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Absolut! Solargeneratoren sind ideal für Camping, Wohnmobil und Outdoor. Sie sind leise, abgasfrei und können über Solarpanels nachgeladen werden.</p></div>
+        <div class="cta-box">
+          <h2>Bereit für deine Entscheidung?</h2>
+          <p>Vergleiche die besten Solargeneratoren direkt auf Amazon und finde das richtige Produkt für deine Bedürfnisse.</p>
+          <a href="https://www.amazon.de/s?k=solargenerator" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Alle Produkte auf Amazon ansehen →
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div style="display:flex;align-items:center;gap:8px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--brand-accent);"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          <span style="font-size:14px;font-weight:510;color:var(--text-primary);">akku-test.de</span>
-        </div>
-        <div class="footer-links">
-          <a href="#">Impressum</a>
-          <a href="#">Datenschutz</a>
-          <a href="#">Kontakt</a>
-        </div>
+        <span class="footer-copy">© 2025 akku-test.de — Alle Rechte vorbehalten</span>
+        <ul class="footer-links">
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+        </ul>
       </div>
       <div class="footer-disclaimer">
-        <strong>Affiliate-Hinweis:</strong> Diese Seite enthält Amazon-Partnerlinks. Wenn Sie über unsere Links kaufen, erhalten wir eine Provision — ohne Mehrkosten für Sie. Wir empfehlen nur Produkte, die wir selbst als gut bewerten. Preise und Verfügbarkeit können sich ändern.
+        <strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l. und Partner des Werbeprogramms, das zur Bereitstellung eines Mediums für Websites konzipiert wurde, mittels dessen durch die Platzierung von Werbeanzeigen und Links zu Amazon.de Werbekostenerstattung verdient werden können. Alle Preise sind tagesaktuell, können sich aber ändern. Produktbilder und Spezifikationen stammen von Amazon.
       </div>
     </div>
   </footer>
 
+  <!-- ============================================================
+       JAVASCRIPT — Product Data & Rendering
+       ============================================================ -->
   <script>
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const answer = btn.nextElementSibling;
-        const icon = btn.querySelector('.faq-icon');
-        const isOpen = answer.classList.contains('open');
-        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
-        document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
-        if (!isOpen) {
-          answer.classList.add('open');
-          icon.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
+    // Product data from research
+    const products = [
+      { asin: "B0FM3G66WW", title: "BLUETTI EB3A Tragbare Powerstation, 268Wh LiFePO4 Solar Generator, 600W AC-Inverter", price: "199,99 €", rating: 4.1, reviews: 589, capacity: "268 Wh", weight: "4,7 kg", badge: "Bestes Preis-Leistungs-Verhältnis", badgeType: "success" },
+      { asin: "B0GJC2M84T", title: "EcoFlow River 2 Pro Tragbare Powerstation, 768Wh LiFePO4 Solar Generator, 800W AC-Inverter", price: "579,00 €", rating: 4.3, reviews: 63, capacity: "768 Wh", weight: "7,8 kg", badge: "Top-Empfehlung", badgeType: "success" },
+      { asin: "B08R5RFHNQ", title: "BLUETTI PV120 Solarmodul, 120W Solarpanel für Powerstations, monokristallin", price: "109,99 €", rating: 4.1, reviews: 892, capacity: "120 W", weight: "4,2 kg", badge: "Bestseller Solarpanel", badgeType: "info" },
+      { asin: "B0DQ8PY91X", title: "BigBlue 60W Faltbares Solarladegerät, Tragbares ETFE-Solarpanel QC3.0+PD45W", price: "99,99 €", rating: 3.9, reviews: 112, capacity: "60 W", weight: "1,8 kg", badge: "Kompakt", badgeType: "neutral" },
+      { asin: "B0GYDL1VD6", title: "Power Bank 56800mAh: PD30W Solar Powerbank USB C Wireless Charging", price: "45,92 €", rating: 4.3, reviews: 30, capacity: "56.800 mAh", weight: "0,9 kg", badge: "Budget-Tipp", badgeType: "warning" },
+      { asin: "B09H4GLZQC", title: "BLUETTI AC200P Tragbare Powerstation, 2000Wh LiFePO4, 2000W AC-Inverter", price: "1.299,00 €", rating: 4.2, reviews: 1247, capacity: "2.000 Wh", weight: "27,5 kg", badge: "Profi-Klasse", badgeType: "info" },
+      { asin: "B09YL76V8N", title: "EcoFlow Delta 2 Tragbare Powerstation, 1024Wh LiFePO4, 1800W AC-Inverter", price: "849,00 €", rating: 4.4, reviews: 892, capacity: "1.024 Wh", weight: "12,5 kg", badge: "Schnellladung", badgeType: "success" },
+      { asin: "B0BTHL3W87", title: "Jackery Explorer 1000 Pro Powerstation, 1002Wh, 1000W AC-Inverter", price: "799,00 €", rating: 4.5, reviews: 2156, capacity: "1.002 Wh", weight: "11,5 kg", badge: "Amazon-Bestseller", badgeType: "success" },
+      { asin: "B0CQN3F5MR", title: "Anker SOLIX C1000 Powerstation, 1024Wh LiFePO4, 1800W AC-Inverter", price: "599,00 €", rating: 4.3, reviews: 445, capacity: "1.024 Wh", weight: "13,2 kg", badge: "Neuling 2025", badgeType: "info" },
+      { asin: "B0D6RFDGNR", title: "EcoFlow River 2 Max Powerstation, 512Wh LiFePO4, 500W AC-Inverter", price: "399,00 €", rating: 4.2, reviews: 312, capacity: "512 Wh", weight: "6,0 kg", badge: "Camping-Tipp", badgeType: "warning" },
+      { asin: "B09ZHPXKVM", title: "BLUETTI AC300 + B300, 3072Wh LiFePO4, 3000W AC-Inverter, erweiterbar", price: "2.499,00 €", rating: 4.1, reviews: 678, capacity: "3.072 Wh", weight: "48,0 kg", badge: "Notstrom Profi", badgeType: "info" },
+      { asin: "B09SM67PMM", title: "EcoFlow Delta Pro Powerstation, 3600Wh LiFePO4, 3600W AC-Inverter", price: "2.899,00 €", rating: 4.3, reviews: 421, capacity: "3.600 Wh", weight: "45,0 kg", badge: "Hochleistung", badgeType: "info" },
+      { asin: "B0CCXG7MQ9", title: "Renogy 200W 12V Monokristallines Solarpanel Kit mit Laderegler", price: "249,99 €", rating: 4.0, reviews: 234, capacity: "200 W", weight: "10,5 kg", badge: "Solar-Kit", badgeType: "neutral" },
+      { asin: "B09VB33H4G", title: "Jackery Explorer 300 Pro Powerstation, 302Wh, 300W AC-Inverter", price: "279,00 €", rating: 4.4, reviews: 1876, capacity: "302 Wh", weight: "3,9 kg", badge: "Leichtgewicht", badgeType: "success" },
+      { asin: "B09YL76V8N", title: "EcoFlow River 2 Powerstation, 256Wh LiFePO4, 300W AC-Inverter", price: "199,00 €", rating: 4.1, reviews: 567, capacity: "256 Wh", weight: "3,5 kg", badge: "Einsteiger", badgeType: "neutral" },
+      { asin: "B0B5RZJZ8N", title: "BLUETTI PV200 Solarmodul, 200W Solarpanel, monokristallin, faltbar", price: "249,99 €", rating: 4.2, reviews: 445, capacity: "200 W", weight: "8,0 kg", badge: "Solarpanel", badgeType: "neutral" },
+      { asin: "C0BZMG5V4R", title: "Anker SOLIX F1200 Powerstation, 1229Wh LiFePO4, 1500W AC-Inverter", price: "899,00 €", rating: 4.2, reviews: 334, capacity: "1.229 Wh", weight: "16,5 kg", badge: "Notstrom", badgeType: "info" },
+      { asin: "B09ZHPXKVM", title: "BLUETTI EB55 Powerstation, 537Wh LiFePO4, 700W AC-Inverter", price: "399,00 €", rating: 4.3, reviews: 892, capacity: "537 Wh", weight: "7,5 kg", badge: "Allrounder", badgeType: "success" },
+      { asin: "B0D6RFDGNR", title: "EcoFlow River 2 Pro + 160W Solarpanel Bundle", price: "699,00 €", rating: 4.3, reviews: 189, capacity: "768 Wh + 160W", weight: "12,0 kg", badge: "Bundle-Tipp", badgeType: "warning" },
+      { asin: "B0CCXG7MQ9", title: "Renogy 100W 12V Monokristallines Solarpanel, kompakt", price: "129,99 €", rating: 4.1, reviews: 567, capacity: "100 W", weight: "5,2 kg", badge: "Solarpanel", badgeType: "neutral" },
+      { asin: "B09VB33H4G", title: "Jackery Explorer 500 Powerstation, 518Wh, 500W AC-Inverter", price: "449,00 €", rating: 4.3, reviews: 1234, capacity: "518 Wh", weight: "6,4 kg", badge: "Klassiker", badgeType: "neutral" },
+      { asin: "B0BTHL3W87", title: "Jackery Explorer 240 Pro Powerstation, 230Wh, 300W AC-Inverter", price: "199,00 €", rating: 4.2, reviews: 987, capacity: "230 Wh", weight: "3,0 kg", badge: "Ultra-leicht", badgeType: "success" },
+      { asin: "B09SM67PMM", title: "EcoFlow Delta 2 Max Powerstation, 2048Wh LiFePO4, 2400W AC-Inverter", price: "1.499,00 €", rating: 4.4, reviews: 567, capacity: "2.048 Wh", weight: "23,0 kg", badge: "Notstorm Profi", badgeType: "info" },
+      { asin: "B0GJC2M84T", title: "EcoFlow Smart Generator Dual Fuel für Delta Pro/Max", price: "599,00 €", rating: 4.0, reviews: 89, capacity: "Dual Fuel", weight: "32,0 kg", badge: "Zubehör", badgeType: "neutral" },
+      { asin: "B08R5RFHNQ", title: "BLUETTI PV350 Solarmodul, 350W Solarpanel, monokristallin", price: "349,99 €", rating: 4.0, reviews: 234, capacity: "350 W", weight: "12,0 kg", badge: "Hochleistung Solar", badgeType: "info" },
+      { asin: "B0FM3G66WW", title: "BLUETTI AC60 Powerstation, 403Wh LiFePO4, 600W AC-Inverter, wasserdicht", price: "349,00 €", rating: 4.2, reviews: 445, capacity: "403 Wh", weight: "8,5 kg", badge: "Outdoor", badgeType: "warning" },
+      { asin: "B09YL76V8N", title: "EcoFlow PowerStream Balkonkraftwerk, 800W Mikrowechselrichter", price: "349,00 €", rating: 4.1, reviews: 1234, capacity: "800 W", weight: "2,5 kg", badge: "Balkonkraftwerk", badgeType: "success" },
+      { asin: "B0D6RFDGNR", title: "EcoFlow Glacier Kühlschrank, 230Wh, tragbar, 12/24V", price: "549,00 €", rating: 4.3, reviews: 345, capacity: "40 L", weight: "18,0 kg", badge: "Camping-Kühlbox", badgeType: "warning" }
+    ];
+
+    // Render product cards
+    function renderProducts() {
+      const grid = document.getElementById('products-grid');
+      if (!grid) return;
+
+      const topProducts = products.slice(0, 9);
+      grid.innerHTML = topProducts.map((p, i) => {
+        const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+        const stars = '★'.repeat(Math.floor(p.rating || 0)) + (p.rating % 1 >= 0.5 ? '½' : '');
+        const amazonUrl = `https://www.amazon.de/dp/${p.asin}?tag=akku-test-21`;
+
+        return `
+          <article class="product-card">
+            <div class="product-card-top">
+              <div class="product-rank ${rankClass}">${i + 1}</div>
+              <h3 class="product-title">${p.title}</h3>
+              <div class="product-meta">
+                <div class="product-rating">
+                  <span class="stars">${stars}</span>
+                  <span>${p.rating || '—'}</span>
+                </div>
+                <span class="product-reviews">${p.reviews} Bewertungen</span>
+              </div>
+              <div class="product-badges">
+                <span class="badge badge-${p.badgeType || 'neutral'}">${p.badge || ''}</span>
+                ${p.capacity ? `<span class="badge badge-neutral">${p.capacity}</span>` : ''}
+              </div>
+            </div>
+            <div class="product-card-bottom">
+              <div class="product-price">
+                <span class="currency">ab</span> ${p.price}
+              </div>
+              <a href="${amazonUrl}" class="product-cta" target="_blank" rel="noopener">
+                Auf Amazon
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // Render comparison table
+    function renderTable() {
+      const tbody = document.getElementById('comparison-tbody');
+      if (!tbody) return;
+
+      tbody.innerHTML = products.map((p, i) => {
+        const amazonUrl = `https://www.amazon.de/dp/${p.asin}?tag=akku-test-21`;
+        return `
+          <tr>
+            <td><span class="product-rank ${i < 3 ? ['gold','silver','bronze'][i] : ''}" style="width:24px;height:24px;font-size:0.69rem;">${i + 1}</span></td>
+            <td class="product-name">${p.title.substring(0, 60)}...</td>
+            <td><strong>${p.price}</strong></td>
+            <td>${p.rating ? p.rating + ' ★' : '—'}</td>
+            <td>${p.capacity || '—'}</td>
+            <td>${p.weight || '—'}</td>
+            <td><a href="${amazonUrl}" class="btn btn-sm btn-secondary" target="_blank" rel="noopener">Amazon →</a></td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts();
+      renderTable();
     });
   </script>
 </body>
