@@ -695,12 +695,12 @@
         const score = Math.round(p.rating * 20);
         const capPct = Math.round((p.capacity / maxCap) * 100);
         return `
-          <article class="product-card" onclick="openModal(${i})" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openModal(${i})">
-            <div class="product-card-image">
+          <article class="product-card" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openModal(${i})">
+            <div class="product-card-image" onclick="openModal(${i})">
               <img src="${p.image}" alt="${p.title}" loading="lazy" width="400" height="300">
               <div class="product-rank ${rc}">${i + 1}</div>
             </div>
-            <div class="product-card-top">
+            <div class="product-card-top" onclick="openModal(${i})">
               <h3 class="product-title">${p.title}</h3>
               <div class="product-meta">
                 <div class="product-rating">
@@ -715,7 +715,7 @@
             </div>
             <div class="product-card-bottom">
               <div class="product-price"><span class="currency">ab</span> ${p.price}</div>
-              <span class="product-cta">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+              <span class="product-cta" onclick="event.stopPropagation();openModal(${i})">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
             </div>
           </article>`;
       }).join('');
