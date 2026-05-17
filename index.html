@@ -695,7 +695,7 @@
         const score = Math.round(p.rating * 20);
         const capPct = Math.round((p.capacity / maxCap) * 100);
         return `
-          <article class="product-card" onclick="openModal(${i})">
+          <article class="product-card" onclick="openModal(${i})" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openModal(${i})">
             <div class="product-card-image">
               <img src="${p.image}" alt="${p.title}" loading="lazy" width="400" height="300">
               <div class="product-rank ${rc}">${i + 1}</div>
