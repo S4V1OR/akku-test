@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solargenerator Vergleich 2026 — Die besten Powerstations & Solarladegeräte</title>
-  <meta name="description" content="Der große Solargenerator Vergleich 2026. Unabhängige Tests von Powerstations & Solarladegeräten — BLUETTI, Jackery, EcoFlow, Anker.">
+  <meta name="description" content="Der große Solargenerator Vergleich 2026. Unabhängige Tests von Powerstations & Solarladegeräten.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://akku-test.de/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,8 +21,6 @@
       background: #0a0b0d;
       min-height: 100vh;
     }
-
-    /* Animated gradient background */
     body::before {
       content: '';
       position: fixed;
@@ -35,18 +33,11 @@
       z-index: -1;
       animation: bgShift 20s ease-in-out infinite alternate;
     }
-    @keyframes bgShift {
-      0% { opacity: 0.8; }
-      50% { opacity: 1; }
-      100% { opacity: 0.8; }
-    }
-
+    @keyframes bgShift { 0% { opacity: 0.8; } 50% { opacity: 1; } 100% { opacity: 0.8; } }
     h1,h2,h3,h4 { color: #f7f8f8; font-weight: 500; letter-spacing: -0.02em; }
     a { color: #7170ff; text-decoration: none; }
     a:hover { color: #828fff; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-
-    /* Nav */
     .nav { position: sticky; top: 0; z-index: 100; background: rgba(10,11,13,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .nav-logo { display: flex; align-items: center; gap: 8px; color: #f7f8f8; font-weight: 600; font-size: 1.1rem; text-decoration: none; }
@@ -54,8 +45,6 @@
     .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
     .nav-links a { color: #8a8f98; font-size: 0.88rem; font-weight: 500; text-decoration: none; }
     .nav-links a:hover { color: #f7f8f8; }
-
-    /* Hero */
     .hero { padding: 80px 0 60px; text-align: center; }
     .hero-badge { display: inline-block; padding: 4px 12px; background: rgba(94,106,210,0.1); border: 1px solid rgba(94,106,210,0.2); border-radius: 999px; font-size: 0.7rem; font-weight: 500; color: #7170ff; margin-bottom: 20px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.08em; }
     .hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 500; line-height: 1.1; margin-bottom: 16px; }
@@ -64,21 +53,16 @@
     .hero-stat { text-align: center; }
     .hero-stat-value { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 600; color: #f7f8f8; }
     .hero-stat-label { font-size: 0.7rem; color: #62666d; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
-
-    /* Categories */
     .categories { padding: 32px 0; }
     .categories-inner { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
     .cat-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 999px; color: #8a8f98; font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: all 150ms ease; }
     .cat-pill:hover { background: rgba(94,106,210,0.1); border-color: rgba(94,106,210,0.2); color: #7170ff; }
     .cat-pill .icon { width: 14px; height: 14px; }
-
-    /* Products Grid */
     .products { padding: 48px 0; }
     .products-header { text-align: center; margin-bottom: 48px; }
     .products-header h2 { font-size: 1.5rem; margin-bottom: 8px; }
     .products-header p { color: #8a8f98; font-size: 0.95rem; }
     .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
-
     .product-card {
       background: rgba(255,255,255,0.02);
       border: 1px solid rgba(255,255,255,0.06);
@@ -104,7 +88,6 @@
     .product-card:nth-child(12) { animation-delay: 660ms; }
     @keyframes cardIn { to { opacity: 1; transform: translateY(0); } }
     .product-card:hover { border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); transform: translateY(-2px); }
-
     .product-image {
       position: relative; aspect-ratio: 16/10;
       background: rgba(255,255,255,0.02);
@@ -116,7 +99,6 @@
     .rank.gold { background: rgba(245,158,11,0.15); color: #f59e0b; }
     .rank.silver { background: rgba(148,163,184,0.15); color: #94a3b8; }
     .rank.bronze { background: rgba(180,83,9,0.15); color: #d97706; }
-
     .product-info { padding: 16px; }
     .product-title { font-size: 0.95rem; font-weight: 600; color: #f7f8f8; margin-bottom: 8px; line-height: 1.35; }
     .product-meta { display: flex; gap: 12px; font-size: 0.8rem; color: #8a8f98; margin-bottom: 10px; flex-wrap: wrap; }
@@ -125,8 +107,6 @@
     .product-price { font-family: 'JetBrains Mono', monospace; font-size: 1rem; font-weight: 500; color: #f7f8f8; margin-bottom: 10px; }
     .product-cta { display: inline-block; padding: 6px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; color: #d0d6e0; font-size: 0.75rem; font-weight: 500; text-decoration: none; transition: all 150ms ease; }
     .product-cta:hover { background: #5e6ad2; border-color: #5e6ad2; color: #fff; }
-
-    /* Features */
     .features { padding: 64px 0; }
     .features h2 { text-align: center; font-size: 1.5rem; margin-bottom: 48px; }
     .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
@@ -136,8 +116,6 @@
     .feature-icon svg { width: 18px; height: 18px; }
     .feature-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
     .feature-card p { font-size: 0.85rem; color: #8a8f98; line-height: 1.6; }
-
-    /* FAQ */
     .faq { padding: 64px 0; }
     .faq h2 { text-align: center; font-size: 1.5rem; margin-bottom: 32px; }
     .faq-list { max-width: 640px; margin: 0 auto; }
@@ -146,29 +124,19 @@
     .faq-question:hover { color: #7170ff; }
     .faq-answer { padding: 0 16px 16px; font-size: 0.88rem; color: #8a8f98; line-height: 1.7; display: none; }
     .faq-item.open .faq-answer { display: block; }
-
-    /* Footer */
     .footer { padding: 48px 0 24px; border-top: 1px solid rgba(255,255,255,0.06); }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
     .footer-copy { font-size: 0.8rem; color: #62666d; }
     .footer-links { display: flex; gap: 16px; list-style: none; }
     .footer-links a { font-size: 0.8rem; color: #62666d; }
     .footer-links a:hover { color: #8a8f98; }
-
-    @media(max-width: 640px) {
-      .hero-stats { flex-direction: column; gap: 16px; }
-      .products-grid { grid-template-columns: 1fr; }
-    }
+    @media(max-width: 640px) { .hero-stats { flex-direction: column; gap: 16px; } .products-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <nav class="nav"><div class="container"><div class="nav-inner">
     <a href="/" class="nav-logo"><svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>akku-test.de</a>
-    <ul class="nav-links">
-      <li><a href="#vergleich">Vergleich</a></li>
-      <li><a href="#kategorien">Kategorien</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
+    <ul class="nav-links"><li><a href="#vergleich">Vergleich</a></li><li><a href="#kategorien">Kategorien</a></li><li><a href="#faq">FAQ</a></li></ul>
   </div></nav>
 
   <header class="hero"><div class="container">
@@ -187,42 +155,23 @@
       <a href="#vergleich" class="cat-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Alle</a>
       <a href="solargenerator-camping.html" class="cat-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Camping</a>
       <a href="solargenerator-notstrom.html" class="cat-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Notstrom</a>
-      <a href="solargenerator-lifepo4.html" class="cat-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>LiFePO4</a>
+      <a href="solargenerator-lifepo4.html" class="cat-pill">LiFePO4</a>
       <a href="bluetti-vergleich.html" class="cat-pill">BLUETTI</a>
       <a href="ecoflow-vergleich.html" class="cat-pill">EcoFlow</a>
     </div></div></section>
 
     <section class="products" id="vergleich"><div class="container">
-      <div class="products-header">
-        <h2>Die besten Solargeneratoren & Powerstations</h2>
-        <p>Klick auf ein Produkt für Details.</p>
-      </div>
+      <div class="products-header"><h2>Die besten Solargeneratoren & Powerstations</h2><p>Klick auf ein Produkt für Details.</p></div>
       <div class="products-grid" id="products-grid"></div>
     </div></section>
 
     <section class="features"><div class="container">
       <h2>Warum akku-test.de</h2>
       <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-          <h3>Unabhängig</h3>
-          <p>Kein Hersteller-Geld. Unsere Empfehlungen basieren ausschließlich auf Fakten und Daten.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <h3>Datenbasiert</h3>
-          <p>Specs, Bewertungen, Preise — alles wird systematisch erfasst und verglichen.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Transparent</h3>
-          <p>Affiliate-Links sind klar gekennzeichnet. Du zahlst keinen Cent mehr.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-          <h3>Aktuell</h3>
-          <p>Monatliche Updates — Preise und Verfügbarkeit ändern sich ständig.</p>
-        </div>
+        <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Unabhängig</h3><p>Kein Hersteller-Geld. Unsere Empfehlungen basieren ausschließlich auf Fakten und Daten.</p></div>
+        <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><h3>Datenbasiert</h3><p>Specs, Bewertungen, Preise — alles wird systematisch erfasst und verglichen.</p></div>
+        <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Transparent</h3><p>Affiliate-Links sind klar gekennzeichnet. Du zahlst keinen Cent mehr.</p></div>
+        <div class="feature-card"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Aktuell</h3><p>Monatliche Updates — Preise und Verfügbarkeit ändern sich ständig.</p></div>
       </div>
     </div></section>
 
@@ -941,16 +890,8 @@ function renderTableRow(product, index) {
 function renderSpecRows(specs) {
   const labels = { capacity: 'Kapazität', output: 'Ausgangsleistung', weight: 'Gewicht', battery: 'Batterietyp', cycles: 'Ladezyklen', solar: 'Solar-Eingang', ups: 'UPS-Funktion', ports: 'Ausgänge' };
 
-document.addEventListener('DOMContentLoaded', function() {
-  const grid = document.getElementById('products-grid');
-  if (grid) {
-    const products = Object.values(PRODUCTS);
-    grid.innerHTML = products.map((p, i) => renderProductCard(p, i)).join('');
-  }
-});
-
 function renderProductCard(product, index) {
-  const badges = (product.badges || []).map(b => '<span class="badge">' + b + '</span>').join(' ');
+  const badges = (product.badges || []).map(function(b) { return '<span class="badge">' + b + '</span>'; }).join(' ');
   const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
   const brandColors = {'BLUETTI':'#3b82f6','Jackery':'#f59e0b','EcoFlow':'#10b981','Anker':'#6366f1'};
   const bColor = brandColors[product.brand] || '#5e6ad2';
@@ -977,6 +918,14 @@ function openProductModal(productId) {
   if (!p) return;
   window.location.href = 'https://www.amazon.de/dp/' + p.asin + '?tag=akku-test-21';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const grid = document.getElementById('products-grid');
+  if (grid) {
+    const products = Object.values(PRODUCTS);
+    grid.innerHTML = products.map(function(p, i) { return renderProductCard(p, i); }).join('');
+  }
+});
   </script>
 </body>
 </html>
