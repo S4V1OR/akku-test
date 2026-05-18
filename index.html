@@ -46,9 +46,12 @@
       color: var(--text-secondary);
       background-color: var(--bg);
       background-image:
-        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
-      background-size: 64px 64px;
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(94,106,210,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 30% at 80% 50%, rgba(94,106,210,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse 40% 30% at 20% 80%, rgba(94,106,210,0.03) 0%, transparent 50%),
+        linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
       -webkit-font-smoothing: antialiased;
       font-feature-settings: "cv01", "ss03";
     }
@@ -271,8 +274,28 @@
       position: relative; aspect-ratio: 4/3;
       background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-panel) 100%);
       overflow: hidden; border-bottom: 1px solid var(--border-subtle);
+      display: flex; align-items: center; justify-content: center;
     }
-    .product-card-image img { width: 100%; height: 100%; object-fit: contain; padding: var(--s5); transition: transform 300ms ease; }
+    .product-card-image img {
+      width: 100%; height: 100%; object-fit: contain; padding: var(--s5);
+      transition: transform 300ms ease;
+    }
+    .product-card-image .img-placeholder {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, rgba(94,106,210,0.08) 0%, rgba(94,106,210,0.03) 100%);
+      color: var(--accent-hover);
+      font-family: var(--font-sans); font-size: 0.81rem; font-weight: 510;
+      gap: var(--s2);
+    }
+    .product-card-image .img-placeholder .brand-icon {
+      width: 56px; height: 56px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--r-lg);
+      font-size: 1.5rem; font-weight: 600;
+    }
     .product-card:hover .product-card-image img { transform: scale(1.03); }
     .product-card-image .product-rank { position: absolute; top: var(--s3); left: var(--s3); }
     .product-rank {
@@ -911,10 +934,16 @@ function renderProductCard(product, index) {
   }).join(' ');
 
   const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
+  const brandColors = {'BLUETTI':'#3b82f6','Jackery':'#f59e0b','EcoFlow':'#10b981','Anker':'#6366f1'};
+  const bColor = brandColors[product.brand] || '#5e6ad2';
+  const initial = product.brand ? product.brand[0] : 'P';
 
   return '<article class="product-card" onclick="openProductModal(\'' + product.id + '\')" style="animation-delay:' + (index * 60) + 'ms">' +
     '<div class="product-card-image">' +
-      '<img src="' + product.image + '" alt="' + product.name + '" loading="lazy">' +
+      '<div class="img-placeholder" style="background:linear-gradient(135deg,' + bColor + '15 0%,' + bColor + '08 100%)">' +
+        '<div class="brand-icon" style="background:' + bColor + '20;border-color:' + bColor + '30;color:' + bColor + '">' + initial + '</div>' +
+        '<span style="color:' + bColor + ';font-size:0.75rem;font-weight:510">' + product.brand + '</span>' +
+      '</div>' +
       '<div class="product-rank ' + rankClass + '">' + (index + 1) + '</div>' +
     '</div>' +
     '<div class="product-card-top">' +
@@ -928,7 +957,7 @@ function renderProductCard(product, index) {
     '</div>' +
     '<div class="product-card-bottom">' +
       '<div><span class="badge badge-neutral">' + product.specs.output + '</span><span class="badge badge-neutral">' + product.specs.weight + '</span></div>' +
-      '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku-test-21" class="btn btn-sm btn-primary" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>' +
+      '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku-test-21" class="product-cta" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>' +
     '</div>' +
   '</article>';
 }
@@ -1297,10 +1326,16 @@ function renderProductCard(product, index) {
   }).join(' ');
 
   const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : '';
+  const brandColors = {'BLUETTI':'#3b82f6','Jackery':'#f59e0b','EcoFlow':'#10b981','Anker':'#6366f1'};
+  const bColor = brandColors[product.brand] || '#5e6ad2';
+  const initial = product.brand ? product.brand[0] : 'P';
 
   return '<article class="product-card" onclick="openProductModal(\'' + product.id + '\')" style="animation-delay:' + (index * 60) + 'ms">' +
     '<div class="product-card-image">' +
-      '<img src="' + product.image + '" alt="' + product.name + '" loading="lazy">' +
+      '<div class="img-placeholder" style="background:linear-gradient(135deg,' + bColor + '15 0%,' + bColor + '08 100%)">' +
+        '<div class="brand-icon" style="background:' + bColor + '20;border-color:' + bColor + '30;color:' + bColor + '">' + initial + '</div>' +
+        '<span style="color:' + bColor + ';font-size:0.75rem;font-weight:510">' + product.brand + '</span>' +
+      '</div>' +
       '<div class="product-rank ' + rankClass + '">' + (index + 1) + '</div>' +
     '</div>' +
     '<div class="product-card-top">' +
@@ -1314,7 +1349,7 @@ function renderProductCard(product, index) {
     '</div>' +
     '<div class="product-card-bottom">' +
       '<div><span class="badge badge-neutral">' + product.specs.output + '</span><span class="badge badge-neutral">' + product.specs.weight + '</span></div>' +
-      '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku-test-21" class="btn btn-sm btn-primary" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>' +
+      '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku-test-21" class="product-cta" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>' +
     '</div>' +
   '</article>';
 }
