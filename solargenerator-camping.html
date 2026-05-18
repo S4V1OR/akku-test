@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solargenerator für Camping 2026</title>
-  <meta name="description" content="Die besten Solargeneratoren für Camping & Outdoor.">
+  <title>Solargenerator für Camping 2026 — Die besten für Camper & Outdoor</title>
+  <meta name="description" content="Die besten Solargeneratoren für Camping & Outdoor im Vergleich. Leicht, kompakt und leistungsstark.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://akku-test.de/camping.html">
+  <link rel="canonical" href="https://akku-test.de/solargenerator-camping.html">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -16,18 +16,25 @@
       font-weight: 400; line-height: 1.6;
       color: #d0d6e0;
       background: #0a0b0d;
-      background-image:
-        radial-gradient(ellipse 50% 40% at 30% 20%, rgba(94,106,210,0.06) 0%, transparent 60%),
-        radial-gradient(ellipse 40% 30% at 70% 60%, rgba(94,106,210,0.04) 0%, transparent 50%),
-        radial-gradient(ellipse 30% 20% at 50% 80%, rgba(16,185,129,0.03) 0%, transparent 40%);
       min-height: 100vh;
     }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 10%, rgba(94,106,210,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 30%, rgba(94,106,210,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse 40% 30% at 50% 70%, rgba(16,185,129,0.03) 0%, transparent 40%);
+      pointer-events: none;
+      z-index: -1;
+      animation: bgShift 20s ease-in-out infinite alternate;
+    }
+    @keyframes bgShift { 0% { opacity: 0.8; } 50% { opacity: 1; } 100% { opacity: 0.8; } }
     h1,h2,h3,h4,h5 { color: #f7f8f8; font-weight: 500; letter-spacing: -0.02em; }
     a { color: #7170ff; text-decoration: none; }
     a:hover { color: #828fff; }
     .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
-
-    /* Nav */
     .nav { position: sticky; top: 0; z-index: 100; background: rgba(10,11,13,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .nav-logo { display: flex; align-items: center; gap: 8px; color: #f7f8f8; font-weight: 600; font-size: 1.1rem; text-decoration: none; }
@@ -35,45 +42,23 @@
     .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
     .nav-links a { color: #8a8f98; font-size: 0.88rem; font-weight: 500; text-decoration: none; }
     .nav-links a:hover { color: #f7f8f8; }
-
-    /* Hero */
     .hero { padding: 80px 0 60px; text-align: center; }
     .hero-badge { display: inline-block; padding: 4px 12px; background: rgba(94,106,210,0.1); border: 1px solid rgba(94,106,210,0.2); border-radius: 999px; font-size: 0.7rem; font-weight: 500; color: #7170ff; margin-bottom: 20px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.08em; }
     .hero h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 500; line-height: 1.1; margin-bottom: 16px; }
     .hero-subtitle { max-width: 500px; margin: 0 auto; font-size: 1rem; color: #8a8f98; line-height: 1.7; }
-
-    /* Intro */
     .intro { padding: 40px 0; }
     .intro p { font-size: 1.05rem; line-height: 1.8; color: #d0d6e0; margin-bottom: 16px; }
-
-    /* Products */
     .products { padding: 40px 0; }
     .products h2 { text-align: center; font-size: 1.5rem; margin-bottom: 48px; }
-
-    .product-card {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 16px;
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 20px;
-      transition: all 200ms ease;
-    }
+    .product-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 24px; margin-bottom: 16px; display: grid; grid-template-columns: 120px 1fr; gap: 20px; transition: all 200ms ease; }
     .product-card:hover { border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); }
-
-    .product-image {
-      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
-      background: rgba(255,255,255,0.02); border-radius: 8px; padding: 16px; position: relative;
-    }
+    .product-image { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: rgba(255,255,255,0.02); border-radius: 8px; padding: 16px; position: relative; }
     .brand-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 1.25rem; font-weight: 600; border: 1px solid; }
     .brand-name { font-size: 0.7rem; font-weight: 500; }
     .rank { position: absolute; top: 8px; left: 8px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: rgba(94,106,210,0.15); border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; font-weight: 600; color: #7170ff; }
     .rank.gold { background: rgba(245,158,11,0.15); color: #f59e0b; }
     .rank.silver { background: rgba(148,163,184,0.15); color: #94a3b8; }
     .rank.bronze { background: rgba(180,83,9,0.15); color: #d97706; }
-
     .product-info h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
     .meta { display: flex; gap: 16px; font-size: 0.85rem; color: #8a8f98; margin-bottom: 12px; flex-wrap: wrap; }
     .stars { color: #f59e0b; }
@@ -83,8 +68,6 @@
     .price { font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; font-weight: 500; color: #f7f8f8; margin-bottom: 12px; }
     .cta { display: inline-block; padding: 8px 16px; background: #5e6ad2; color: #fff; font-size: 0.8rem; font-weight: 500; border-radius: 6px; text-decoration: none; transition: all 150ms ease; }
     .cta:hover { background: #7170ff; color: #fff; transform: translateY(-1px); }
-
-    /* Testbericht */
     .testbericht { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
     .testbericht h4 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #7170ff; margin-bottom: 12px; }
     .testbericht p { font-size: 0.95rem; line-height: 1.7; color: #d0d6e0; margin-bottom: 16px; }
@@ -99,8 +82,6 @@
     .contra-icon { color: #ef4444; font-weight: 600; margin-right: 6px; }
     .fazit { background: rgba(94,106,210,0.08); border: 1px solid rgba(94,106,210,0.15); border-radius: 8px; padding: 16px; font-size: 0.9rem; color: #d0d6e0; line-height: 1.7; }
     .fazit strong { color: #f7f8f8; }
-
-    /* Footer */
     .footer { padding: 48px 0 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; }
     .footer p { font-size: 0.8rem; color: #62666d; }
   </style>
@@ -114,188 +95,188 @@
   <header class="hero"><div class="container">
     <div class="hero-badge">CAMPING & OUTDOOR — JUNI 2026</div>
     <h1>Die besten Solargeneratoren für Camping</h1>
-    <p class="hero-subtitle">Leicht, kompakt und leistungsstark — für Camper, Vanlife & Outdoor.</p>
+    <p class="hero-subtitle">Leicht, kompakt und leistungsstark — wir haben die besten Powerstations für Camper, Vanlife & Outdoor getestet.</p>
   </div></header>
 
   <main>
     <section class="intro"><div class="container">
-      <p>Ein Solargenerator ist der perfekte Begleiter für jedes Camping-Abenteuer. Er liefert Strom für Laptops, Smartphones, LED-Beleuchtung, Kühlschränke und sogar CPAP-Geräte — ganz ohne Lärm und Abgasse.</p>
+      <p>Ein Solargenerator ist der perfekte Begleiter für jedes Camping-Abenteuer. Er liefert Strom für Laptops, Smartphones, LED-Beleuchtung, Kühlschränke und sogar CPAP-Geräte — ganz ohne Lärm und Abgasse. Im Gegensatz zu Benzin-Generatoren sind Solargeneratoren leise, wartungsarm und umweltfreundlich.</p>
       <p>Die Kombination aus tragbarer Powerstation und faltbarem Solarpanel macht dich autark — egal ob Zeltplatz, Wohnmobil oder Remote-Hütte.</p>
     </div></section>
 
     <section class="products"><div class="container">
       <h2>Top 5 — Solargeneratoren für Camping</h2>
-      
-    <div class="product-card">
-      <div class="product-image">
-        <div class="brand-icon" style="background:#3b82f615;border-color:#3b82f630;color:#3b82f6">B</div>
-        <span class="brand-name" style="color:#3b82f6">BLUETTI</span>
-        <div class="rank gold">1</div>
-      </div>
-      <div class="product-info">
-        <h3>BLUETTI EB3A</h3>
-        <div class="meta">
-          <span class="stars">★★★★☆ 4.1</span>
-          <span>268 Wh</span>
-          <span>4,7 kg</span>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="brand-icon" style="background:#3b82f615;border-color:#3b82f630;color:#3b82f6">B</div>
+          <span class="brand-name" style="color:#3b82f6">BLUETTI</span>
+          <div class="rank gold">1</div>
         </div>
-        <div class="badges"><span class="badge">PREIS-LEISTUNG</span><span class="badge">LIFEPO4</span></div>
-        <div class="specs"><span class="badge">600W AC</span><span class="badge">UPS</span></div>
-        <div class="price">ab 199,99 €</div>
-        <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
-      </div>
-    </div>
-    <div class="testbericht">
-      <h4>Testbericht</h4>
-      <p>Die BLUETTI EB3A überzeugt als kompakter Allrounder fürs Camping. 268Wh, 600W Ausgang, UPS-Modus, LiFePO4 mit 2.500+ Zyklen.</p>
-      <div class="pro-contra">
-        <div class="pro">
-          <h5>Stärken</h5>
-          <ul><li><span class="pro-icon">+</span> UPS-Funktion mit 20ms</li><li><span class="pro-icon">+</span> LiFePO4 mit 2.500+ Zyklen</li><li><span class="pro-icon">+</span> 600W Ausgang</li><li><span class="pro-icon">+</span> Nur 4,7 kg</li><li><span class="pro-icon">+</span> App-Steuerung</li></ul>
-        </div>
-        <div class="contra">
-          <h5>Schwächen</h5>
-          <ul><li><span class="contra-icon">−</span> Nur 268Wh</li><li><span class="contra-icon">−</span> Kein eingebautes Licht</li><li><span class="contra-icon">−</span> Solarpanel separat</li></ul>
+        <div class="product-info">
+          <h3>BLUETTI EB3A — 268Wh LiFePO4 Powerstation</h3>
+          <div class="meta"><span class="stars">★★★★☆ 4.1</span><span>268 Wh</span><span>4,7 kg</span></div>
+          <div class="badges"><span class="badge">PREIS-LEISTUNG</span><span class="badge">LIFEPO4</span></div>
+          <div class="specs"><span class="badge">600W AC</span><span class="badge">UPS</span></div>
+          <div class="price">ab 199,99 €</div>
+          <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
         </div>
       </div>
-      <div class="fazit"><strong>Fazit:</strong> Das beste Preis-Leistungs-Verhältnis. Für Wochenend-Camping absolut empfehlenswert.</div>
-    </div>
-    <div class="product-card">
-      <div class="product-image">
-        <div class="brand-icon" style="background:#f59e0b15;border-color:#f59e0b30;color:#f59e0b">J</div>
-        <span class="brand-name" style="color:#f59e0b">Jackery</span>
-        <div class="rank silver">2</div>
-      </div>
-      <div class="product-info">
-        <h3>Jackery Explorer 300 Pro</h3>
-        <div class="meta">
-          <span class="stars">★★★★☆ 4.4</span>
-          <span>302 Wh</span>
-          <span>3,9 kg</span>
+      <div class="testbericht">
+        <h4>Testbericht</h4>
+        <p>Die BLUETTI EB3A überzeugt im Test als kompakter Allrounder fürs Camping. Mit 268Wh Kapazität, 600W Ausgangsleistung und dem UPS-Modus ist sie ideal für Smartphones, Laptops und kleinere Kühlschränke. Die LiFePO4-Batterie hält über 2.500 Ladezyklen — ein echtes Langzeitinvestment.</p>
+        <div class="pro-contra">
+          <div class="pro"><h5>Stärken</h5><ul>
+            <li><span class="pro-icon">+</span> UPS-Funktion mit 20ms Umschaltzeit</li>
+            <li><span class="pro-icon">+</span> LiFePO4-Batterie mit 2.500+ Zyklen</li>
+            <li><span class="pro-icon">+</span> 600W Ausgang — mehr als die Konkurrenz</li>
+            <li><span class="pro-icon">+</span> Kompaktes Design, passt in jeden Rucksack</li>
+            <li><span class="pro-icon">+</span> App-Steuerung per Bluetooth</li>
+          </ul></div>
+          <div class="contra"><h5>Schwächen</h5><ul>
+            <li><span class="contra-icon">−</span> Nur 262Wh — für längere Touren knapp</li>
+            <li><span class="contra-icon">−</span> Kein eingebautes Licht</li>
+            <li><span class="contra-icon">−</span> Solarpanel separat erforderlich</li>
+          </ul></div>
         </div>
-        <div class="badges"><span class="badge">LEICHTGEWICHT</span><span class="badge">BESTSELLER</span></div>
-        <div class="specs"><span class="badge">300W AC</span><span class="badge">APP</span></div>
-        <div class="price">ab 279,00 €</div>
-        <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
+        <div class="fazit"><strong>Fazit:</strong> Die BLUETTI EB3A ist das beste Preis-Leistungs-Verhältnis im Test. Für Wochenend-Camping-Touren und als Notstrom-Backup absolut empfehlenswert.</div>
       </div>
-    </div>
-    <div class="testbericht">
-      <h4>Testbericht</h4>
-      <p>Der Bestseller unter den Camping-Powerstations. Nur 3,9 kg, tolle App, hohe Verarbeitungsqualität.</p>
-      <div class="pro-contra">
-        <div class="pro">
-          <h5>Stärken</h5>
-          <ul><li><span class="pro-icon">+</span> Nur 3,9 kg</li><li><span class="pro-icon">+</span> Hervorragende App</li><li><span class="pro-icon">+</span> 302Wh für 2-3 Tage</li><li><span class="pro-icon">+</span> Robuste Verarbeitung</li><li><span class="pro-icon">+</span> Leiser Betrieb</li></ul>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="brand-icon" style="background:#f59e0b15;border-color:#f59e0b30;color:#f59e0b">J</div>
+          <span class="brand-name" style="color:#f59e0b">Jackery</span>
+          <div class="rank silver">2</div>
         </div>
-        <div class="contra">
-          <h5>Schwächen</h5>
-          <ul><li><span class="contra-icon">−</span> 300W begrenzt</li><li><span class="contra-icon">−</span> Preis-Leistung hinter Konkurrenz</li></ul>
-        </div>
-      </div>
-      <div class="fazit"><strong>Fazit:</strong> Wer Wert auf geringes Gewicht und App legt, ist hier bestens bedient.</div>
-    </div>
-    <div class="product-card">
-      <div class="product-image">
-        <div class="brand-icon" style="background:#10b98115;border-color:#10b98130;color:#10b981">E</div>
-        <span class="brand-name" style="color:#10b981">EcoFlow</span>
-        <div class="rank bronze">3</div>
-      </div>
-      <div class="product-info">
-        <h3>EcoFlow River 2</h3>
-        <div class="meta">
-          <span class="stars">★★★★☆ 4.1</span>
-          <span>256 Wh</span>
-          <span>3,5 kg</span>
-        </div>
-        <div class="badges"><span class="badge">EINSTEIGER</span><span class="badge">X-STREAM</span></div>
-        <div class="specs"><span class="badge">300W AC</span><span class="badge">LADEZEIT 1H</span></div>
-        <div class="price">ab 199,00 €</div>
-        <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
-      </div>
-    </div>
-    <div class="testbericht">
-      <h4>Testbericht</h4>
-      <p>Der ideale Einstieg. X-Stream-Ladung: 0-100% in nur 1 Stunde. LiFePO4 mit 3.000+ Zyklen.</p>
-      <div class="pro-contra">
-        <div class="pro">
-          <h5>Stärken</h5>
-          <ul><li><span class="pro-icon">+</span> 0-100% in 1 Stunde</li><li><span class="pro-icon">+</span> LiFePO4 mit 3.000+ Zyklen</li><li><span class="pro-icon">+</span> Nur 3,5 kg</li><li><span class="pro-icon">+</span> Günstiger Einstiegspreis</li></ul>
-        </div>
-        <div class="contra">
-          <h5>Schwächen</h5>
-          <ul><li><span class="contra-icon">−</span> 256Wh begrenzt</li><li><span class="contra-icon">−</span> Keine UPS-Funktion</li></ul>
+        <div class="product-info">
+          <h3>Jackery Explorer 300 Pro — 302Wh Powerstation</h3>
+          <div class="meta"><span class="stars">★★★★☆ 4.4</span><span>302 Wh</span><span>3,9 kg</span></div>
+          <div class="badges"><span class="badge">LEICHTGEWICHT</span><span class="badge">BESTSELLER</span></div>
+          <div class="specs"><span class="badge">300W AC</span><span class="badge">APP</span></div>
+          <div class="price">ab 279,00 €</div>
+          <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
         </div>
       </div>
-      <div class="fazit"><strong>Fazit:</strong> Perfekt für Einsteiger. Die ultraschnelle Ladung ist ein Alleinstellungsmerkmal.</div>
-    </div>
-    <div class="product-card">
-      <div class="product-image">
-        <div class="brand-icon" style="background:#f59e0b15;border-color:#f59e0b30;color:#f59e0b">J</div>
-        <span class="brand-name" style="color:#f59e0b">Jackery</span>
-        <div class="rank ">4</div>
-      </div>
-      <div class="product-info">
-        <h3>Jackery Explorer 240 Pro</h3>
-        <div class="meta">
-          <span class="stars">★★★★☆ 4.2</span>
-          <span>230 Wh</span>
-          <span>3,0 kg</span>
+      <div class="testbericht">
+        <h4>Testbericht</h4>
+        <p>Die Jackery Explorer 300 Pro ist der Bestseller unter den Camping-Powerstations — und das aus gutem Grund. Mit nur 3,9 kg ist sie eines der leichtesten Modelle in dieser Klasse. Die App-Steuerung funktioniert tadellos, und die Verarbeitungsqualität ist auf einem hohen Niveau.</p>
+        <div class="pro-contra">
+          <div class="pro"><h5>Stärken</h5><ul>
+            <li><span class="pro-icon">+</span> Sehr leicht mit nur 3,9 kg</li>
+            <li><span class="pro-icon">+</span> Hervorragende App mit Echtzeitdaten</li>
+            <li><span class="pro-icon">+</span> 302Wh Kapazität für 2-3 Tage Camping</li>
+            <li><span class="pro-icon">+</span> Robuste Verarbeitung</li>
+            <li><span class="pro-icon">+</span> Leiser Betrieb — kein Lüftergeräusch</li>
+          </ul></div>
+          <div class="contra"><h5>Schwächen</h5><ul>
+            <li><span class="contra-icon">−</span> 300W Ausgang begrenzt größere Geräte</li>
+            <li><span class="contra-icon">−</span> Preis-Leistung etwas hinter der Konkurrenz</li>
+          </ul></div>
         </div>
-        <div class="badges"><span class="badge">ULTRA-LEICHT</span></div>
-        <div class="specs"><span class="badge">300W AC</span><span class="badge">3 KG</span></div>
-        <div class="price">ab 199,00 €</div>
-        <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
+        <div class="fazit"><strong>Fazit:</strong> Wer Wert auf geringes Gewicht und eine tolle App legt, ist mit der Jackery Explorer 300 Pro bestens bedient.</div>
       </div>
-    </div>
-    <div class="testbericht">
-      <h4>Testbericht</h4>
-      <p>Das leichteste Modell im Test. Nur 3,0 kg — perfekt für Trekking-Touren und Minimalisten.</p>
-      <div class="pro-contra">
-        <div class="pro">
-          <h5>Stärken</h5>
-          <ul><li><span class="pro-icon">+</span> Ultraleicht — nur 3,0 kg</li><li><span class="pro-icon">+</span> Kompakte Bauweise</li><li><span class="pro-icon">+</span> Jackery App</li><li><span class="pro-icon">+</span> 199 €</li></ul>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="brand-icon" style="background:#10b98115;border-color:#10b98130;color:#10b981">E</div>
+          <span class="brand-name" style="color:#10b981">EcoFlow</span>
+          <div class="rank bronze">3</div>
         </div>
-        <div class="contra">
-          <h5>Schwächen</h5>
-          <ul><li><span class="contra-icon">−</span> Nur 230Wh</li><li><span class="contra-icon">−</span> NCM-Akku — 500+ Zyklen</li><li><span class="contra-icon">−</span> 300W begrenzt</li><li><span class="contra-icon">−</span> Keine UPS</li></ul>
-        </div>
-      </div>
-      <div class="fazit"><strong>Fazit:</strong> Für Minimalisten und Ultraleicht-Wanderer die beste Wahl.</div>
-    </div>
-    <div class="product-card">
-      <div class="product-image">
-        <div class="brand-icon" style="background:#10b98115;border-color:#10b98130;color:#10b981">E</div>
-        <span class="brand-name" style="color:#10b981">EcoFlow</span>
-        <div class="rank ">5</div>
-      </div>
-      <div class="product-info">
-        <h3>EcoFlow River 2 Max</h3>
-        <div class="meta">
-          <span class="stars">★★★★☆ 4.2</span>
-          <span>512 Wh</span>
-          <span>6,0 kg</span>
-        </div>
-        <div class="badges"><span class="badge">CAMPING-TIPP</span><span class="badge">LIFEPO4</span></div>
-        <div class="specs"><span class="badge">500W AC</span><span class="badge">6 KG</span></div>
-        <div class="price">ab 399,00 €</div>
-        <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
-      </div>
-    </div>
-    <div class="testbericht">
-      <h4>Testbericht</h4>
-      <p>Der Sweet Spot zwischen Portabilität und Kapazität. 512Wh, 500W, X-Stream-Schnellladung.</p>
-      <div class="pro-contra">
-        <div class="pro">
-          <h5>Stärken</h5>
-          <ul><li><span class="pro-icon">+</span> 512Wh Kapazität</li><li><span class="pro-icon">+</span> X-Stream-Schnellladung</li><li><span class="pro-icon">+</span> LiFePO4</li><li><span class="pro-icon">+</span> 500W Ausgang</li><li><span class="pro-icon">+</span> EcoFlow App</li></ul>
-        </div>
-        <div class="contra">
-          <h5>Schwächen</h5>
-          <ul><li><span class="contra-icon">−</span> 6,0 kg</li><li><span class="contra-icon">−</span> 399 €</li><li><span class="contra-icon">−</span> Keine UPS-Funktion</li></ul>
+        <div class="product-info">
+          <h3>EcoFlow River 2 — 256Wh LiFePO4 Powerstation</h3>
+          <div class="meta"><span class="stars">★★★★☆ 4.1</span><span>256 Wh</span><span>3,5 kg</span></div>
+          <div class="badges"><span class="badge">EINSTEIGER</span><span class="badge">X-STREAM</span></div>
+          <div class="specs"><span class="badge">300W AC</span><span class="badge">LADEZEIT 1H</span></div>
+          <div class="price">ab 199,00 €</div>
+          <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
         </div>
       </div>
-      <div class="fazit"><strong>Fazit:</strong> Die beste Wahl für Camper und Vanlife-Enthusiasten.</div>
-    </div>
+      <div class="testbericht">
+        <h4>Testbericht</h4>
+        <p>Die EcoFlow River 2 ist der ideale Einstieg ins Solargenerator-Thema. Mit der X-Stream-Ladetechnologie geht sie von 0 auf 100% in nur einer Stunde — ein echter Vorteil auf Camping-Plätzen mit begrenztem Stromanschluss.</p>
+        <div class="pro-contra">
+          <div class="pro"><h5>Stärken</h5><ul>
+            <li><span class="pro-icon">+</span> Blitzschnelle Ladung: 0-100% in nur 1 Stunde</li>
+            <li><span class="pro-icon">+</span> LiFePO4-Batterie mit 3.000+ Zyklen</li>
+            <li><span class="pro-icon">+</span> Sehr leicht mit 3,5 kg</li>
+            <li><span class="pro-icon">+</span> Attraktiver Einstiegspreis</li>
+          </ul></div>
+          <div class="contra"><h5>Schwächen</h5><ul>
+            <li><span class="contra-icon">−</span> 256Wh begrenzt die Nutzungsdauer</li>
+            <li><span class="contra-icon">−</span> Keine UPS-Funktion</li>
+          </ul></div>
+        </div>
+        <div class="fazit"><strong>Fazit:</strong> Perfekt für Einsteiger und Gelegenheits-Camper. Die ultraschnelle Ladung ist ein Alleinstellungsmerkmal.</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="brand-icon" style="background:#f59e0b15;border-color:#f59e0b30;color:#f59e0b">J</div>
+          <span class="brand-name" style="color:#f59e0b">Jackery</span>
+          <div class="rank">4</div>
+        </div>
+        <div class="product-info">
+          <h3>Jackery Explorer 240 Pro — 230Wh Powerstation</h3>
+          <div class="meta"><span class="stars">★★★★☆ 4.2</span><span>230 Wh</span><span>3,0 kg</span></div>
+          <div class="badges"><span class="badge">ULTRA-LEICHT</span></div>
+          <div class="specs"><span class="badge">300W AC</span><span class="badge">3 KG</span></div>
+          <div class="price">ab 199,00 €</div>
+          <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
+        </div>
+      </div>
+      <div class="testbericht">
+        <h4>Testbericht</h4>
+        <p>Mit nur 3,0 kg ist die Jackery Explorer 240 Pro das leichteste Modell in unserem Test — perfekt für Trekking-Touren und Minimalisten. Die 230Wh reichen für das Aufladen von Smartphones, Tablets und LED-Beleuchtung über mehrere Tage.</p>
+        <div class="pro-contra">
+          <div class="pro"><h5>Stärken</h5><ul>
+            <li><span class="pro-icon">+</span> Ultraleicht — nur 3,0 kg im Test</li>
+            <li><span class="pro-icon">+</span> Kompakte Bauweise — passt in jeden Rucksack</li>
+            <li><span class="pro-icon">+</span> Jackery App mit Bluetooth</li>
+            <li><span class="pro-icon">+</span> 199 € — günstig für Jackery-Qualität</li>
+          </ul></div>
+          <div class="contra"><h5>Schwächen</h5><ul>
+            <li><span class="contra-icon">−</span> Nur 230Wh — geringste Kapazität im Test</li>
+            <li><span class="contra-icon">−</span> NCM-Akku — nur 500+ Zyklen</li>
+            <li><span class="contra-icon">−</span> Keine UPS-Funktion</li>
+          </ul></div>
+        </div>
+        <div class="fazit"><strong>Fazit:</strong> Für Minimalisten und Ultraleicht-Wanderer ist die Explorer 240 Pro die beste Wahl.</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <div class="brand-icon" style="background:#10b98115;border-color:#10b98130;color:#10b981">E</div>
+          <span class="brand-name" style="color:#10b981">EcoFlow</span>
+          <div class="rank">5</div>
+        </div>
+        <div class="product-info">
+          <h3>EcoFlow River 2 Max — 512Wh LiFePO4 Powerstation</h3>
+          <div class="meta"><span class="stars">★★★★☆ 4.2</span><span>512 Wh</span><span>6,0 kg</span></div>
+          <div class="badges"><span class="badge">CAMPING-TIPP</span><span class="badge">LIFEPO4</span></div>
+          <div class="specs"><span class="badge">500W AC</span><span class="badge">6 KG</span></div>
+          <div class="price">ab 399,00 €</div>
+          <a href="https://www.amazon.de/?tag=akku-test-21" class="cta" target="_blank" rel="noopener">Auf Amazon →</a>
+        </div>
+      </div>
+      <div class="testbericht">
+        <h4>Testbericht</h4>
+        <p>Die EcoFlow River 2 Max ist der Sweet Spot zwischen Portabilität und Kapazität. Mit 512Wh, 500W Ausgang und X-Stream-Schnellladung bietet sie deutlich mehr Power als die Einsteiger-Modelle — bei moderatem Gewicht von 6 kg.</p>
+        <div class="pro-contra">
+          <div class="pro"><h5>Stärken</h5><ul>
+            <li><span class="pro-icon">+</span> 512Wh Kapazität — doppelt so viel wie River 2</li>
+            <li><span class="pro-icon">+</span> X-Stream-Schnellladung — 0 auf 80% in 1 Stunde</li>
+            <li><span class="pro-icon">+</span> LiFePO4 mit 3.000+ Zyklen</li>
+            <li><span class="pro-icon">+</span> EcoFlow App mit Bluetooth und WiFi</li>
+          </ul></div>
+          <div class="contra"><h5>Schwächen</h5><ul>
+            <li><span class="contra-icon">−</span> 6,0 kg — deutlich schwerer als Einsteiger-Modelle</li>
+            <li><span class="contra-icon">−</span> 399 € — doppelt so teuer wie River 2</li>
+            <li><span class="contra-icon">−</span> Keine UPS-Funktion</li>
+          </ul></div>
+        </div>
+        <div class="fazit"><strong>Fazit:</strong> Die River 2 Max ist die beste Wahl für Camper und Vanlife-Enthusiasten, die mehr Kapazität brauchen.</div>
+      </div>
+
     </div></section>
   </main>
 
