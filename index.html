@@ -14,9 +14,9 @@
   <style>
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{font-size:16px;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-    :root{--bg:#0f1117;--bg-card:#161822;--bg-card-hover:#1c1f2b;--border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.12);--text-primary:#e8eaed;--text-secondary:#9aa0b0;--text-muted:#6b7280;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-bg:rgba(94,106,210,0.1);--accent-border:rgba(94,106,210,0.25);--success:#10b981;--warning:#f59e0b;--danger:#ef4444;--radius:12px;--radius-sm:8px;--shadow:0 4px 24px rgba(0,0,0,0.4);--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--mono:'JetBrains Mono',monospace}
+    :root{--bg:#0c0e14;--bg-card:#13151c;--bg-card-hover:#1a1d28;--border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.14);--text-primary:#e8eaed;--text-secondary:#b0b8c8;--text-muted:#7a8090;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-bg:rgba(94,106,210,0.1);--accent-border:rgba(94,106,210,0.25);--success:#10b981;--warning:#f59e0b;--danger:#ef4444;--radius:12px;--radius-sm:8px;--shadow:0 4px 24px rgba(0,0,0,0.4);--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--mono:'JetBrains Mono',monospace}
     body{font-family:var(--font);font-weight:400;line-height:1.6;color:var(--text-secondary);background:var(--bg);min-height:100vh;overflow-x:hidden}
-    body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 60% 50% at 15% 5%,rgba(94,106,210,0.08) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 85% 25%,rgba(94,106,210,0.05) 0%,transparent 45%),radial-gradient(ellipse 40% 35% at 50% 80%,rgba(16,185,129,0.03) 0%,transparent 40%);pointer-events:none;z-index:-1}
+    body::before{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 60% 50% at 15% 5%,rgba(94,106,210,0.1) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 85% 25%,rgba(94,106,210,0.06) 0%,transparent 45%),radial-gradient(ellipse 40% 35% at 50% 80%,rgba(16,185,129,0.04) 0%,transparent 40%),linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:100% 100%,100% 100%,100% 100%,48px 48px,48px 48px;pointer-events:none;z-index:-1}
     h1,h2,h3,h4{color:var(--text-primary);font-weight:600;letter-spacing:-0.02em;line-height:1.2}
     a{color:var(--accent);text-decoration:none;transition:color 150ms}
     a:hover{color:var(--accent-hover)}
@@ -40,17 +40,18 @@
     .hero-badge{display:inline-block;padding:5px 14px;background:var(--accent-bg);border:1px solid var(--accent-border);border-radius:999px;font-size:0.7rem;font-weight:600;color:var(--accent);margin-bottom:20px;font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em}
     .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:16px;background:linear-gradient(135deg,var(--text-primary) 0%,var(--text-secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .hero-subtitle{max-width:520px;margin:0 auto;font-size:1.05rem;color:var(--text-secondary);line-height:1.7}
-    .hero-stats{display:flex;justify-content:center;gap:48px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border)}
+    .hero-stats{display:flex;justify-content:center;gap:48px;margin-top:48px}
     .hero-stat{text-align:center}
     .hero-stat-value{font-family:var(--mono);font-size:1.6rem;font-weight:600;color:var(--text-primary)}
     .hero-stat-label{font-size:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px}
     /* CATEGORIES */
-    .categories{padding:24px 0 32px}
+    .categories{padding:0 0 48px}
     .categories-inner{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
-    .cat-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:999px;color:var(--text-secondary);font-size:0.85rem;font-weight:500;text-decoration:none;transition:all 200ms}
+    .cat-pill{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:999px;color:var(--text-secondary);font-size:0.85rem;font-weight:500;text-decoration:none;transition:all 200ms}
     .cat-pill:hover{background:var(--accent-bg);border-color:var(--accent-border);color:var(--accent)}
     /* PRODUCTS */
-    .products{padding:48px 0 64px}
+    .products{padding:48px 0 64px;position:relative}
+    .products::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(ellipse 50% 40% at 20% 50%,rgba(94,106,210,0.03) 0%,transparent 50%);pointer-events:none}
     .products-header{text-align:center;margin-bottom:48px}
     .products-header h2{font-size:1.75rem;margin-bottom:8px}
     .products-header p{color:var(--text-secondary);font-size:1rem}
@@ -98,7 +99,8 @@
     .btn-sm{padding:6px 12px;font-size:0.8rem}
     .btn-block{width:100%}
     /* COMPARISON TABLE */
-    .comparison{padding:64px 0;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .comparison{padding:64px 0;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative}
+    .comparison::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 40% 30% at 70% 20%,rgba(94,106,210,0.04) 0%,transparent 50%);pointer-events:none}
     .comparison h2{text-align:center;font-size:1.75rem;margin-bottom:8px}
     .comparison-subtitle{text-align:center;color:var(--text-secondary);margin-bottom:40px}
     .table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border)}
@@ -110,7 +112,8 @@
     .comparison-table .product-cell{font-weight:600;color:var(--text-primary)}
     .comparison-table .price-cell{font-family:var(--mono);color:var(--accent);font-weight:600}
     /* FEATURES */
-    .features{padding:64px 0}
+    .features{padding:64px 0;position:relative}
+    .features::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 50% 40% at 80% 60%,rgba(16,185,129,0.03) 0%,transparent 50%);pointer-events:none}
     .features h2{text-align:center;font-size:1.75rem;margin-bottom:8px}
     .features-subtitle{text-align:center;color:var(--text-secondary);margin-bottom:48px}
     .features-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
@@ -121,7 +124,8 @@
     .feature-card h3{font-size:1.05rem;font-weight:600;margin-bottom:8px}
     .feature-card p{font-size:0.9rem;color:var(--text-secondary);line-height:1.6}
     /* FAQ */
-    .faq{padding:64px 0;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .faq{padding:64px 0;background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative}
+    .faq::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 40% 30% at 30% 40%,rgba(94,106,210,0.03) 0%,transparent 50%);pointer-events:none}
     .faq h2{text-align:center;font-size:1.75rem;margin-bottom:40px}
     .faq-list{max-width:720px;margin:0 auto}
     .faq-item{border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:8px;overflow:hidden;transition:all 200ms}
@@ -215,11 +219,11 @@
 <section class="categories">
   <div class="container">
     <div class="categories-inner">
-      <a href="/solargenerator-camping.html" class="cat-pill">🏕️ Camping</a>
-      <a href="/solargenerator-notstrom.html" class="cat-pill">⚡ Notstrom</a>
-      <a href="/solargenerator-lifepo4.html" class="cat-pill">🔋 LiFePO4</a>
-      <a href="/bluetti-vergleich.html" class="cat-pill">🔵 BLUETTI</a>
-      <a href="/ecoflow-vergleich.html" class="cat-pill">🟢 EcoFlow</a>
+      <a href="/solargenerator-camping.html" class="cat-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-4a2 2 0 012-2h4a2 2 0 012 2v4"/></svg> Camping</a>
+      <a href="/solargenerator-notstrom.html" class="cat-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Notstrom</a>
+      <a href="/solargenerator-lifepo4.html" class="cat-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 11v2M10 11v2M14 11v2M18 11v2"/></svg> LiFePO4</a>
+      <a href="/bluetti-vergleich.html" class="cat-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> BLUETTI</a>
+      <a href="/ecoflow-vergleich.html" class="cat-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg> EcoFlow</a>
     </div>
   </div>
 </section>
