@@ -601,7 +601,7 @@ function openProductModal(id){
     '<div class="verdict"><strong>Fazit:</strong> '+p.testreport.verdict+'</div>';
   var labels={capacity:'Kapazität',output:'Ausgangsleistung',weight:'Gewicht',battery:'Batterietyp',cycles:'Ladezyklen',solar:'Solar-Eingang',ups:'UPS-Funktion',ports:'Ausgänge'};
   document.getElementById('tab-specs').innerHTML='<table class="specs-table">'+Object.entries(p.specs).map(function(kv){return '<tr><td>'+(labels[kv[0]]||kv[0])+'</td><td>'+kv[1]+'</td></tr>';}).join('')+'</table>';
-  document.getElementById('tab-reviews').innerHTML='<div style="text-align:center;padding:32px 0"><div style="font-size:2.5rem;color:var(--warning);margin-bottom:8px;letter-spacing:4px">'+renderStars(p.rating)+'</div><div style="font-size:1.75rem;font-weight:600;color:var(--text-primary)">'+p.rating+' / 5.0</div><div style="color:var(--text-muted);margin-top:4px">'+p.reviews.toLocaleString('de-DE')+' Bewertungen auf Amazon</div><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku-test-21" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:20px">Alle Bewertungen auf Amazon lesen →</a></div>';
+  document.getElementById('tab-reviews').innerHTML='<div style="text-align:center;padding:32px 0"><div style="font-size:2.5rem;color:var(--warning);margin-bottom:8px;letter-spacing:4px">'+renderStars(p.rating)+'</div><div style="font-size:1.75rem;font-weight:600;color:var(--text-primary)">'+p.rating+' / 5.0</div><div style="color:var(--text-muted);margin-top:4px">'+p.reviews.toLocaleString('de-DE')+' Bewertungen auf Amazon</div><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:20px">Alle Bewertungen auf Amazon lesen →</a></div>';
   document.getElementById('productModal').classList.add('open');
   document.body.style.overflow='hidden';
   switchTab('test');
@@ -634,7 +634,7 @@ document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventLis
           '<div class="product-badges">'+badges+'</div>'+
           '<div class="product-price"><span class="from">ab </span>'+p.price+' €</div>'+
           '<div class="product-actions">'+
-            '<a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku-test-21" class="btn btn-primary btn-sm" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>'+
+            '<a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn btn-primary btn-sm" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>'+
             '<button class="btn btn-outline btn-sm" onclick="event.stopPropagation();openProductModal(\''+p.id+'\')">Testbericht</button>'+
           '</div>'+
         '</div>'+
@@ -651,7 +651,7 @@ document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventLis
       '<td><span class="stars" style="color:var(--warning);letter-spacing:2px">'+renderStars(p.rating)+'</span> '+p.rating+'</td>'+
       '<td>'+p.specs.capacity+'</td>'+
       '<td>'+p.specs.output+'</td>'+
-      '<td><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku-test-21" class="btn btn-primary btn-sm" target="_blank" rel="noopener" onclick="event.stopPropagation()">Amazon →</a></td>'+
+      '<td><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn btn-primary btn-sm" target="_blank" rel="noopener" onclick="event.stopPropagation()">Amazon →</a></td>'+
     '</tr>';}).join('');
   }
 })();

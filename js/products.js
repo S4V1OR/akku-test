@@ -291,7 +291,7 @@ function renderProductCard(product, index) {
     '</div>' +
     '<div class="product-card-bottom">' +
       '<div><span class="badge badge-neutral">' + product.specs.output + '</span><span class="badge badge-neutral">' + product.specs.weight + '</span></div>' +
-      '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku-test-21" class="btn btn-sm btn-primary" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>' +
+      '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku0a1-21" class="btn btn-sm btn-primary" target="_blank" rel="noopener" onclick="event.stopPropagation()">Auf Amazon →</a>' +
     '</div>' +
   '</article>';
 }
@@ -303,7 +303,7 @@ function renderTableRow(product, index) {
     '<td>' + product.price + ' €</td>' +
     '<td>' + renderStars(product.rating) + ' ' + product.rating + '</td>' +
     '<td>' + product.specs.capacity + '</td>' +
-    '<td><a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku-test-21" class="btn btn-sm btn-primary" target="_blank" rel="noopener" onclick="event.stopPropagation()">Amazon →</a></td>' +
+    '<td><a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku0a1-21" class="btn btn-sm btn-primary" target="_blank" rel="noopener" onclick="event.stopPropagation()">Amazon →</a></td>' +
   '</tr>';
 }
 
@@ -321,14 +321,14 @@ function openProductModal(productId) {
   document.getElementById('modalTitle').textContent = p.name;
   document.getElementById('modalPrice').textContent = 'ab ' + p.price + ' €';
   document.getElementById('modalRating').innerHTML = renderStars(p.rating) + ' ' + p.rating + ' (' + p.reviews.toLocaleString('de-DE') + ' Bewertungen)';
-  document.getElementById('modalAmazonLink').href = 'https://www.amazon.de/dp/' + p.asin + '?tag=akku-test-21';
+  document.getElementById('modalAmazonLink').href = 'https://www.amazon.de/dp/' + p.asin + '?tag=akku0a1-21';
   document.getElementById('modalTest').innerHTML = 
     '<div class="testbericht-summary">' + p.testreport.summary + '</div>' +
     '<div class="testbericht-pro-contra"><div class="testbericht-pro"><h4>Stärken</h4><ul>' + p.testreport.positives.map(x => '<li>' + x + '</li>').join('') + '</ul></div>' +
     '<div class="testbericht-contra"><h4>Schwächen</h4><ul>' + p.testreport.negatives.map(x => '<li>' + x + '</li>').join('') + '</ul></div></div>' +
     '<div class="testbericht-fazit"><strong>Fazit:</strong> ' + p.testreport.verdict + '</div>';
   document.getElementById('modalSpecs').innerHTML = '<table class="specs-table">' + renderSpecRows(p.specs) + '</table>';
-  document.getElementById('modalReviews').innerHTML = '<div style="text-align:center;padding:2rem 0"><div style="font-size:2rem;color:var(--accent);margin-bottom:0.5rem">' + renderStars(p.rating) + '</div><div style="font-size:1.5rem;font-weight:590;color:var(--text-primary)">' + p.rating + ' / 5.0</div><div style="color:var(--text-tertiary);margin-top:0.25rem">' + p.reviews.toLocaleString('de-DE') + ' Bewertungen auf Amazon</div><a href="https://www.amazon.de/dp/' + p.asin + '?tag=akku-test-21" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1rem">Alle Bewertungen auf Amazon lesen →</a></div>';
+  document.getElementById('modalReviews').innerHTML = '<div style="text-align:center;padding:2rem 0"><div style="font-size:2rem;color:var(--accent);margin-bottom:0.5rem">' + renderStars(p.rating) + '</div><div style="font-size:1.5rem;font-weight:590;color:var(--text-primary)">' + p.rating + ' / 5.0</div><div style="color:var(--text-tertiary);margin-top:0.25rem">' + p.reviews.toLocaleString('de-DE') + ' Bewertungen auf Amazon</div><a href="https://www.amazon.de/dp/' + p.asin + '?tag=akku0a1-21" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1rem">Alle Bewertungen auf Amazon lesen →</a></div>';
   document.getElementById('productModal').classList.add('open');
   document.body.style.overflow = 'hidden';
   switchTab('test');
