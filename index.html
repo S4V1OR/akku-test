@@ -7,6 +7,7 @@
   <meta name="description" content="Der große Solargenerator Vergleich 2026. Unabhängige Tests von Powerstations & Solarladegeräten. BLUETTI, EcoFlow, Jackery, Anker — verglichen und bewertet.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://akku-test.de/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta property="og:title" content="Solargenerator Vergleich 2026 — Die besten Powerstations & Solarladegeräte">
   <meta property="og:description" content="Der große Solargenerator Vergleich 2026. Unabhängige Tests von Powerstations & Solarladegeräten. BLUETTI, EcoFlow, Jackery, Anker — verglichen und bewertet.">
   <meta property="og:url" content="https://akku-test.de/">
@@ -624,7 +625,7 @@ document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventLis
       var rankClass=i===0?'gold':i===1?'silver':i===2?'bronze':'';
       return '<article class="product-card" onclick="openProductModal(\''+p.id+'\')">'+
         '<div class="product-card-img">'+
-          '<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">'+
+          '<img src="'+p.image+'" alt="'+p.name+'" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.background=\'linear-gradient(135deg,rgba(94,106,210,0.1),rgba(94,106,210,0.05)\');this.nextElementSibling.innerHTML=\'<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'var(--accent)\' stroke-width=\'1.5\' style=\'width:32px;height:32px;\'><rect x=\'2\' y=\'7\' width=\'20\' height=\'10\' rx=\'2\'/><path d=\'M6 11v2M10 11v2M14 11v2M18 11v2\'/></svg>\'">'+
           '<div class="product-rank '+rankClass+'">'+(i+1)+'</div>'+
         '</div>'+
         '<div class="product-card-body">'+
