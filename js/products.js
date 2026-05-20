@@ -7,7 +7,7 @@ const PRODUCTS = {
     price: "199,99",
     rating: 4.1,
     reviews: 589,
-    image: "https://m.media-amazon.com/images/I/71e5xYHkSfL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "268 Wh", output: "600W AC", weight: "4,7 kg", battery: "LiFePO4", cycles: "3.000+", solar: "200W max", ups: "<20ms", ports: "8 Outputs" },
     testreport: {
       summary: "Die BLUETTI EB3A ist das beste Einsteiger-Preis-Leistungs-Verhältnis unter den kompakten Powerstations. Mit 268Wh LiFePO4, 600W Ausgang und UPS-Funktion ist sie ideal für Camping, Notstrom und den Einstieg in die Welt der Solargeneratoren.",
@@ -26,7 +26,7 @@ const PRODUCTS = {
     price: "279,00",
     rating: 4.4,
     reviews: 1876,
-    image: "https://m.media-amazon.com/images/I/61L+KX+KZaL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "302 Wh", output: "300W AC", weight: "3,9 kg", battery: "NCM", cycles: "500+", solar: "100W max", ups: "Nein", ports: "5 Outputs" },
     testreport: {
       summary: "Die Jackery Explorer 300 Pro ist das leichteste Modell in unserem Test und überzeugt mit Jackery-typischer Qualität und App-Steuerung. Allerdings nutzt sie NCM-Technologie statt LiFePO4 — das kostet sie im Vergleich zur BLUETTI EB3A deutlich Punkte bei Langlebigkeit.",
@@ -45,7 +45,7 @@ const PRODUCTS = {
     price: "199,00",
     rating: 4.1,
     reviews: 567,
-    image: "https://m.media-amazon.com/images/I/61VC+KxK+VL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "256 Wh", output: "300W AC", weight: "3,5 kg", battery: "LiFePO4", cycles: "3.000+", solar: "110W max", ups: "Nein", ports: "5 Outputs" },
     testreport: {
       summary: "Die EcoFlow River 2 ist die schnellste ladende Powerstation in der Einsteiger-Klasse. Dank X-Stream-Technologie lädt sie von 0 auf 80% in nur einer Stunde — einzigartig in dieser Preisklasse. LiFePO4-Sicherheit inklusive.",
@@ -64,7 +64,7 @@ const PRODUCTS = {
     price: "199,00",
     rating: 4.2,
     reviews: 987,
-    image: "https://m.media-amazon.com/images/I/61S+Kx+KZaL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "230 Wh", output: "300W AC", weight: "3,0 kg", battery: "NCM", cycles: "500+", solar: "90W max", ups: "Nein", ports: "4 Outputs" },
     testreport: {
       summary: "Die Jackery Explorer 240 Pro ist das Ultraleicht-Gewicht im Test. Mit nur 3,0 kg ist sie die ideale Powerstation für Rucksack-Touren und Minimalisten. Der NCM-Akku begrenzt jedoch die Lebensdauer erheblich.",
@@ -83,7 +83,7 @@ const PRODUCTS = {
     price: "399,00",
     rating: 4.2,
     reviews: 312,
-    image: "https://m.media-amazon.com/images/I/61WC+KxK+VL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "512 Wh", output: "500W AC", weight: "6,0 kg", battery: "LiFePO4", cycles: "3.000+", solar: "220W max", ups: "Nein", ports: "6 Outputs" },
     testreport: {
       summary: "Die EcoFlow River 2 Max ist der Sweet Spot zwischen Portabilität und Kapazität. Mit 512Wh, 500W Ausgang und X-Stream-Schnellladung bietet sie deutlich mehr Power als die Einsteiger-Modelle — bei moderatem Gewicht von 6 kg.",
@@ -97,12 +97,12 @@ const PRODUCTS = {
   "ecoflow-delta2": {
     id: "ecoflow-delta2",
     name: "EcoFlow Delta 2",
-    asin: "B09YL76V8N",
+    asin: "B0B5R2ZH19",
     brand: "EcoFlow",
     price: "849,00",
     rating: 4.4,
     reviews: 892,
-    image: "https://m.media-amazon.com/images/I/61VC+KxK+VL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "1.024 Wh", output: "1.800W AC", weight: "12,5 kg", battery: "LiFePO4", cycles: "3.000+", solar: "500W max", ups: "<30ms", ports: "15 Outputs" },
     testreport: {
       summary: "Die EcoFlow Delta 2 ist die beste Notstrom-Powerstation im Test. Mit 1.024Wh, 1.800W Ausgang, UPS-Funktion und X-Stream-Schnellladung bietet sie alles, was man für zuverlässigen Notstrom braucht. Die App-Steuerung ist die beste in der Branche.",
@@ -121,7 +121,7 @@ const PRODUCTS = {
     price: "1.299,00",
     rating: 4.2,
     reviews: 1247,
-    image: "https://m.media-amazon.com/images/I/71e5xYHkSfL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "2.000 Wh", output: "2.000W AC", weight: "27,5 kg", battery: "LiFePO4", cycles: "3.000+", solar: "700W max", ups: "<20ms", ports: "7 Inputs, 16 Outputs" },
     testreport: {
       summary: "Die BLUETTI AC200P ist die Profi-Powerstation für anspruchsvolle Nutzer. Mit 2.000Wh, 2.000W Ausgang und 700W Solar-Eingang bietet sie mehr Leistung als die meisten Haushalte brauchen. Der Preis von 1.299 € ist gerechtigert durch die massive Ausstattung.",
@@ -140,7 +140,7 @@ const PRODUCTS = {
     price: "599,00",
     rating: 4.3,
     reviews: 445,
-    image: "https://m.media-amazon.com/images/I/61L+KX+KZaL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "1.024 Wh", output: "1.800W AC", weight: "13,2 kg", battery: "LiFePO4", cycles: "3.000+", solar: "300W max", ups: "<20ms", ports: "10 Outputs" },
     testreport: {
       summary: "Die Anker SOLIX C1000 ist der Neuling 2026 und überzeugt mit Anker-typischer Qualität, LiFePO4-Technologie und einem aggressiven Preis von 599 €. Für 1.024Wh und 1.800W ist sie die günstigste Option in der Mittelklasse.",
@@ -159,7 +159,7 @@ const PRODUCTS = {
     price: "1.499,00",
     rating: 4.4,
     reviews: 567,
-    image: "https://m.media-amazon.com/images/I/61WC+KxK+VL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "2.048 Wh", output: "2.400W AC", weight: "23,0 kg", battery: "LiFePO4", cycles: "3.000+", solar: "800W max", ups: "<30ms", ports: "15 Outputs" },
     testreport: {
       summary: "Die EcoFlow Delta 2 Max ist die Königsklasse der mobilen Powerstations. Mit 2.048Wh, 2.400W Ausgang und 800W Solar-Eingang bietet sie genug Leistung für den ganzen Haushalt — inklusive Waschmaschine und Geschirrspüler.",
@@ -178,7 +178,7 @@ const PRODUCTS = {
     price: "2.499,00",
     rating: 4.1,
     reviews: 678,
-    image: "https://m.media-amazon.com/images/I/71e5xYHkSfL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "3.072 Wh", output: "3.000W AC", weight: "48,0 kg", battery: "LiFePO4", cycles: "3.000+", solar: "2.400W max", ups: "<20ms", ports: "16 Outputs" },
     testreport: {
       summary: "Das BLUETTI AC300+B300-System ist die modulare Spitzenklasse. Mit 3.072Wh Basis-Kapazität (erweiterbar auf 12.288Wh), 3.000W Ausgang und 2.400W Solar-Eingang ist es das leistungsstärkste System im Test — für Profis und Off-Grid-Anwendungen.",
@@ -197,7 +197,7 @@ const PRODUCTS = {
     price: "579,00",
     rating: 4.3,
     reviews: 63,
-    image: "https://m.media-amazon.com/images/I/61VC+KxK+VL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "768 Wh", output: "800W AC", weight: "7,8 kg", battery: "LiFePO4", cycles: "3.000+", solar: "220W max", ups: "Nein", ports: "8 Outputs" },
     testreport: {
       summary: "Die EcoFlow River 2 Pro ist der Sweet Spot der River-Serie. Mit 768Wh, 800W Ausgang und X-Stream-Schnellladung bietet sie deutlich mehr Power als die Einsteiger-Modelle — bei moderatem Gewicht von 7,8 kg.",
@@ -216,7 +216,7 @@ const PRODUCTS = {
     price: "399,00",
     rating: 4.3,
     reviews: 892,
-    image: "https://m.media-amazon.com/images/I/71e5xYHkSfL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "537 Wh", output: "700W AC", weight: "7,5 kg", battery: "LiFePO4", cycles: "3.000+", solar: "200W max", ups: "<20ms", ports: "8 Outputs" },
     testreport: {
       summary: "Die BLUETTI EB55 ist der Allrounder der EB-Serie. Mit 537Wh, 700W Ausgang und UPS-Funktion bietet sie deutlich mehr Power als die EB3A — bei moderatem Gewicht von 7,5 kg. Ideal für alle, die mehr Kapazität braucht, aber nicht die AC-Serie benötigen.",
@@ -230,12 +230,12 @@ const PRODUCTS = {
   "bluetti-ac60": {
     id: "bluetti-ac60",
     name: "BLUETTI AC60",
-    asin: "B0FM3G66WW",
+    asin: "B0C7V8BQX7",
     brand: "BLUETTI",
     price: "349,00",
     rating: 4.2,
     reviews: 445,
-    image: "https://m.media-amazon.com/images/I/71e5xYHkSfL._AC_SL1500_.jpg",
+    image: "",
     specs: { capacity: "403 Wh", output: "600W AC", weight: "8,5 kg", battery: "LiFePO4", cycles: "3.000+", solar: "200W max", ups: "<20ms", ports: "6 Outputs" },
     testreport: {
       summary: "Die BLUETTI AC60 ist die wasserdichte Powerstation für Outdoor-Einsätze. Mit IP65-Schutz, 403Wh und 600W Ausgang ist sie die einzige Powerstation im Test, die auch im Regen und Schnee zuverlässig arbeitet.",
