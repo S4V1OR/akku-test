@@ -18,6 +18,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://akku-test.de/"},{"@type":"ListItem","position":2,"name":"Vergleich","item":"https://akku-test.de/vergleich.html"}]}</script>
   <style>
     :root{--bg:#08090a;--bg-panel:#0f1011;--bg-elevated:#191a1b;--bg-hover:#28282c;--text-primary:#f7f8f8;--text-secondary:#d0d6e0;--text-tertiary:#8a8f98;--text-quaternary:#62666d;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-dim:#3e4a9e;--accent-glow:rgba(94,106,210,0.12);--accent-glow-strong:rgba(94,106,210,0.2);--accent-border:rgba(94,106,210,0.2);--accent-bg:rgba(94,106,210,0.08);--border-subtle:rgba(255,255,255,0.05);--border-default:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.12);--success:#34d399;--danger:#f87171;--warning:#fbbf24;--font-sans:'Inter',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:80px;--r-sm:4px;--r-md:6px;--r-lg:8px;--r-xl:12px;--r-pill:9999px}
+    [data-theme="light"]{--bg:#f5f6f8;--bg-panel:#ffffff;--bg-elevated:#ebedf0;--bg-hover:#e2e4e8;--text-primary:#1a1d28;--text-secondary:#3a3f4e;--text-tertiary:#6b7280;--text-quaternary:#9ca3af;--accent-glow:rgba(94,106,210,0.08);--accent-glow-strong:rgba(94,106,210,0.15);--accent-border:rgba(94,106,210,0.25);--accent-bg:rgba(94,106,210,0.05);--border-subtle:rgba(0,0,0,0.06);--border-default:rgba(0,0,0,0.1);--border-strong:rgba(0,0,0,0.15)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
     body{font-family:var(--font-sans);background:var(--bg);color:var(--text-primary);line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -39,6 +40,10 @@
     .nav-cta:hover{background:var(--accent-hover);color:#fff!important}
     .nav-toggle{display:none;background:none;border:none;color:var(--text-primary);cursor:pointer;padding:var(--s2)}
     .nav-toggle svg{width:24px;height:24px}
+    .nav-actions{display:flex;align-items:center;gap:var(--s2)}
+    .theme-toggle{background:none;border:1px solid var(--border-default);color:var(--text-tertiary);cursor:pointer;padding:var(--s1);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;transition:all 150ms ease;width:36px;height:36px}
+    .theme-toggle:hover{border-color:var(--text-tertiary);color:var(--text-secondary)}
+    .theme-toggle svg{width:18px;height:18px}
     .breadcrumbs{border-bottom:1px solid var(--border-subtle);background:var(--bg-panel)}
     .breadcrumb-list{display:flex;align-items:center;gap:var(--s2);list-style:none;padding:var(--s3) 0;font-size:0.81rem}
     .breadcrumb-item{color:var(--text-quaternary)}
@@ -136,7 +141,7 @@
 
   <header class="hero">
     <div class="container">
-      <div class="hero-badge">ALLE PRODUKTE — JULI 2026</div>
+      <div class="hero-badge">ALLE PRODUKTE — JUNI 2026</div>
       <h1>Powerstation Vergleich<br>Alle Produkte im Überblick</h1>
       <p class="hero-subtitle">Filtere nach Hersteller, Kapazität, Preis und Bewertung. Finde die perfekte Powerstation für deine Bedürfnisse.</p>
     </div>
@@ -161,6 +166,13 @@
           <option value="100-300">100–300 Wh</option>
           <option value="300-600">300–600 Wh</option>
           <option value="600+">Über 600 Wh</option>
+        </select>
+        <select class="filter-select" id="filterOutput" onchange="applyFilters()">
+          <option value="">Alle Leistungen</option>
+          <option value="0-300">Unter 300W</option>
+          <option value="300-600">300–600W</option>
+          <option value="600-1000">600–1000W</option>
+          <option value="1000+">Über 1000W</option>
         </select>
         <select class="filter-select" id="sortBy" onchange="applyFilters()">
           <option value="rating">Beste Bewertung</option>
@@ -237,6 +249,7 @@
       var brand = document.getElementById('filterBrand').value;
       var category = document.getElementById('filterCategory').value;
       var capacity = document.getElementById('filterCapacity').value;
+      var output = document.getElementById('filterOutput').value;
       var sortBy = document.getElementById('sortBy').value;
 
       var filtered = allProducts.slice();
@@ -254,6 +267,16 @@
           if(capacity === '100-300') return wh >= 100 && wh < 300;
           if(capacity === '300-600') return wh >= 300 && wh < 600;
           if(capacity === '600+') return wh >= 600;
+          return true;
+        });
+      }
+      if(output){
+        filtered = filtered.filter(function(p){
+          var w = parseOutput(p.specs && p.specs.output);
+          if(output === '0-300') return w < 300;
+          if(output === '300-600') return w >= 300 && w < 600;
+          if(output === '600-1000') return w >= 600 && w < 1000;
+          if(output === '1000+') return w >= 1000;
           return true;
         });
       }
@@ -292,11 +315,18 @@
       document.getElementById('filterBrand').value = '';
       document.getElementById('filterCategory').value = '';
       document.getElementById('filterCapacity').value = '';
+      document.getElementById('filterOutput').value = '';
       document.getElementById('sortBy').value = 'rating';
       applyFilters();
     }
 
     function parseCapacity(str){
+      if(!str) return 0;
+      var m = str.match(/(\d+)/);
+      return m ? parseInt(m[1]) : 0;
+    }
+
+    function parseOutput(str){
       if(!str) return 0;
       var m = str.match(/(\d+)/);
       return m ? parseInt(m[1]) : 0;
@@ -332,6 +362,35 @@
     // Expose for onchange handlers
     window.applyFilters = applyFilters;
     window.resetFilters = resetFilters;
+  })();
+  // Theme Toggle
+  (function(){
+    var html = document.documentElement;
+    var toggle = document.getElementById('themeToggle');
+    var iconDark = toggle ? toggle.querySelector('.theme-icon-dark') : null;
+    var iconLight = toggle ? toggle.querySelector('.theme-icon-light') : null;
+    var saved = localStorage.getItem('theme');
+    if(saved === 'light'){
+      html.setAttribute('data-theme','light');
+      if(iconDark) iconDark.style.display = 'none';
+      if(iconLight) iconLight.style.display = 'block';
+    }
+    if(toggle){
+      toggle.addEventListener('click', function(){
+        var isLight = html.getAttribute('data-theme') === 'light';
+        if(isLight){
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme','dark');
+          if(iconDark) iconDark.style.display = 'block';
+          if(iconLight) iconLight.style.display = 'none';
+        } else{
+          html.setAttribute('data-theme','light');
+          localStorage.setItem('theme','light');
+          if(iconDark) iconDark.style.display = 'none';
+          if(iconLight) iconLight.style.display = 'block';
+        }
+      });
+    }
   })();
   </script>
 </body>

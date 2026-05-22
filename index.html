@@ -18,6 +18,7 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"akku-test.de","url":"https://akku-test.de/","description":"Powerstation Vergleich — Die besten Powerstations & Solargeneratoren"}</script>
   <style>
     :root{--bg:#08090a;--bg-panel:#0f1011;--bg-elevated:#191a1b;--bg-hover:#28282c;--text-primary:#f7f8f8;--text-secondary:#d0d6e0;--text-tertiary:#8a8f98;--text-quaternary:#62666d;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-dim:#3e4a9e;--accent-glow:rgba(94,106,210,0.12);--accent-glow-strong:rgba(94,106,210,0.2);--accent-border:rgba(94,106,210,0.2);--accent-bg:rgba(94,106,210,0.08);--border-subtle:rgba(255,255,255,0.05);--border-default:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.12);--success:#34d399;--danger:#f87171;--warning:#fbbf24;--font-sans:'Inter',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:80px;--r-sm:4px;--r-md:6px;--r-lg:8px;--r-xl:12px;--r-pill:9999px}
+    [data-theme="light"]{--bg:#f5f6f8;--bg-panel:#ffffff;--bg-elevated:#ebedf0;--bg-hover:#e2e4e8;--text-primary:#1a1d28;--text-secondary:#3a3f4e;--text-tertiary:#6b7280;--text-quaternary:#9ca3af;--accent-glow:rgba(94,106,210,0.08);--accent-glow-strong:rgba(94,106,210,0.15);--accent-border:rgba(94,106,210,0.25);--accent-bg:rgba(94,106,210,0.05);--border-subtle:rgba(0,0,0,0.06);--border-default:rgba(0,0,0,0.1);--border-strong:rgba(0,0,0,0.15)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
     body{font-family:var(--font-sans);background:var(--bg);color:var(--text-primary);line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -43,6 +44,10 @@
     .nav-cta:hover{background:var(--accent-hover);color:#fff!important}
     .nav-toggle{display:none;background:none;border:none;color:var(--text-primary);cursor:pointer;padding:var(--s2)}
     .nav-toggle svg{width:24px;height:24px}
+    .nav-actions{display:flex;align-items:center;gap:var(--s2)}
+    .theme-toggle{background:none;border:1px solid var(--border-default);color:var(--text-tertiary);cursor:pointer;padding:var(--s1);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;transition:all 150ms ease;width:36px;height:36px}
+    .theme-toggle:hover{border-color:var(--text-tertiary);color:var(--text-secondary)}
+    .theme-toggle svg{width:18px;height:18px}
 
     /* Hero */
     .hero{padding:var(--s9) 0 var(--s7);text-align:center;position:relative;overflow:hidden}
@@ -162,22 +167,28 @@
           <span>akku-test.de</span>
         </a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="/" class="active">Startseite</a></li>
+        <ul class="nav-links" id="navLinks">
           <li><a href="/camping.html">Camping</a></li>
           <li><a href="/notstrom.html">Notstrom</a></li>
           <li><a href="/solar.html">Solar</a></li>
           <li><a href="/vergleich.html">Vergleich</a></li>
         </ul>
-        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-        </button>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten" title="Dark/Light Mode">
+            <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
 
   <header class="hero">
     <div class="container">
-      <div class="hero-badge">POWERSTATION VERGLEICH — JULI 2026</div>
+      <div class="hero-badge">POWERSTATION VERGLEICH — JUNI 2026</div>
       <h1>Die besten Powerstations<br>im Test & Vergleich</h1>
       <p class="hero-subtitle">Unabhängige Tests von Powerstations & Solargeneratoren. Anker, Jackery, BLUETTI, EcoFlow — verglichen und bewertet.</p>
       <div class="hero-actions">
@@ -339,6 +350,39 @@
           '</div>'+
         '</div>'+
       '</article>';
+    }
+  })();
+
+  // Theme Toggle
+  (function(){
+    var html = document.documentElement;
+    var toggle = document.getElementById('themeToggle');
+    var iconDark = toggle ? toggle.querySelector('.theme-icon-dark') : null;
+    var iconLight = toggle ? toggle.querySelector('.theme-icon-light') : null;
+
+    // Load saved theme
+    var saved = localStorage.getItem('theme');
+    if(saved === 'light'){
+      html.setAttribute('data-theme','light');
+      if(iconDark) iconDark.style.display = 'none';
+      if(iconLight) iconLight.style.display = 'block';
+    }
+
+    if(toggle){
+      toggle.addEventListener('click', function(){
+        var isLight = html.getAttribute('data-theme') === 'light';
+        if(isLight){
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme','dark');
+          if(iconDark) iconDark.style.display = 'block';
+          if(iconLight) iconLight.style.display = 'none';
+        } else{
+          html.setAttribute('data-theme','light');
+          localStorage.setItem('theme','light');
+          if(iconDark) iconDark.style.display = 'none';
+          if(iconLight) iconLight.style.display = 'block';
+        }
+      });
     }
   })();
   </script>
