@@ -96,7 +96,13 @@
     .footer-links a{font-size:0.8rem;color:var(--text-quaternary);text-decoration:none}
     .footer-links a:hover{color:var(--text-secondary)}
     .footer-disclaimer{padding-top:var(--s4);border-top:1px solid var(--border-subtle);font-size:0.72rem;color:var(--text-quaternary);line-height:1.6}
-    .build-timestamp{font-size:0.7rem;color:var(--text-quaternary);margin-top:var(--s3);opacity:0.5}
+        .build-timestamp{font-size:0.7rem;color:var(--text-quaternary);margin-top:var(--s3);opacity:0.5}
+    .pagination{display:flex;align-items:center;justify-content:space-between;margin-top:var(--s6);padding-top:var(--s5);border-top:1px solid var(--border-subtle)}
+    .pagination-info{font-size:0.85rem;color:var(--text-quaternary)}
+    .pagination-buttons{display:flex;gap:var(--s2)}
+    .pagination-btn{background:var(--bg-elevated);border:1px solid var(--border-default);color:var(--text-secondary);padding:var(--s2) var(--s3);border-radius:var(--r-md);font-size:0.85rem;font-family:var(--font-sans);cursor:pointer;transition:all 150ms ease}
+    .pagination-btn:hover{border-color:var(--text-tertiary);color:var(--text-primary)}
+    .pagination-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
     @media(max-width:768px){
       .nav-links{display:none}
       .nav-toggle{display:block}
@@ -194,6 +200,7 @@
         <p>Versuche andere Filtereinstellungen</p>
       </div>
     </div>
+    <div id="pagination"></div>
   </section>
 
   <footer class="footer">
@@ -309,6 +316,19 @@
         });
       }
       count.textContent = filtered.length + ' Produkt' + (filtered.length !== 1 ? 'e' : '');
+    }
+
+    // Pagination for filtered results
+    var totalPages = Math.ceil(filtered.length / 12);
+    var pagEl = document.getElementById('pagination');
+    if(pagEl){
+      if(totalPages <= 1){ pagEl.innerHTML = ''; }
+      else {
+        var pHtml = '<div class="pagination"><span class="pagination-info">'+filtered.length+' Produkte</span><div class="pagination-buttons">'; 
+        for(var i=1;i<=totalPages;i++){ pHtml+='<button class="pagination-btn" onclick="alert(\"Pagination coming soon\")">'+i+'</button>'; }
+        pHtml += '</div></div>';
+        pagEl.innerHTML = pHtml;
+      }
     }
 
     function resetFilters(){

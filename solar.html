@@ -91,6 +91,14 @@
     .footer-links a:hover{color:var(--text-secondary)}
     .footer-disclaimer{padding-top:var(--s4);border-top:1px solid var(--border-subtle);font-size:0.72rem;color:var(--text-quaternary);line-height:1.6}
     .build-timestamp{font-size:0.7rem;color:var(--text-quaternary);margin-top:var(--s3);opacity:0.5}
+
+    .pagination{display:flex;align-items:center;justify-content:space-between;margin-top:var(--s6);padding-top:var(--s5);border-top:1px solid var(--border-subtle)}
+    .pagination-info{font-size:0.85rem;color:var(--text-quaternary)}
+    .pagination-buttons{display:flex;gap:var(--s2)}
+    .pagination-btn{background:var(--bg-elevated);border:1px solid var(--border-default);color:var(--text-secondary);padding:var(--s2) var(--s3);border-radius:var(--r-md);font-size:0.85rem;font-family:var(--font-sans);cursor:pointer;transition:all 150ms ease}
+    .pagination-btn:hover{border-color:var(--text-tertiary);color:var(--text-primary)}
+    .pagination-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
     @media(max-width:768px){
       .nav-links{display:none}
       .nav-toggle{display:block}
@@ -151,6 +159,7 @@
       <h2 style="font-size:1.3rem;font-weight:600;margin-bottom:var(--s5)">Alle Solar-Kits & Solargeneratoren</h2>
       <div class="products-grid" id="productGrid"></div>
     </div>
+    <div id="pagination"></div>
   </section>
 
   <footer class="footer">
@@ -188,12 +197,10 @@
       .then(function(r){ return r.json(); })
       .then(function(data){
         var products = data.products.filter(function(p){ return p.categories.indexOf('solar') !== -1; });
-        var grid = document.getElementById('productGrid');
-        if(grid){
-          products.forEach(function(p){
-            grid.innerHTML += renderProductCard(p);
-          });
-        }
+        currentProducts = products;
+        currentPage = 1;
+        renderProducts();
+        renderPagination();
       })
       .catch(function(e){ console.error('Failed to load products:', e); });
 
@@ -254,6 +261,66 @@
       });
     }
   })();
+
+  // Pagination
+  var currentPage = 1;
+  var itemsPerPage = 6;
+  var currentProducts = [];
+
+  function renderPagination(){
+    var totalPages = Math.ceil(currentProducts.length / itemsPerPage);
+    var paginationEl = document.getElementById('pagination');
+    if(!paginationEl) return;
+
+    if(totalPages <= 1){
+      paginationEl.innerHTML = '';
+      return;
+    }
+
+    var html = '<div class="pagination">';
+    html += '<span class="pagination-info">Seite '+currentPage+' von '+totalPages+'</span>';
+    html += '<div class="pagination-buttons">';
+
+    if(currentPage > 1){
+      html += '<button class="pagination-btn" onclick="changePage('+(currentPage-1)+')">← Zurück</button>';
+    }
+
+    // Page numbers
+    for(var i = 1; i <= totalPages; i++){
+      if(i === currentPage){
+        html += '<button class="pagination-btn active">'+i+'</button>';
+      } else {
+        html += '<button class="pagination-btn" onclick="changePage('+i+')">'+i+'</button>';
+      }
+    }
+
+    if(currentPage < totalPages){
+      html += '<button class="pagination-btn" onclick="changePage('+(currentPage+1)+')">Weiter →</button>';
+    }
+
+    html += '</div></div>';
+    paginationEl.innerHTML = html;
+  }
+
+  function changePage(page){
+    currentPage = page;
+    renderProducts();
+    renderPagination();
+    window.scrollTo({top: document.getElementById('productGrid').offsetTop - 100, behavior: 'smooth'});
+  }
+
+  function renderProducts(){
+    var grid = document.getElementById('productGrid');
+    if(!grid) return;
+    var start = (currentPage - 1) * itemsPerPage;
+    var end = start + itemsPerPage;
+    var pageProducts = currentProducts.slice(start, end);
+    grid.innerHTML = '';
+    pageProducts.forEach(function(p){
+      grid.innerHTML += renderProductCard(p);
+    });
+  }
+
   </script>
 </body>
 </html>

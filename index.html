@@ -302,22 +302,26 @@
         // Render categories
         var catGrid = document.getElementById('categoryGrid');
         if(catGrid){
-          Object.keys(categories).forEach(function(key){
-            var cat = categories[key];
+          var catArray = Array.isArray(categories) ? categories : Object.keys(categories);
+          catArray.forEach(function(cat){
+            var key = cat.id || cat;
+            var name = cat.name || key;
+            var icon = cat.icon || '';
+            var desc = cat.description || '';
             var count = products.filter(function(p){ return p.categories.indexOf(key) !== -1; }).length;
             catGrid.innerHTML += '<a href="/'+key+'.html" class="category-card">'+
-              '<div class="category-icon">'+cat.icon+'</div>'+
-              '<h3>'+cat.name+'</h3>'+
-              '<p>'+cat.description+'</p>'+
+              '<div class="category-icon">'+icon+'</div>'+
+              '<h3>'+name+'</h3>'+
+              '<p>'+desc+'</p>'+
               '<span class="category-link">'+count+' Produkte ansehen →</span>'+
             '</a>';
           });
         }
 
-        // Render top products (sorted by rating)
+        // Render top products (sorted by rating) — max 9
         var topProducts = document.getElementById('topProducts');
         if(topProducts){
-          var sorted = products.slice().sort(function(a,b){ return b.rating - a.rating; });
+          var sorted = products.slice().sort(function(a,b){ return b.rating - a.rating; }).slice(0, 9);
           sorted.forEach(function(p){
             topProducts.innerHTML += renderProductCard(p);
           });
