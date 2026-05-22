@@ -82,6 +82,16 @@
     .cta-section p{color:var(--text-tertiary);margin-bottom:var(--s5);max-width:500px;margin-left:auto;margin-right:auto}
     .btn-primary{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s3) var(--s6);background:var(--accent);color:#fff;font-size:1rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
     .btn-primary:hover{background:var(--accent-hover);color:#fff}
+    .faq-section{padding:var(--s8) 0;background:var(--bg-panel)}
+    .faq-section h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:var(--s6)}
+    .faq-list{max-width:800px;margin:0 auto}
+    .faq-item{border-bottom:1px solid var(--border-subtle)}
+    .faq-question{width:100%;background:none;border:none;color:var(--text-primary);font-size:1rem;font-weight:500;font-family:var(--font-sans);padding:var(--s5) 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:var(--s4)}
+    .faq-question:hover{color:var(--accent)}
+    .faq-icon{flex-shrink:0;width:20px;height:20px;transition:transform 200ms ease;color:var(--text-quaternary)}
+    .faq-item.open .faq-icon{transform:rotate(180deg)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height 300ms ease;color:var(--text-tertiary);font-size:0.9rem;line-height:1.7;padding:0}
+    .faq-item.open .faq-answer{max-height:500px;padding-bottom:var(--s5)}
     .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
     .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
@@ -145,6 +155,38 @@
     <div class="container">
       <h2>Top-Produkte im Überblick</h2>
       <div class="products-grid" id="topProducts"></div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">Was ist der Unterschied zwischen einem Solargenerator und einer Powerstation?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer">Eine Powerstation ist ein tragbarer Akku mit Wechselrichter. Ein Solargenerator bezeichnet meist das Komplettttpaket aus Powerstation plus Solarpanel. Die Powerstation speichert Energie, das Solarpanel erzeugt sie aus Sonnenlicht.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">Welche Kapazität brauche ich für Notstrom?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer">Für den Notbetrieb von Kühlschrank und WLAN reichen ca. 500 Wh. Für längere Stromausfälle empfehlen wir mindestens 1.000 Wh. Unsere Notstrom-Empfehlungen starten bei 256 Wh und gehen bis zu 2.048 Wh.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">LiFePO4 oder NCM — welcher Akku ist besser?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer">LiFePO4 ist die bessere Wahl: 3.000+ Ladezyklen (vs. 500-800 bei NCM), sicherer und langlebiger. NCM ist leichter und kompakter, aber kürzerlebig. Für regelmäßigen Einsatz empfehlen wir LiFePO4.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">Wie lange dauert das Laden per Solarpanel?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer">Ein 200W-Solarpanel lädt eine 500Wh-Powerstation in ca. 3-5 Stunden bei idealer Sonneneinstrahlung. Die tatsächliche Zeit hängt von Sonnenstand, Wetter und Panel-Ausrichtung ab.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">Kann ich einen Solargenerator als Notstrom für mein ganzes Haus nutzen?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer">Ja, Modelle wie die EcoFlow Delta 2 Max (2.048Wh, 2.400W) oder BLUETTI Apex 300 (3.000W) können einen Haushalt für 1-3 Tage versorgen. Für den Dauerbetrieb empfehlen wir eine Notstromschaltung durch einen Elektriker installieren zu lassen.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">Wie lange hält eine Powerstation?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="faq-answer">LiFePO4-Powerstations halten 3.000+ Ladezyklen — das entspricht ca. 10 Jahren bei täglichem Gebrauch. NCM-Akku halten ca. 500-800 Zyklen (2-3 Jahre bei täglichem Gebrauch). Die Lebensdauer hängt auch von der Lade- und Entladetiefe ab.</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -214,6 +256,16 @@
       }
     }).catch(function(e){ console.error(e); });
   })();
+
+  // FAQ Toggle
+  function toggleFAQ(btn){
+    var item = btn.parentElement;
+    var isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+    // Toggle current
+    if(!isOpen) item.classList.add('open');
+  }
   </script>
 </body>
 </html>
