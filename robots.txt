@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Legal pages — low priority
-Disallow: /impressum.html
-Disallow: /datenschutz.html
-
+# Sitemap
 Sitemap: https://akku-test.de/sitemap.xml
+
+# Noindex legal pages
+Noindex: /impressum.html
+Noindex: /datenschutz.html
