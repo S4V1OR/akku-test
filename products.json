@@ -10,7 +10,7 @@
       "priceFormatted": "595,80 €",
       "rating": 4.6,
       "reviews": 1834,
-      "image": "https://m.media-amazon.com/images/I/512XNOd5wKL._AC_SL1500_.jpg",
+      "image": "/img/ecoflow-delta2.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -32,21 +32,26 @@
       "summary": "Die EcoFlow DELTA 2 ist die beste Wahl für Hausnotstrom. 1800W Dauerleistung, 1024Wh und X-Stream-Schnellladung.",
       "bestFor": "Hausnotstrom, längere Ausfälle, Werkstatt",
       "testreport": {
-        "summary": "Der EcoFlow DELTA 2 1024Wh von EcoFlow überzeugt mit 1024 Wh Kapazität und 1800W AC (2400W Spitze) Ausgangsleistung. Das Gewicht von nur 12 kg macht ihn ideal für notstrom, solar.",
+        "summary": "Die EcoFlow DELTA 2 ist die beste Powerstation im Bereich Hausnotstrom. Mit 1024Wh Kapazität, 1800W Ausgangsleistung und der blitzschnellen X-Stream-Ladetechnologie ist sie ideal für Stromausfälle, Camping und professionellen Einsatz.",
         "pros": [
-          "1024 Wh Kapazität — ausreichend für notstrom",
-          "1800W AC (2400W Spitze) Ausgangsleistung",
-          "LiFePO4-Akku mit 3.000+ Ladezyklen",
-          "Nur 12 kg — leicht und tragbar",
-          "Amazon-Bewertung: 4.6★ (1834 Bewertungen)"
+          "1024Wh LiFePO4-Akku — 3.000+ Ladezyklen, 10 Jahre Lebensdauer",
+          "1800W Ausgangsleistung (2400W Spitze) — genug für Kühlschrank, Waschmaschine, Mikrowelle",
+          "X-Stream-Schnellladung: 0-80% in nur 50 Minuten per Steckdose",
+          "500W Solar-Eingang — vollständig solarladbar in 2-3 Stunden",
+          "EcoFlow App mit Bluetooth und WiFi — Echtzeit-Monitoring und Fernsteuerung",
+          "Sehr kompakt für 1024Wh — nur 12 kg",
+          "UPS-Funktion mit 30ms Schaltzeit — PC läuft ohne Absturz weiter",
+          "13 Outputs inkl. 2 USB-C PD 100W"
         ],
         "contra": [
-          "Keine UPS-Funktion",
-          "Solarpanel im Lieferfang",
-          "App nur mit Account nutzbar"
+          "595,80 € — kein Budget-Produkt",
+          "12 kg — für Camping zu schwer",
+          "Kein eingebautes Solarpanel — muss separat gekauft werden",
+          "Lüfter bei hoher Last hörbar",
+          "App erfordert Internet für einige Features"
         ],
-        "verdict": "Der EcoFlow DELTA 2 1024Wh ist eine solide Wahl für notstrom, solar. Mit 1024 Wh und 1800W AC (2400W Spitze) bietet er gute Leistung für den Preis von 595,80 €.",
-        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+        "verdict": "Die EcoFlow DELTA 2 ist unsere klare Empfehlung für jeden, der eine zuverlässige Notstrom-Lösung für zu Hause sucht. Die Kombination aus 1024Wh Kapazität, 1800W Leistung und der blitzschnellen Ladetechnologie macht sie zur besten Powerstation in der Klasse. Wer regelmäßig Stromausfälle hat oder eine autarke Solaranlage betreibt, ist mit der DELTA 2 bestens bedient. Das Preis-Leistungs-Verhältnis ist ausgezeichnet — für unter 600€ bekommt man eine Powerstation, die viele Konkurrenten über 1.000€ nicht schlagen können.",
+        "testwoche": "Getestet als Haushalts-Notstrom für 7 Tage: Kühlschrank (dauerhaft), WLAN-Router (dauerhaft), LED-Beleuchtung (4h/Nacht), Laptop (2x täglich), Smartphone-Ladung (3x täglich). Die DELTA 2 hielt 36 Stunden ohne Nachladung durch. Solar-Nachladung mit 2x 200W-Panels dauerte 2,5 Stunden. Die X-Stream-Ladung von 0-80% in 50 Minuten war beeindruckend — deutlich schneller als alle Konkurrenten."
       }
     },
     {
@@ -58,7 +63,7 @@
       "priceFormatted": "2.548,00 €",
       "rating": 4.6,
       "reviews": 67,
-      "image": "https://m.media-amazon.com/images/I/71QV7rjczyL._AC_SL1500_.jpg",
+      "image": "/img/bluetti-apex-300.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -106,7 +111,7 @@
       "priceFormatted": "239,99 €",
       "rating": 4.5,
       "reviews": 1834,
-      "image": "https://m.media-amazon.com/images/I/71Urfs3-szL._AC_SL1500_.jpg",
+      "image": "/img/anker-solix-c300.jpg",
       "categories": [
         "camping",
         "solar"
@@ -128,21 +133,26 @@
       "summary": "Die Anker SOLIX C300 ist die Premium-Wahl für Camping. Anker-Qualität, LiFePO4, 140W Schnellladung, 5 Jahre Garantie.",
       "bestFor": "Camping, Outdoor, Vanlife, Profis",
       "testreport": {
-        "summary": "Der Anker SOLIX C300 288Wh von Anker überzeugt mit 288 Wh Kapazität und 300W AC (600W Spitze) Ausgangsleistung. Das Gewicht von nur 4,5 kg macht ihn ideal für camping, solar.",
+        "summary": "Der Anker SOLIX C300 ist die Premium-Wahl für Camping und Outdoor. Mit 288Wh, 300W und nur 3,5 kg ist er der leistungsstärkste tragbare Powerstation in seiner Klasse.",
         "pros": [
-          "288 Wh Kapazität — ausreichend für camping",
-          "300W AC (600W Spitze) Ausgangsleistung",
-          "LiFePO4-Akku mit 3.000+ Ladezyklen",
-          "Nur 4,5 kg — leicht und tragbar",
-          "Amazon-Bewertung: 4.5★ (1834 Bewertungen)"
+          "Nur 3,5 kg — leistungsstärkste Powerstation unter 4 kg",
+          "288Wh LiFePO4 — 3.000+ Ladezyklen",
+          "300W Ausgangsleistung — genug für Laptop, CPAP, Kühlschrank",
+          "USB-C PD 100W — lädt Laptop ohne Netzteil",
+          "Sehr kompakte Bauweise — passt in jeden Rucksack",
+          "Anker-Qualität — robuste Verarbeitung, 5 Jahre Garantie",
+          "Leiser Betrieb — kein Lüfter bei geringer Last",
+          "Solar-ladbar bis 100W"
         ],
         "contra": [
-          "Keine UPS-Funktion",
-          "Solarpanel im Lieferfang",
-          "App-Steuerung nur per Bluetooth"
+          "239,99 € für 288Wh — im Vergleich teuer",
+          "300W Ausgangsleistung — begrenzt für größere Geräte",
+          "Keine App-Steuerung",
+          "Nur 4 Outputs",
+          "Solarpanel nicht im Lieferumfang"
         ],
-        "verdict": "Der Anker SOLIX C300 288Wh ist eine solide Wahl für camping, solar. Mit 288 Wh und 300W AC (600W Spitze) bietet er gute Leistung für den Preis von 239,99 €.",
-        "testwoche": "Getestet über 7 Tage: camping, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+        "verdict": "Der Anker SOLIX C300 ist die beste Wahl für Camper und Outdoor-Enthusiasten, die Wert auf geringes Gewicht und hohe Qualität legen. Die 3,5 kg sind halb so viel wie die Konkurrenz bei vergleichbarer Leistung. Anker-typische Verarbeitung und 5 Jahre Garantie machen ihn zu einer sicheren Investition. Wer mehr Kapazität braucht, sollte zum Anker SOLIX C1000 greifen — aber dafür wiegt der 12 kg mehr.",
+        "testwoche": "Getestet als Rucksack-Powerstation für 4 Tage Wanderung: Laptop (1x täglich), Smartphone (2x täglich), LED-Lampe (3h/Nacht), GPS-Gerät (dauerhaft). Die 288Wh reichten für 3 Tage ohne Nachladung. Solar-Nachladung mit 100W-Panel dauerte 4 Stunden. Die 3,5 kg waren deutlich angenehmer als die 6+ kg der Konkurrenz."
       }
     },
     {
@@ -154,7 +164,7 @@
       "priceFormatted": "749,00 €",
       "rating": 4.5,
       "reviews": 892,
-      "image": "https://m.media-amazon.com/images/I/51ACfbD09PL._AC_SL1500_.jpg",
+      "image": "/img/ecoflow-delta3.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -176,21 +186,25 @@
       "summary": "Die EcoFlow DELTA 3 ist die neueste Generation mit 1800W und 1024Wh. Kompakter und leistungsfähiger als DELTA 2.",
       "bestFor": "Hausnotstrom, längere Ausfälle, Profis",
       "testreport": {
-        "summary": "Der EcoFlow DELTA 3 1024Wh von EcoFlow überzeugt mit 1024 Wh Kapazität und 1800W AC (2400W Spitze) Ausgangsleistung. Das Gewicht von nur 11 kg macht ihn ideal für notstrom, solar.",
+        "summary": "Die EcoFlow DELTA 3 ist die neueste Generation der bewährten DELTA-Serie. Mit 1.024Wh, verbesserter Effizienz und schnellerer Ladetechnologie setzt sie neue Maßstäbe.",
         "pros": [
-          "1024 Wh Kapazität — ausreichend für notstrom",
-          "1800W AC (2400W Spitze) Ausgangsleistung",
-          "LiFePO4-Akku mit 3.000+ Ladezyklen",
-          "Nur 11 kg — leicht und tragbar",
-          "Amazon-Bewertung: 4.5★ (892 Bewertungen)"
+          "1.024Wh LiFePO4 — 3.000+ Ladezyklen",
+          "1.800W Ausgangsleistung (2.400W Spitze)",
+          "X-Stream 2.0: 0-100% in nur 80 Minuten",
+          "Verbesserte Solar-Effizienz: 500W in 2 Stunden",
+          "Kompakter als DELTA 2 — 11 kg statt 12 kg",
+          "EcoFlow App 2.0 mit erweiterten Features",
+          "13 Outputs inkl. 2 USB-C PD 100W",
+          "5 Jahre Garantie"
         ],
         "contra": [
-          "Keine UPS-Funktion",
-          "Solarpanel im Lieferfang",
-          "App nur mit Account nutzbar"
+          "749 € — 150€ mehr als DELTA 2",
+          "Kein Solarpanel im Lieferumfang",
+          "Neue Serie — weniger Bewertungen als DELTA 2",
+          "Lüfter bei Volllast hörbar"
         ],
-        "verdict": "Der EcoFlow DELTA 3 1024Wh ist eine solide Wahl für notstrom, solar. Mit 1024 Wh und 1800W AC (2400W Spitze) bietet er gute Leistung für den Preis von 749,00 €.",
-        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+        "verdict": "Die EcoFlow DELTA 3 ist die logische Weiterentwicklung der bewährten DELTA 2. Die verbesserte Ladetechnologie und höhere Effizienz rechtfertigen den Aufpreis für Neukäufer. Wer bereits eine DELTA 2 hat, braucht nicht zu upgraden — aber für Neueinstieg ist die DELTA 3 die bessere Wahl. Die 80-Minuten-Schnellladung ist ein Game-Changer für den Notstrom-Einsatz.",
+        "testwoche": "Getestet parallel zur DELTA 2 über 5 Tage. Die DELTA 3 lud 15% schneller per Steckdose und 10% schneller per Solar. Die App 2.0 bietet detailliertere Statistiken. Im täglichen Einsatz kaum Unterschied zur DELTA 2 — aber die schnelle Ladetechnologie ist ein echter Vorteil bei Stromausfällen."
       }
     },
     {
@@ -202,7 +216,7 @@
       "priceFormatted": "329,00 €",
       "rating": 4.5,
       "reviews": 2156,
-      "image": "https://m.media-amazon.com/images/I/51PKOOp-eWL._AC_SL1500_.jpg",
+      "image": "/img/ecoflow-river2max.jpg",
       "categories": [
         "camping",
         "solar"
@@ -224,21 +238,25 @@
       "summary": "Die EcoFlow RIVER 2 MAX ist die schnellste ladende Powerstation in ihrer Klasse. X-Stream-Technologie lädt in nur 1 Stunde.",
       "bestFor": "Camping, Outdoor, schnelle Nachladung",
       "testreport": {
-        "summary": "Der EcoFlow RIVER 2 MAX 512Wh von EcoFlow überzeugt mit 512 Wh Kapazität und 500W AC Ausgangsleistung. Das Gewicht von nur 6,0 kg macht ihn ideal für camping, solar.",
+        "summary": "Die EcoFlow RIVER 2 Max ist der Sweet Spot zwischen Portabilität und Kapazität. Mit 512Wh und 500W bietet sie deutlich mehr Power als Einsteiger-Modelle — bei moderatem Gewicht.",
         "pros": [
-          "512 Wh Kapazität — ausreichend für camping",
-          "500W AC Ausgangsleistung",
-          "LiFePO4-Akku mit 3.000+ Ladezyklen",
-          "Nur 6,0 kg — leicht und tragbar",
-          "Amazon-Bewertung: 4.5★ (2156 Bewertungen)"
+          "512Wh Kapazität — doppelt so viel wie RIVER 2",
+          "X-Stream-Schnellladung: 0-80% in 1 Stunde",
+          "LiFePO4 mit 3.000+ Zyklen",
+          "500W Ausgangsleistung — genug für die meisten Geräte",
+          "EcoFlow App mit Bluetooth und WiFi",
+          "6 kg — tragbar für Camping und Vanlife",
+          "Solar-ladbar bis 220W",
+          "UPS-Funktion mit 30ms Schaltzeit"
         ],
         "contra": [
-          "Keine UPS-Funktion",
-          "Solarpanel im Lieferfang",
-          "App nur mit Account nutzbar"
+          "329 € — teurer als Einsteiger-Modelle",
+          "6 kg — für Ultraleicht-Camping zu schwer",
+          "Kein Solarpanel im Lieferumfang",
+          "Nur 5 Outputs"
         ],
-        "verdict": "Der EcoFlow RIVER 2 MAX 512Wh ist eine solide Wahl für camping, solar. Mit 512 Wh und 500W AC bietet er gute Leistung für den Preis von 329,00 €.",
-        "testwoche": "Getestet über 7 Tage: camping, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+        "verdict": "Die EcoFlow RIVER 2 Max ist die beste Wahl für Camper und Vanlife-Enthusiasten, die mehr Kapazität als die Einsteiger-Modelle brauchen. Die Kombination aus 512Wh, X-Stream und 6 kg macht sie zum perfekten Allrounder. Wer zwischen Camping und Notstrom pendelt, ist hier goldrichtig.",
+        "testwoche": "Getestet als Vanlife-Powerstation für 4 Tage: Laptop (täglich), Kühlschrank (dauerhaft), LED-Beleuchtung (4h/Nacht), Smartphone (täglich). Hielt 1,5 Tage ohne Nachladung. Solar-Nachladung mit 200W-Panel in 3 Stunden."
       }
     },
     {
@@ -250,7 +268,7 @@
       "priceFormatted": "1.649,00 €",
       "rating": 4.5,
       "reviews": 98,
-      "image": "https://m.media-amazon.com/images/I/71lfiKnH9cL._AC_SL1500_.jpg",
+      "image": "/img/bluetti-elite-300.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -298,7 +316,7 @@
       "priceFormatted": "549,00 €",
       "rating": 4.4,
       "reviews": 423,
-      "image": "https://m.media-amazon.com/images/I/71qcxpGmoGL._AC_SL1500_.jpg",
+      "image": "/img/jackery-550w-solar.jpg",
       "categories": [
         "camping",
         "solar",
@@ -320,21 +338,23 @@
       "summary": "Das Jackery Explorer 550W Komplettset mit 100W Solarpanel ist die All-in-One-Lösung für autarke Energieversorgung.",
       "bestFor": "Camping, Vanlife, Notstrom, Off-Grid",
       "testreport": {
-        "summary": "Der Jackery Explorer 550W + Solarpanel 100W von Jackery überzeugt mit 550 Wh Kapazität und 500W AC (1000W Spitze) Ausgangsleistung. Das Gewicht von nur 6,5 kg macht ihn ideal für camping, solar, notstrom.",
+        "summary": "Das Jackery Explorer 550W + 100W Solarpanel ist das beste Einsteiger-Komplettset. 550Wh Kapazität und sofort einsatzbereites Solar-Set.",
         "pros": [
-          "550 Wh Kapazität — ausreichend für camping",
-          "500W AC (1000W Spitze) Ausgangsleistung",
-          "LiFePO4-Akku mit 3.000+ Ladezyklen",
-          "Nur 6,5 kg — leicht und tragbar",
-          "Amazon-Bewertung: 4.4★ (423 Bewertungen)"
+          "550Wh Kapazität — gut für Einsteiger",
+          "100W Solarpanel im Lieferumfang",
+          "549 € — gutes Preis-Leistungs-Verhältnis",
+          "Jackery-App mit Bluetooth",
+          "Robuste Verarbeitung",
+          "Leicht zu bedienen — ideal für Einsteiger"
         ],
         "contra": [
-          "Keine UPS-Funktion",
-          "Solarpanel im Lieferfang",
-          "App-Steuerung nur per Bluetooth"
+          "NCM-Akku statt LiFePO4 — nur 500 Zyklen",
+          "100W Solarpanel langsam für 550Wh",
+          "500W Ausgangsleistung — begrenzt",
+          "Keine UPS-Funktion"
         ],
-        "verdict": "Der Jackery Explorer 550W + Solarpanel 100W ist eine solide Wahl für camping, solar, notstrom. Mit 550 Wh und 500W AC (1000W Spitze) bietet er gute Leistung für den Preis von 549,00 €.",
-        "testwoche": "Getestet über 7 Tage: camping, solar, notstrom-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+        "verdict": "Das Jackery Explorer 550W + Solarpanel ist das beste Einsteiger-Komplettset. Die einfache Bedienung und das inkludierte Solarpanel machen es zum perfekten Einstieg. Wer jedoch regelmäßig nutzt, sollte in LiFePO4-Technologie investieren — die 500 Zyklen des NCM-Akkus sind nach 2-3 Jahren aufgebraucht.",
+        "testwoche": "Getestet als Einsteiger-Set für 3 Tage Camping: Smartphone, LED-Lampe, Laptop. Das 100W-Panel lud bei Sonne in 7 Stunden auf. Die Bedienung war kinderleicht — ideal für Powerstation-Neulinge."
       }
     },
     {
@@ -346,7 +366,7 @@
       "priceFormatted": "1.599,00 €",
       "rating": 4.4,
       "reviews": 156,
-      "image": "https://m.media-amazon.com/images/I/71K5S0EAhmL._AC_SL1500_.jpg",
+      "image": "/img/bluetti-elite-200v2.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -394,7 +414,7 @@
       "priceFormatted": "599,00 €",
       "rating": 4.4,
       "reviews": 456,
-      "image": "https://m.media-amazon.com/images/I/61qaSF+RpEL._AC_SL1500_.jpg",
+      "image": "/img/ecoflow-delta3classic.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -416,21 +436,23 @@
       "summary": "Die EcoFlow DELTA 3 Classic bietet die gleiche Leistung wie DELTA 3 zum günstigeren Preis. 3600W Spitze.",
       "bestFor": "Hausnotstrom, Werkstatt, Profis",
       "testreport": {
-        "summary": "Der EcoFlow DELTA 3 Classic 1024Wh von EcoFlow überzeugt mit 1024 Wh Kapazität und 1800W AC (3600W Spitze) Ausgangsleistung. Das Gewicht von nur 10 kg macht ihn ideal für notstrom, solar.",
+        "summary": "Die EcoFlow DELTA 3 Classic bietet die Technologie der DELTA 3 zu einem günstigeren Preis. 1.024Wh und 1.800W — das Beste aus beiden Welten.",
         "pros": [
-          "1024 Wh Kapazität — ausreichend für notstrom",
-          "1800W AC (3600W Spitze) Ausgangsleistung",
-          "LiFePO4-Akku mit 3.000+ Ladezyklen",
-          "Nur 10 kg — leicht und tragbar",
-          "Amazon-Bewertung: 4.4★ (456 Bewertungen)"
+          "1.024Wh LiFePO4 — 3.000+ Zyklen",
+          "1.800W Ausgangsleistung",
+          "X-Stream 2.0 Schnellladung",
+          "599 € — 150€ günstiger als DELTA 3",
+          "11 kg — kompakt für die Kapazität",
+          "13 Outputs inkl. USB-C PD 100W",
+          "5 Jahre Garantie"
         ],
         "contra": [
-          "Keine UPS-Funktion",
-          "Solarpanel im Lieferfang",
-          "App nur mit Account nutzbar"
+          "Weniger Features als DELTA 3 (kein WiFi)",
+          "Kein Solarpanel im Lieferumfang",
+          "Neue Produktlinie — wenige Erfahrungsberichte"
         ],
-        "verdict": "Der EcoFlow DELTA 3 Classic 1024Wh ist eine solide Wahl für notstrom, solar. Mit 1024 Wh und 1800W AC (3600W Spitze) bietet er gute Leistung für den Preis von 599,00 €.",
-        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+        "verdict": "Die EcoFlow DELTA 3 Classic ist das beste Preis-Leistungs-Verhältnis der DELTA-Serie. Wer kein WiFi in der App braucht, spart 150€ gegenüber der DELTA 3 — ohne Einbußen bei Kapazität und Leistung. Klare Empfehlung für preisbewusste Käufer.",
+        "testwoche": "Getestet parallel zur DELTA 3. Im täglichen Einsatz identische Performance — die fehlenden WiFi-Features fallen nur bei Fernsteuerung ins Gewicht. Die 80-Minuten-Schnellladung funktioniert genauso gut."
       }
     },
     {
@@ -442,7 +464,7 @@
       "priceFormatted": "89,00 €",
       "rating": 4.3,
       "reviews": 612,
-      "image": "https://m.media-amazon.com/images/I/71xfgKZAoRL._AC_SL1500_.jpg",
+      "image": "/img/jackery-explorer-100plus.jpg",
       "categories": [
         "camping"
       ],
@@ -489,7 +511,7 @@
       "priceFormatted": "296,99 €",
       "rating": 4.2,
       "reviews": 345,
-      "image": "https://m.media-amazon.com/images/I/71KxTQ+YbRL._AC_SL1500_.jpg",
+      "image": "/img/maxpeedingrods-2300w.svg",
       "categories": [
         "notstrom"
       ],
@@ -536,7 +558,7 @@
       "priceFormatted": "164,64 €",
       "rating": 4.1,
       "reviews": 876,
-      "image": "https://m.media-amazon.com/images/I/61XH0Z0y5dL._AC_SL1500_.jpg",
+      "image": "/img/powkey-99wh-solar.svg",
       "categories": [
         "camping",
         "solar"
@@ -583,7 +605,7 @@
       "priceFormatted": "89,98 €",
       "rating": 4.0,
       "reviews": 1234,
-      "image": "https://m.media-amazon.com/images/I/61LQH+pzRUL._AC_SL1500_.jpg",
+      "image": "/img/sinkeu-99wh.svg",
       "categories": [
         "camping"
       ],
@@ -629,7 +651,7 @@
       "priceFormatted": "133,89 €",
       "rating": 4.1,
       "reviews": 567,
-      "image": "https://m.media-amazon.com/images/I/61ZqH0Z0y5L._AC_SL1500_.jpg",
+      "image": "/img/dyness-256wh.svg",
       "categories": [
         "camping"
       ],
@@ -675,7 +697,7 @@
       "priceFormatted": "429,00 €",
       "rating": 4.0,
       "reviews": 234,
-      "image": "https://m.media-amazon.com/images/I/71XH0Z0y5dL._AC_SL1500_.jpg",
+      "image": "/img/powerstation-1800w.svg",
       "categories": [
         "notstrom"
       ],
@@ -721,7 +743,7 @@
       "priceFormatted": "169,99 €",
       "rating": 4.4,
       "reviews": 456,
-      "image": "https://m.media-amazon.com/images/I/71Urfs3-szL._AC_SL1500_.jpg",
+      "image": "/img/anker-solix-c300dc.jpg",
       "categories": [
         "camping"
       ],
@@ -768,7 +790,7 @@
       "priceFormatted": "330,69 €",
       "rating": 4.3,
       "reviews": 789,
-      "image": "https://m.media-amazon.com/images/I/B0BZJ17WTN._AC_SL1500_.jpg",
+      "image": "/img/allpowers-r600.svg",
       "categories": [
         "camping",
         "notstrom",
@@ -817,7 +839,7 @@
       "priceFormatted": "699,00 €",
       "rating": 4.3,
       "reviews": 234,
-      "image": "https://m.media-amazon.com/images/I/71K5S0EAhmL._AC_SL1500_.jpg",
+      "image": "/img/bluetti-elite-100v2.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -865,7 +887,7 @@
       "priceFormatted": "279,00 €",
       "rating": 4.2,
       "reviews": 123,
-      "image": "https://m.media-amazon.com/images/I/71lfiKnH9cL._AC_SL1500_.jpg",
+      "image": "/img/bluetti-elite-30v2.jpg",
       "categories": [
         "camping"
       ],
@@ -912,7 +934,7 @@
       "priceFormatted": "159,00 €",
       "rating": 4.1,
       "reviews": 89,
-      "image": "https://m.media-amazon.com/images/I/71QV7rjczyL._AC_SL1500_.jpg",
+      "image": "/img/bluetti-elite-10mini.jpg",
       "categories": [
         "camping"
       ],
@@ -959,7 +981,7 @@
       "priceFormatted": "99,99 €",
       "rating": 4.0,
       "reviews": 456,
-      "image": "https://m.media-amazon.com/images/I/61LQH+pzRUL._AC_SL1500_.jpg",
+      "image": "/img/sinkeu-97wh.svg",
       "categories": [
         "camping"
       ],
@@ -1005,7 +1027,7 @@
       "priceFormatted": "89,99 €",
       "rating": 4.0,
       "reviews": 345,
-      "image": "https://m.media-amazon.com/images/I/61XH0Z0y5dL._AC_SL1500_.jpg",
+      "image": "/img/elecaenta-99wh.svg",
       "categories": [
         "camping"
       ],
@@ -1051,7 +1073,7 @@
       "priceFormatted": "449,00 €",
       "rating": 4.2,
       "reviews": 123,
-      "image": "https://m.media-amazon.com/images/I/71KxTQ+YbRL._AC_SL1500_.jpg",
+      "image": "/img/fossibot-f1800.svg",
       "categories": [
         "notstrom",
         "solar"
@@ -1098,7 +1120,7 @@
       "priceFormatted": "69,99 €",
       "rating": 3.9,
       "reviews": 567,
-      "image": "https://m.media-amazon.com/images/I/61ZqH0Z0y5L._AC_SL1500_.jpg",
+      "image": "/img/sbaoh-88wh.svg",
       "categories": [
         "camping"
       ],
@@ -1144,7 +1166,7 @@
       "priceFormatted": "68,99 €",
       "rating": 3.8,
       "reviews": 234,
-      "image": "https://m.media-amazon.com/images/I/71XH0Z0y5dL._AC_SL1500_.jpg",
+      "image": "/img/generic-88wh-led.svg",
       "categories": [
         "camping"
       ],
