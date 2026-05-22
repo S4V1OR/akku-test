@@ -9,7 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="canonical" href="https://akku-test.de/">
   <meta property="og:title" content="Powerstation Vergleich 2026 — Die besten Powerstations & Solargeneratoren">
-  <meta property="og:description" content="Der große Powerstation Vergleich 2026. Unabhängige Tests von Powerstations & Solargeneratoren. Anker, Jackery, BLUETTI, EcoFlow — verglichen und bewertet.">
+  <meta property="og:description" content="Der große Powerstation Vergleich 2026. Anker, Jackery, BLUETTI, EcoFlow — verglichen und bewertet.">
   <meta property="og:url" content="https://akku-test.de/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="akku-test.de">
@@ -26,13 +26,10 @@
     a:hover{color:var(--accent-hover)}
     img{max-width:100%;height:auto;display:block}
     .container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--s5)}
-
-    /* Grid Background */
     body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;z-index:0}
     body>*{position:relative;z-index:1}
-
-    /* Nav */
     .nav{position:sticky;top:0;z-index:100;background:rgba(8,9,10,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-subtle)}
+    [data-theme="light"] .nav{background:rgba(255,255,255,0.9);border-bottom-color:var(--border-subtle)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;height:56px}
     .nav-logo{display:flex;align-items:center;gap:var(--s2);color:var(--text-primary);font-weight:600;font-size:1rem;text-decoration:none}
     .nav-logo:hover{color:var(--text-primary)}
@@ -40,56 +37,32 @@
     .nav-links{display:flex;align-items:center;gap:var(--s4);list-style:none}
     .nav-links a{color:var(--text-tertiary);font-size:0.85rem;font-weight:500;text-decoration:none;transition:color 150ms ease}
     .nav-links a:hover,.nav-links a.active{color:var(--text-primary)}
-    .nav-cta{display:inline-flex;align-items:center;gap:var(--s1);padding:var(--s1) var(--s3);background:var(--accent);color:#fff!important;font-size:0.8rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
-    .nav-cta:hover{background:var(--accent-hover);color:#fff!important}
+    .nav-actions{display:flex;align-items:center;gap:var(--s2)}
     .nav-toggle{display:none;background:none;border:none;color:var(--text-primary);cursor:pointer;padding:var(--s2)}
     .nav-toggle svg{width:24px;height:24px}
-    .nav-actions{display:flex;align-items:center;gap:var(--s2)}
     .theme-toggle{background:none;border:1px solid var(--border-default);color:var(--text-tertiary);cursor:pointer;padding:var(--s1);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;transition:all 150ms ease;width:36px;height:36px}
     .theme-toggle:hover{border-color:var(--text-tertiary);color:var(--text-secondary)}
     .theme-toggle svg{width:18px;height:18px}
-
-    /* Hero */
     .hero{padding:var(--s9) 0 var(--s7);text-align:center;position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(94,106,210,0.08) 0%,transparent 70%);pointer-events:none}
-    .hero-badge{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s1) var(--s3);background:var(--accent-glow);border:1px solid var(--accent-border);border-radius:var(--r-pill);font-size:0.72rem;font-weight:500;color:var(--accent-hover);margin-bottom:var(--s5);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em}
-    .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;letter-spacing:-0.03em;margin-bottom:var(--s4);background:linear-gradient(135deg,var(--text-primary) 0%,var(--text-secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .hero-subtitle{font-size:1.1rem;color:var(--text-tertiary);max-width:600px;margin:0 auto var(--s6);line-height:1.6}
-    .hero-actions{display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s3) var(--s5);border-radius:var(--r-md);font-size:0.9rem;font-weight:500;text-decoration:none;transition:all 150ms ease;cursor:pointer;border:none;font-family:var(--font-sans)}
-    .btn-primary{background:var(--accent);color:#fff}
-    .btn-primary:hover{background:var(--accent-hover);color:#fff}
-    .btn-ghost{background:transparent;border:1px solid var(--border-default);color:var(--text-secondary)}
-    .btn-ghost:hover{border-color:var(--text-tertiary);color:var(--text-primary)}
-
-    /* Categories */
-    .categories{padding:var(--s7) 0}
-    .section-title{font-size:1.5rem;font-weight:600;margin-bottom:var(--s2);letter-spacing:-0.02em}
-    .section-subtitle{color:var(--text-tertiary);margin-bottom:var(--s6);font-size:0.95rem}
-    .category-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--s4)}
-    .category-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);padding:var(--s6);transition:all 200ms ease;position:relative;overflow:hidden}
-    .category-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(94,106,210,0.04) 0%,transparent 50%);opacity:0;transition:opacity 200ms ease}
+    .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-0.03em;margin-bottom:var(--s4);background:linear-gradient(135deg,var(--text-primary) 0%,var(--text-secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-subtitle{font-size:1.1rem;color:var(--text-tertiary);max-width:640px;margin:0 auto;line-height:1.7}
+    .categories-section{padding:var(--s8) 0}
+    .categories-section h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:var(--s6)}
+    .categories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--s4)}
+    .category-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);padding:var(--s6);text-align:center;transition:all 200ms ease;display:block}
     .category-card:hover{border-color:var(--accent-border);transform:translateY(-2px)}
-    .category-card:hover::before{opacity:1}
-    .category-icon{font-size:2rem;margin-bottom:var(--s3)}
-    .category-card h3{font-size:1.1rem;font-weight:600;margin-bottom:var(--s2)}
-    .category-card p{color:var(--text-tertiary);font-size:0.88rem;line-height:1.6;margin-bottom:var(--s4)}
-    .category-link{display:inline-flex;align-items:center;gap:var(--s1);font-size:0.85rem;font-weight:500;color:var(--accent)}
-    .category-link:hover{color:var(--accent-hover)}
-
-    /* Products */
-    .products-section{padding:var(--s7) 0}
-    .products-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:var(--s5);flex-wrap:wrap;gap:var(--s3)}
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--s4)}
-    .product-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);overflow:hidden;transition:all 200ms ease;position:relative}
+    .category-icon{font-size:2.5rem;margin-bottom:var(--s3)}
+    .category-card h3{font-size:1.1rem;font-weight:600;margin-bottom:var(--s2);color:var(--text-primary)}
+    .category-card p{font-size:0.85rem;color:var(--text-tertiary);line-height:1.6;margin-bottom:var(--s4)}
+    .category-link{font-size:0.85rem;color:var(--accent);font-weight:500}
+    .top-products-section{padding:var(--s8) 0;background:var(--bg-panel)}
+    .top-products-section h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:var(--s6)}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--s4)}
+    .product-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);overflow:hidden;transition:all 200ms ease}
     .product-card:hover{border-color:var(--accent-border);transform:translateY(-2px)}
     .product-image-wrap{position:relative;height:200px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border-subtle)}
-    .product-image-wrap img{max-height:180px;max-width:90%;object-fit:contain;transition:transform 300ms ease}
-    .product-card:hover .product-image-wrap img{transform:scale(1.05)}
-    .product-badges{position:absolute;top:var(--s3);left:var(--s3);display:flex;gap:var(--s1);flex-wrap:wrap}
-    .badge{display:inline-block;padding:2px 8px;background:var(--accent-glow);border:1px solid var(--accent-border);border-radius:var(--r-pill);font-size:0.65rem;font-weight:500;color:var(--accent-hover);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.06em}
-    .badge-success{background:rgba(52,211,153,0.1);border-color:rgba(52,211,153,0.2);color:var(--success)}
-    .badge-warning{background:rgba(251,191,36,0.1);border-color:rgba(251,191,36,0.2);color:var(--warning)}
+    .product-image-wrap img{max-height:180px;max-width:90%;object-fit:contain}
     .product-info{padding:var(--s4)}
     .product-brand{font-size:0.72rem;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-mono);margin-bottom:var(--s1)}
     .product-name{font-size:0.95rem;font-weight:600;margin-bottom:var(--s2);line-height:1.4}
@@ -99,62 +72,30 @@
     .product-specs{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2);margin-bottom:var(--s4);padding:var(--s3);background:var(--bg-elevated);border-radius:var(--r-sm)}
     .spec{font-size:0.75rem;color:var(--text-tertiary)}
     .spec strong{color:var(--text-secondary);font-weight:500}
+    .product-summary{font-size:0.85rem;color:var(--text-tertiary);line-height:1.6;margin-bottom:var(--s4)}
     .product-footer{display:flex;align-items:center;justify-content:space-between}
     .product-price{font-size:1.1rem;font-weight:700;color:var(--text-primary)}
-    .product-price span{font-size:0.75rem;font-weight:400;color:var(--text-quaternary)}
-    .btn-amazon{display:inline-flex;align-items:center;gap:var(--s1);padding:var(--s2) var(--s4);background:var(--accent);color:#fff;font-size:0.8rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
+    .btn-amazon{display:inline-flex;align-items:center;gap:var(--s1);padding:var(--s2) var(--s4);background:var(--accent);color:#fff;font-size:0.8rem;font-weight:500;border-radius:var(--r-md);text-decoration:none}
     .btn-amazon:hover{background:var(--accent-hover);color:#fff}
-
-    /* Filter */
-    .filter-bar{display:flex;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s5)}
-    .filter-select{background:var(--bg-panel);border:1px solid var(--border-default);color:var(--text-secondary);padding:var(--s2) var(--s3);border-radius:var(--r-md);font-size:0.85rem;font-family:var(--font-sans);cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a8f98' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px}
-    .filter-select:focus{outline:none;border-color:var(--accent)}
-    .filter-reset{background:transparent;border:1px solid var(--border-default);color:var(--text-tertiary);padding:var(--s2) var(--s3);border-radius:var(--r-md);font-size:0.85rem;font-family:var(--font-sans);cursor:pointer;transition:all 150ms ease}
-    .filter-reset:hover{border-color:var(--text-tertiary);color:var(--text-secondary)}
-
-    /* Comparison Table */
-    .comparison-section{padding:var(--s7) 0}
-    .comparison-table{width:100%;border-collapse:collapse;margin-top:var(--s4);overflow-x:auto;display:block}
-    .comparison-table th,.comparison-table td{padding:var(--s3) var(--s4);text-align:left;border-bottom:1px solid var(--border-subtle);font-size:0.85rem;white-space:nowrap}
-    .comparison-table th{color:var(--text-quaternary);font-weight:500;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-mono);background:var(--bg-panel);position:sticky;top:0}
-    .comparison-table td{color:var(--text-secondary)}
-    .comparison-table tr:hover td{background:var(--bg-hover)}
-    .comparison-table .product-link{color:var(--text-primary);font-weight:500;text-decoration:none}
-    .comparison-table .product-link:hover{color:var(--accent)}
-
-    /* FAQ */
-    .faq-section{padding:var(--s7) 0}
-    .faq-list{max-width:800px}
-    .faq-item{border-bottom:1px solid var(--border-subtle)}
-    .faq-question{width:100%;background:none;border:none;color:var(--text-primary);font-size:1rem;font-weight:500;font-family:var(--font-sans);padding:var(--s5) 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:var(--s4)}
-    .faq-question:hover{color:var(--accent)}
-    .faq-icon{flex-shrink:0;width:20px;height:20px;transition:transform 200ms ease;color:var(--text-quaternary)}
-    .faq-item.open .faq-icon{transform:rotate(180deg)}
-    .faq-answer{max-height:0;overflow:hidden;transition:max-height 300ms ease,color 200ms ease;color:var(--text-tertiary);font-size:0.9rem;line-height:1.7;padding:0}
-    .faq-item.open .faq-answer{max-height:500px;padding-bottom:var(--s5)}
-
-    /* Footer */
+    .cta-section{padding:var(--s8) 0;text-align:center}
+    .cta-section h2{font-size:1.5rem;font-weight:600;margin-bottom:var(--s3)}
+    .cta-section p{color:var(--text-tertiary);margin-bottom:var(--s5);max-width:500px;margin-left:auto;margin-right:auto}
+    .btn-primary{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s3) var(--s6);background:var(--accent);color:#fff;font-size:1rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
+    .btn-primary:hover{background:var(--accent-hover);color:#fff}
     .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
     .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
     .footer-links{display:flex;gap:var(--s4);list-style:none}
-    .footer-links a{font-size:0.8rem;color:var(--text-quaternary);text-decoration:none}
-    .footer-links a:hover{color:var(--text-secondary)}
+    .footer-links a{font-size:0.8rem;color:var(--text-quaternary)}
     .footer-disclaimer{padding-top:var(--s4);border-top:1px solid var(--border-subtle);font-size:0.72rem;color:var(--text-quaternary);line-height:1.6}
     .build-timestamp{font-size:0.7rem;color:var(--text-quaternary);margin-top:var(--s3);opacity:0.5}
-
-    /* Mobile */
     @media(max-width:768px){
       .nav-links{display:none}
       .nav-toggle{display:block}
       .nav-links.open{display:flex;flex-direction:column;position:absolute;top:56px;left:0;right:0;background:var(--bg-panel);border-bottom:1px solid var(--border-subtle);padding:var(--s4);gap:var(--s3)}
-      .hero{padding:var(--s7) 0 var(--s5)}
+      [data-theme="light"] .nav-links.open{background:#fff}
       .hero h1{font-size:1.8rem}
-      .category-grid{grid-template-columns:1fr}
-      .products-grid{grid-template-columns:1fr}
-      .product-specs{grid-template-columns:1fr}
-      .comparison-table{font-size:0.78rem}
-      .comparison-table th,.comparison-table td{padding:var(--s2) var(--s3)}
+      .categories-grid,.products-grid{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -167,7 +108,7 @@
           <span>akku-test.de</span>
         </a>
         <ul class="nav-links" id="navLinks">
-        <ul class="nav-links" id="navLinks">
+          <li><a href="/" class="active">Startseite</a></li>
           <li><a href="/camping.html">Camping</a></li>
           <li><a href="/notstrom.html">Notstrom</a></li>
           <li><a href="/solar.html">Solar</a></li>
@@ -188,206 +129,90 @@
 
   <header class="hero">
     <div class="container">
-      <div class="hero-badge">POWERSTATION VERGLEICH — JUNI 2026</div>
-      <h1>Die besten Powerstations<br>im Test & Vergleich</h1>
-      <p class="hero-subtitle">Unabhängige Tests von Powerstations & Solargeneratoren. Anker, Jackery, BLUETTI, EcoFlow — verglichen und bewertet.</p>
-      <div class="hero-actions">
-        <a href="/vergleich.html" class="btn btn-primary">Alle Produkte vergleichen →</a>
-        <a href="#kategorien" class="btn btn-ghost">Kategorien entdecken</a>
-      </div>
+      <h1>Powerstation Vergleich 2026<br>Die besten Powerstations & Solargeneratoren</h1>
+      <p class="hero-subtitle">Unabhängige Tests und Vergleiche von Powerstations, Solargeneratoren und Solar-Kits. Transparent, ehrlich, ohne Hersteller-Geld.</p>
     </div>
   </header>
 
-  <section class="categories" id="kategorien">
+  <section class="categories-section">
     <div class="container">
-      <h2 class="section-title">Nach Kategorie entdecken</h2>
-      <p class="section-subtitle">Finde die passende Powerstation für deinen Einsatzzweck</p>
-      <div class="category-grid" id="categoryGrid"></div>
+      <h2>Nach Kategorie entdecken</h2>
+      <div class="categories-grid" id="categoryGrid"></div>
     </div>
   </section>
 
-  <section class="products-section">
+  <section class="top-products-section">
     <div class="container">
-      <div class="products-header">
-        <div>
-          <h2 class="section-title">Top-Empfehlungen</h2>
-          <p class="section-subtitle">Die meistverkauften Powerstations im Juli 2026</p>
-        </div>
-        <a href="/vergleich.html" class="btn btn-ghost">Alle ansehen →</a>
-      </div>
+      <h2>Top-Produkte im Überblick</h2>
       <div class="products-grid" id="topProducts"></div>
     </div>
   </section>
 
-  <section class="faq-section" id="faq">
+  <section class="cta-section">
     <div class="container">
-      <h2 class="section-title">Häufige Fragen</h2>
-      <p class="section-subtitle">Alles was du über Powerstations wissen musst</p>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Was ist der Unterschied zwischen einer Powerstation und einem Solargenerator?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-          <div class="faq-answer">Eine Powerstation ist ein tragbarer Akku mit Wechselrichter. Ein Solargenerator bezeichnet meist das Komplettpaket aus Powerstation plus Solarpanel. In der Praxis werden die Begriffe oft synonym verwendet.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Welche Kapazität brauche ich für Notstrom?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-          <div class="faq-answer">Für den Notbetrieb von Kühlschrank und WLAN reichen ca. 500 Wh. Für längere Stromausfälle empfehlen wir mindestens 1.000 Wh. Unsere 1800W-Powerstation mit 1102Wh hält einen Haushalt 1-2 Tage am Laufen.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">LiFePO4 oder NCM — welcher Akku ist besser?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-          <div class="faq-answer">LiFePO4 ist die bessere Wahl: 3.000+ Ladezyklen (vs. 500-800 bei NCM), sicherer und langlebiger. Nach 10 Jahren Nutzung hat eine LiFePO4-Batterie noch 80% Kapazität. NCM ist günstiger, muss aber nach 2-3 Jahren getauscht werden.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Wie lange dauert das Laden per Solarpanel?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-          <div class="faq-answer">Ein 200W-Solarpanel lädt eine 500Wh-Powerstation in ca. 3-5 Stunden bei idealer Sonneneinstrahlung. Die Powkey 99Wh mit 40W-Panel ist in 4-6 Stunden voll. Die Anker SOLIX C300 lädt per 140W PD in nur 2 Stunden.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">Kann ich eine Powerstation als Notstrom für mein ganzes Haus nutzen?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
-          <div class="faq-answer">Ja, Modelle mit 1.000Wh+ und 1.500W+ Ausgangsleistung können einen Haushalt für 1-3 Tage versorgen. Die 1800W-Powerstation (1102Wh) betreibt Kühlschrank, WLAN, Laptop und Beleuchtung gleichzeitig.</div>
-        </div>
-      </div>
+      <h2>Alle Produkte im Detail</h2>
+      <p>Vergleiche alle Powerstations mit Filtern nach Hersteller, Kapazität, Leistung und Preis.</p>
+      <a href="/vergleich.html" class="btn-primary">Zum Vergleich →</a>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-copy">© 2026 akku-test.de — Alle Rechte vorbehalten</span>
+        <span class="footer-copy">© 2026 akku-test.de</span>
         <ul class="footer-links">
           <li><a href="/ueber-uns.html">Über uns</a></li>
           <li><a href="/impressum.html">Impressum</a></li>
           <li><a href="/datenschutz.html">Datenschutz</a></li>
         </ul>
       </div>
-      <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l. Als Amazon-Partner verdienen wir an qualifizierten Käufen.</div>
-      <div class="build-timestamp" id="buildTimestamp"></div>
+      <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
+      <div class="build-timestamp">Build: 22.05.2026 19:30 CEST</div>
     </div>
   </footer>
 
   <script>
   (function(){
-    // Mobile nav toggle
+    // Nav toggle
     var toggle = document.getElementById('navToggle');
     var navLinks = document.getElementById('navLinks');
-    if(toggle && navLinks){
-      toggle.addEventListener('click', function(){
-        var isOpen = navLinks.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
+    if(toggle && navLinks){ toggle.addEventListener('click', function(){ navLinks.classList.toggle('open'); }); }
 
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        var item = btn.parentElement;
-        var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
-        if(!isOpen) item.classList.add('open');
-      });
-    });
-
-    // Build timestamp
-    var ts = new Date();
-    var pad = function(n){ return n<10?'0'+n:n; };
-    var tsStr = pad(ts.getDate())+'.'+pad(ts.getMonth()+1)+'.'+ts.getFullYear()+' '+pad(ts.getHours())+':'+pad(ts.getMinutes())+' CEST';
-    var el = document.getElementById('buildTimestamp');
-    if(el) el.textContent = 'Build: ' + tsStr;
-
-    // Load products
-    fetch('/products.json')
-      .then(function(r){ return r.json(); })
-      .then(function(data){
-        var products = data.products;
-        var categories = data.categories;
-
-        // Render categories
-        var catGrid = document.getElementById('categoryGrid');
-        if(catGrid){
-          var catArray = Array.isArray(categories) ? categories : Object.keys(categories);
-          catArray.forEach(function(cat){
-            var key = cat.id || cat;
-            var name = cat.name || key;
-            var icon = cat.icon || '';
-            var desc = cat.description || '';
-            var count = products.filter(function(p){ return p.categories.indexOf(key) !== -1; }).length;
-            catGrid.innerHTML += '<a href="/'+key+'.html" class="category-card">'+
-              '<div class="category-icon">'+icon+'</div>'+
-              '<h3>'+name+'</h3>'+
-              '<p>'+desc+'</p>'+
-              '<span class="category-link">'+count+' Produkte ansehen →</span>'+
-            '</a>';
-          });
-        }
-
-        // Render top products (sorted by rating) — max 9
-        var topProducts = document.getElementById('topProducts');
-        if(topProducts){
-          var sorted = products.slice().sort(function(a,b){ return b.rating - a.rating; }).slice(0, 9);
-          sorted.forEach(function(p){
-            topProducts.innerHTML += renderProductCard(p);
-          });
-        }
-      })
-      .catch(function(e){ console.error('Failed to load products:', e); });
+    // Theme Toggle
+    var html = document.documentElement;
+    var themeToggleBtn = document.getElementById('themeToggle');
+    var iconDark = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-dark') : null;
+    var iconLight = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-light') : null;
+    var savedTheme = localStorage.getItem('theme');
+    if(savedTheme === 'light'){ html.setAttribute('data-theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; }
+    if(themeToggleBtn){ themeToggleBtn.addEventListener('click', function(){ var isLight = html.getAttribute('data-theme')==='light'; if(isLight){ html.removeAttribute('data-theme'); localStorage.setItem('theme','dark'); if(iconDark) iconDark.style.display='block'; if(iconLight) iconLight.style.display='none'; }else{ html.setAttribute('data-theme','light'); localStorage.setItem('theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; } }); }
 
     function renderProductCard(p){
-      var stars = '★'.repeat(Math.round(p.rating)) + '☆'.repeat(5-Math.round(p.rating));
-      var badges = (p.tags||[]).slice(0,3).map(function(t){ return '<span class="badge">'+t+'</span>'; }).join('');
-      var specs = p.specs || {};
-      return '<article class="product-card">'+
-        '<div class="product-image-wrap">'+
-          (p.image ? '<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">' : '<div style="color:var(--text-quaternary);font-size:0.8rem">Kein Bild</div>')+
-          '<div class="product-badges">'+badges+'</div>'+
-        '</div>'+
-        '<div class="product-info">'+
-          '<div class="product-brand">'+p.brand+'</div>'+
-          '<h3 class="product-name">'+p.name+'</h3>'+
-          '<div class="product-rating"><span class="stars">'+stars+'</span><span class="rating-text">'+p.rating+' ('+p.reviews+' Bewertungen)</span></div>'+
-          '<div class="product-specs">'+
-            '<div class="spec"><strong>Kapazität:</strong> '+(specs.capacity||'—')+'</div>'+
-            '<div class="spec"><strong>Leistung:</strong> '+(specs.output||'—')+'</div>'+
-            '<div class="spec"><strong>Gewicht:</strong> '+(specs.weight||'—')+'</div>'+
-            '<div class="spec"><strong>Akku:</strong> '+(specs.battery||'—')+'</div>'+
-          '</div>'+
-          '<div class="product-footer">'+
-            '<div class="product-price">'+p.priceFormatted+' <span>€</span></div>'+
-            '<a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a>'+
-          '</div>'+
-        '</div>'+
-      '</article>';
-    }
-  })();
-
-  // Theme Toggle
-  (function(){
-    var html = document.documentElement;
-    var toggle = document.getElementById('themeToggle');
-    var iconDark = toggle ? toggle.querySelector('.theme-icon-dark') : null;
-    var iconLight = toggle ? toggle.querySelector('.theme-icon-light') : null;
-
-    // Load saved theme
-    var saved = localStorage.getItem('theme');
-    if(saved === 'light'){
-      html.setAttribute('data-theme','light');
-      if(iconDark) iconDark.style.display = 'none';
-      if(iconLight) iconLight.style.display = 'block';
+      var stars = '★'.repeat(Math.round(p.rating))+'☆'.repeat(5-Math.round(p.rating));
+      var s = p.specs||{};
+      return '<article class="product-card"><div class="product-image-wrap">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':'')+'</div><div class="product-info"><div class="product-brand">'+p.brand+'</div><h3 class="product-name">'+p.name+'</h3><div class="product-rating"><span class="stars">'+stars+'</span><span class="rating-text">'+p.rating+' ('+p.reviews+' Bewertungen)</span></div><div class="product-specs"><div class="spec"><strong>Kapazität:</strong> '+(s.capacity||'—')+'</div><div class="spec"><strong>Leistung:</strong> '+(s.output||'—')+'</div><div class="spec"><strong>Gewicht:</strong> '+(s.weight||'—')+'</div><div class="spec"><strong>Akku:</strong> '+(s.battery||'—')+'</div></div><p class="product-summary">'+p.summary+'</p><div class="product-footer"><div class="product-price">'+p.priceFormatted+'</div><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a></div></div></article>';
     }
 
-    if(toggle){
-      toggle.addEventListener('click', function(){
-        var isLight = html.getAttribute('data-theme') === 'light';
-        if(isLight){
-          html.removeAttribute('data-theme');
-          localStorage.setItem('theme','dark');
-          if(iconDark) iconDark.style.display = 'block';
-          if(iconLight) iconLight.style.display = 'none';
-        } else{
-          html.setAttribute('data-theme','light');
-          localStorage.setItem('theme','light');
-          if(iconDark) iconDark.style.display = 'none';
-          if(iconLight) iconLight.style.display = 'block';
-        }
-      });
-    }
+    fetch('/products.json').then(function(r){return r.json();}).then(function(data){
+      var products = data.products;
+      var categories = data.categories || [];
+
+      // Render categories
+      var catGrid = document.getElementById('categoryGrid');
+      if(catGrid && Array.isArray(categories)){
+        categories.forEach(function(cat){
+          var count = products.filter(function(p){ return p.categories.indexOf(cat.id) !== -1; }).length;
+          catGrid.innerHTML += '<a href="/'+cat.id+'.html" class="category-card"><div class="category-icon">'+cat.icon+'</div><h3>'+cat.name+'</h3><p>'+cat.description+'</p><span class="category-link">'+count+' Produkte →</span></a>';
+        });
+      }
+
+      // Render top 9 products
+      var topProducts = document.getElementById('topProducts');
+      if(topProducts){
+        var sorted = products.slice().sort(function(a,b){ return b.rating - a.rating; }).slice(0, 9);
+        sorted.forEach(function(p){ topProducts.innerHTML += renderProductCard(p); });
+      }
+    }).catch(function(e){ console.error(e); });
   })();
   </script>
 </body>
