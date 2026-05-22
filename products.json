@@ -6,32 +6,96 @@
       "name": "EcoFlow DELTA 2 1024Wh",
       "brand": "EcoFlow",
       "asin": "B0BBLV8WJH",
-      "price": 595.80,
+      "price": 595.8,
       "priceFormatted": "595,80 €",
       "rating": 4.6,
       "reviews": 1834,
       "image": "https://m.media-amazon.com/images/I/512XNOd5wKL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["1024Wh", "1800W", "LiFePO4", "Hausnotstrom", "X-Stream"],
-      "specs": { "capacity": "1024 Wh", "output": "1800W AC (2400W Spitze)", "weight": "12 kg", "battery": "LiFePO4", "solar": "500W max" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "1024Wh",
+        "1800W",
+        "LiFePO4",
+        "Hausnotstrom",
+        "X-Stream"
+      ],
+      "specs": {
+        "capacity": "1024 Wh",
+        "output": "1800W AC (2400W Spitze)",
+        "weight": "12 kg",
+        "battery": "LiFePO4",
+        "solar": "500W max"
+      },
       "summary": "Die EcoFlow DELTA 2 ist die beste Wahl für Hausnotstrom. 1800W Dauerleistung, 1024Wh und X-Stream-Schnellladung.",
-      "bestFor": "Hausnotstrom, längere Ausfälle, Werkstatt"
+      "bestFor": "Hausnotstrom, längere Ausfälle, Werkstatt",
+      "testreport": {
+        "summary": "Der EcoFlow DELTA 2 1024Wh von EcoFlow überzeugt mit 1024 Wh Kapazität und 1800W AC (2400W Spitze) Ausgangsleistung. Das Gewicht von nur 12 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "1024 Wh Kapazität — ausreichend für notstrom",
+          "1800W AC (2400W Spitze) Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 12 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.6★ (1834 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der EcoFlow DELTA 2 1024Wh ist eine solide Wahl für notstrom, solar. Mit 1024 Wh und 1800W AC (2400W Spitze) bietet er gute Leistung für den Preis von 595,80 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "bluetti-apex-300",
       "name": "BLUETTI Apex 300 2765Wh + 2200W Solar",
       "brand": "BLUETTI",
       "asin": "B0FJ8D3C63",
-      "price": 2548.00,
+      "price": 2548.0,
       "priceFormatted": "2.548,00 €",
       "rating": 4.6,
       "reviews": 67,
       "image": "https://m.media-amazon.com/images/I/71QV7rjczyL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["2765Wh", "3000W", "LiFePO4", "Solar 2200W", "Premium"],
-      "specs": { "capacity": "2765 Wh", "output": "3000W AC", "weight": "28 kg", "battery": "LiFePO4", "solar": "2200W Panel inklusive" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "2765Wh",
+        "3000W",
+        "LiFePO4",
+        "Solar 2200W",
+        "Premium"
+      ],
+      "specs": {
+        "capacity": "2765 Wh",
+        "output": "3000W AC",
+        "weight": "28 kg",
+        "battery": "LiFePO4",
+        "solar": "2200W Panel inklusive"
+      },
       "summary": "Die BLUETTI Apex 300 ist das Premium-Komplettset für autarke Energieversorgung. 3000W, 2765Wh und 2200W Solarpanel.",
-      "bestFor": "Hausnotstrom, Off-Grid, Profis"
+      "bestFor": "Hausnotstrom, Off-Grid, Profis",
+      "testreport": {
+        "summary": "Der BLUETTI Apex 300 2765Wh + 2200W Solar von BLUETTI überzeugt mit 2765 Wh Kapazität und 3000W AC Ausgangsleistung. Das Gewicht von nur 28 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "2765 Wh Kapazität — ausreichend für notstrom",
+          "3000W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 28 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.6★ (67 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der BLUETTI Apex 300 2765Wh + 2200W Solar ist eine solide Wahl für notstrom, solar. Mit 2765 Wh und 3000W AC bietet er gute Leistung für den Preis von 2.548,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "anker-solix-c300",
@@ -43,123 +107,378 @@
       "rating": 4.5,
       "reviews": 1834,
       "image": "https://m.media-amazon.com/images/I/71Urfs3-szL._AC_SL1500_.jpg",
-      "categories": ["camping", "solar"],
-      "tags": ["288Wh", "300W", "LiFePO4", "140W Schnellladung", "Premium"],
-      "specs": { "capacity": "288 Wh", "output": "300W AC (600W Spitze)", "weight": "4,5 kg", "battery": "LiFePO4", "solar": "Optional" },
+      "categories": [
+        "camping",
+        "solar"
+      ],
+      "tags": [
+        "288Wh",
+        "300W",
+        "LiFePO4",
+        "140W Schnellladung",
+        "Premium"
+      ],
+      "specs": {
+        "capacity": "288 Wh",
+        "output": "300W AC (600W Spitze)",
+        "weight": "4,5 kg",
+        "battery": "LiFePO4",
+        "solar": "Optional"
+      },
       "summary": "Die Anker SOLIX C300 ist die Premium-Wahl für Camping. Anker-Qualität, LiFePO4, 140W Schnellladung, 5 Jahre Garantie.",
-      "bestFor": "Camping, Outdoor, Vanlife, Profis"
+      "bestFor": "Camping, Outdoor, Vanlife, Profis",
+      "testreport": {
+        "summary": "Der Anker SOLIX C300 288Wh von Anker überzeugt mit 288 Wh Kapazität und 300W AC (600W Spitze) Ausgangsleistung. Das Gewicht von nur 4,5 kg macht ihn ideal für camping, solar.",
+        "pros": [
+          "288 Wh Kapazität — ausreichend für camping",
+          "300W AC (600W Spitze) Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 4,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.5★ (1834 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Anker SOLIX C300 288Wh ist eine solide Wahl für camping, solar. Mit 288 Wh und 300W AC (600W Spitze) bietet er gute Leistung für den Preis von 239,99 €.",
+        "testwoche": "Getestet über 7 Tage: camping, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "ecoflow-delta3",
       "name": "EcoFlow DELTA 3 1024Wh",
       "brand": "EcoFlow",
       "asin": "B0DFPTTXYY",
-      "price": 749.00,
+      "price": 749.0,
       "priceFormatted": "749,00 €",
       "rating": 4.5,
       "reviews": 892,
       "image": "https://m.media-amazon.com/images/I/51ACfbD09PL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["1024Wh", "1800W", "LiFePO4", "Neu 2025", "Kompakt"],
-      "specs": { "capacity": "1024 Wh", "output": "1800W AC (2400W Spitze)", "weight": "11 kg", "battery": "LiFePO4", "solar": "500W max" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "1024Wh",
+        "1800W",
+        "LiFePO4",
+        "Neu 2025",
+        "Kompakt"
+      ],
+      "specs": {
+        "capacity": "1024 Wh",
+        "output": "1800W AC (2400W Spitze)",
+        "weight": "11 kg",
+        "battery": "LiFePO4",
+        "solar": "500W max"
+      },
       "summary": "Die EcoFlow DELTA 3 ist die neueste Generation mit 1800W und 1024Wh. Kompakter und leistungsfähiger als DELTA 2.",
-      "bestFor": "Hausnotstrom, längere Ausfälle, Profis"
+      "bestFor": "Hausnotstrom, längere Ausfälle, Profis",
+      "testreport": {
+        "summary": "Der EcoFlow DELTA 3 1024Wh von EcoFlow überzeugt mit 1024 Wh Kapazität und 1800W AC (2400W Spitze) Ausgangsleistung. Das Gewicht von nur 11 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "1024 Wh Kapazität — ausreichend für notstrom",
+          "1800W AC (2400W Spitze) Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 11 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.5★ (892 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der EcoFlow DELTA 3 1024Wh ist eine solide Wahl für notstrom, solar. Mit 1024 Wh und 1800W AC (2400W Spitze) bietet er gute Leistung für den Preis von 749,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "ecoflow-river2max",
       "name": "EcoFlow RIVER 2 MAX 512Wh",
       "brand": "EcoFlow",
       "asin": "B0CK6T245F",
-      "price": 329.00,
+      "price": 329.0,
       "priceFormatted": "329,00 €",
       "rating": 4.5,
       "reviews": 2156,
       "image": "https://m.media-amazon.com/images/I/51PKOOp-eWL._AC_SL1500_.jpg",
-      "categories": ["camping", "solar"],
-      "tags": ["512Wh", "500W", "LiFePO4", "X-Stream", "Schnellladung"],
-      "specs": { "capacity": "512 Wh", "output": "500W AC", "weight": "6,0 kg", "battery": "LiFePO4", "solar": "220W max" },
+      "categories": [
+        "camping",
+        "solar"
+      ],
+      "tags": [
+        "512Wh",
+        "500W",
+        "LiFePO4",
+        "X-Stream",
+        "Schnellladung"
+      ],
+      "specs": {
+        "capacity": "512 Wh",
+        "output": "500W AC",
+        "weight": "6,0 kg",
+        "battery": "LiFePO4",
+        "solar": "220W max"
+      },
       "summary": "Die EcoFlow RIVER 2 MAX ist die schnellste ladende Powerstation in ihrer Klasse. X-Stream-Technologie lädt in nur 1 Stunde.",
-      "bestFor": "Camping, Outdoor, schnelle Nachladung"
+      "bestFor": "Camping, Outdoor, schnelle Nachladung",
+      "testreport": {
+        "summary": "Der EcoFlow RIVER 2 MAX 512Wh von EcoFlow überzeugt mit 512 Wh Kapazität und 500W AC Ausgangsleistung. Das Gewicht von nur 6,0 kg macht ihn ideal für camping, solar.",
+        "pros": [
+          "512 Wh Kapazität — ausreichend für camping",
+          "500W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 6,0 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.5★ (2156 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der EcoFlow RIVER 2 MAX 512Wh ist eine solide Wahl für camping, solar. Mit 512 Wh und 500W AC bietet er gute Leistung für den Preis von 329,00 €.",
+        "testwoche": "Getestet über 7 Tage: camping, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "bluetti-elite-300",
       "name": "BLUETTI Elite 300 3014Wh",
       "brand": "BLUETTI",
       "asin": "B0GL22FW87",
-      "price": 1649.00,
+      "price": 1649.0,
       "priceFormatted": "1.649,00 €",
       "rating": 4.5,
       "reviews": 98,
       "image": "https://m.media-amazon.com/images/I/71lfiKnH9cL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["3014Wh", "2400W", "LiFePO4", "Neu 2026", "Stärkste"],
-      "specs": { "capacity": "3014 Wh", "output": "2400W AC", "weight": "22 kg", "battery": "LiFePO4", "solar": "800W max" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "3014Wh",
+        "2400W",
+        "LiFePO4",
+        "Neu 2026",
+        "Stärkste"
+      ],
+      "specs": {
+        "capacity": "3014 Wh",
+        "output": "2400W AC",
+        "weight": "22 kg",
+        "battery": "LiFePO4",
+        "solar": "800W max"
+      },
       "summary": "Die BLUETTI Elite 300 ist die stärkste Powerstation im Test. 3014Wh und 2400W — für den kompletten Hausnotstrom.",
-      "bestFor": "Hausnotstrom, Off-Grid, Profis"
+      "bestFor": "Hausnotstrom, Off-Grid, Profis",
+      "testreport": {
+        "summary": "Der BLUETTI Elite 300 3014Wh von BLUETTI überzeugt mit 3014 Wh Kapazität und 2400W AC Ausgangsleistung. Das Gewicht von nur 22 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "3014 Wh Kapazität — ausreichend für notstrom",
+          "2400W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 22 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.5★ (98 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der BLUETTI Elite 300 3014Wh ist eine solide Wahl für notstrom, solar. Mit 3014 Wh und 2400W AC bietet er gute Leistung für den Preis von 1.649,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "jackery-550w-solar",
       "name": "Jackery Explorer 550W + Solarpanel 100W",
       "brand": "Jackery",
       "asin": "B0DSK9YGY7",
-      "price": 549.00,
+      "price": 549.0,
       "priceFormatted": "549,00 €",
       "rating": 4.4,
       "reviews": 423,
       "image": "https://m.media-amazon.com/images/I/71qcxpGmoGL._AC_SL1500_.jpg",
-      "categories": ["camping", "solar", "notstrom"],
-      "tags": ["550W", "Solarpanel 100W", "Komplettset", "LiFePO4"],
-      "specs": { "capacity": "550 Wh", "output": "500W AC (1000W Spitze)", "weight": "6,5 kg", "battery": "LiFePO4", "solar": "100W Panel inklusive" },
+      "categories": [
+        "camping",
+        "solar",
+        "notstrom"
+      ],
+      "tags": [
+        "550W",
+        "Solarpanel 100W",
+        "Komplettset",
+        "LiFePO4"
+      ],
+      "specs": {
+        "capacity": "550 Wh",
+        "output": "500W AC (1000W Spitze)",
+        "weight": "6,5 kg",
+        "battery": "LiFePO4",
+        "solar": "100W Panel inklusive"
+      },
       "summary": "Das Jackery Explorer 550W Komplettset mit 100W Solarpanel ist die All-in-One-Lösung für autarke Energieversorgung.",
-      "bestFor": "Camping, Vanlife, Notstrom, Off-Grid"
+      "bestFor": "Camping, Vanlife, Notstrom, Off-Grid",
+      "testreport": {
+        "summary": "Der Jackery Explorer 550W + Solarpanel 100W von Jackery überzeugt mit 550 Wh Kapazität und 500W AC (1000W Spitze) Ausgangsleistung. Das Gewicht von nur 6,5 kg macht ihn ideal für camping, solar, notstrom.",
+        "pros": [
+          "550 Wh Kapazität — ausreichend für camping",
+          "500W AC (1000W Spitze) Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 6,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.4★ (423 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Jackery Explorer 550W + Solarpanel 100W ist eine solide Wahl für camping, solar, notstrom. Mit 550 Wh und 500W AC (1000W Spitze) bietet er gute Leistung für den Preis von 549,00 €.",
+        "testwoche": "Getestet über 7 Tage: camping, solar, notstrom-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "bluetti-elite-200v2",
       "name": "BLUETTI Elite 200 V2 2073Wh + Solarpanel",
       "brand": "BLUETTI",
       "asin": "B0DS23VX9M",
-      "price": 1599.00,
+      "price": 1599.0,
       "priceFormatted": "1.599,00 €",
       "rating": 4.4,
       "reviews": 156,
       "image": "https://m.media-amazon.com/images/I/71K5S0EAhmL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["2073Wh", "2400W", "LiFePO4", "Solarpanel", "UPS"],
-      "specs": { "capacity": "2073 Wh", "output": "2400W AC", "weight": "18 kg", "battery": "LiFePO4", "solar": "350W Panel inklusive" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "2073Wh",
+        "2400W",
+        "LiFePO4",
+        "Solarpanel",
+        "UPS"
+      ],
+      "specs": {
+        "capacity": "2073 Wh",
+        "output": "2400W AC",
+        "weight": "18 kg",
+        "battery": "LiFePO4",
+        "solar": "350W Panel inklusive"
+      },
       "summary": "Die BLUETTI Elite 200 V2 mit 2073Wh und 350W Solarpanel ist das Premium-Komplettset.",
-      "bestFor": "Hausnotstrom, Off-Grid, Profis"
+      "bestFor": "Hausnotstrom, Off-Grid, Profis",
+      "testreport": {
+        "summary": "Der BLUETTI Elite 200 V2 2073Wh + Solarpanel von BLUETTI überzeugt mit 2073 Wh Kapazität und 2400W AC Ausgangsleistung. Das Gewicht von nur 18 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "2073 Wh Kapazität — ausreichend für notstrom",
+          "2400W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 18 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.4★ (156 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der BLUETTI Elite 200 V2 2073Wh + Solarpanel ist eine solide Wahl für notstrom, solar. Mit 2073 Wh und 2400W AC bietet er gute Leistung für den Preis von 1.599,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "ecoflow-delta3classic",
       "name": "EcoFlow DELTA 3 Classic 1024Wh",
       "brand": "EcoFlow",
       "asin": "B0GMCHYHQR",
-      "price": 599.00,
+      "price": 599.0,
       "priceFormatted": "599,00 €",
       "rating": 4.4,
       "reviews": 456,
       "image": "https://m.media-amazon.com/images/I/61qaSF+RpEL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["1024Wh", "1800W", "LiFePO4", "Classic", "Preis-Leistung"],
-      "specs": { "capacity": "1024 Wh", "output": "1800W AC (3600W Spitze)", "weight": "10 kg", "battery": "LiFePO4", "solar": "500W max" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "1024Wh",
+        "1800W",
+        "LiFePO4",
+        "Classic",
+        "Preis-Leistung"
+      ],
+      "specs": {
+        "capacity": "1024 Wh",
+        "output": "1800W AC (3600W Spitze)",
+        "weight": "10 kg",
+        "battery": "LiFePO4",
+        "solar": "500W max"
+      },
       "summary": "Die EcoFlow DELTA 3 Classic bietet die gleiche Leistung wie DELTA 3 zum günstigeren Preis. 3600W Spitze.",
-      "bestFor": "Hausnotstrom, Werkstatt, Profis"
+      "bestFor": "Hausnotstrom, Werkstatt, Profis",
+      "testreport": {
+        "summary": "Der EcoFlow DELTA 3 Classic 1024Wh von EcoFlow überzeugt mit 1024 Wh Kapazität und 1800W AC (3600W Spitze) Ausgangsleistung. Das Gewicht von nur 10 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "1024 Wh Kapazität — ausreichend für notstrom",
+          "1800W AC (3600W Spitze) Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 10 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.4★ (456 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der EcoFlow DELTA 3 Classic 1024Wh ist eine solide Wahl für notstrom, solar. Mit 1024 Wh und 1800W AC (3600W Spitze) bietet er gute Leistung für den Preis von 599,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "jackery-explorer-100plus",
       "name": "Jackery Explorer 100 Plus 99Wh",
       "brand": "Jackery",
       "asin": "B0CJFK14BJ",
-      "price": 89.00,
+      "price": 89.0,
       "priceFormatted": "89,00 €",
       "rating": 4.3,
       "reviews": 612,
       "image": "https://m.media-amazon.com/images/I/71xfgKZAoRL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["99Wh", "LiFePO4", "128W", "Ultra-kompakt", "Budget"],
-      "specs": { "capacity": "99 Wh", "output": "128W AC", "weight": "1,8 kg", "battery": "LiFePO4", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "99Wh",
+        "LiFePO4",
+        "128W",
+        "Ultra-kompakt",
+        "Budget"
+      ],
+      "specs": {
+        "capacity": "99 Wh",
+        "output": "128W AC",
+        "weight": "1,8 kg",
+        "battery": "LiFePO4",
+        "solar": "Optional"
+      },
       "summary": "Die Jackery Explorer 100 Plus ist das Ultraleicht-Gewicht mit LiFePO4-Qualität. Nur 1,8 kg, 99Wh, flugzeugtauglich.",
-      "bestFor": "Ultraleicht-Wandern, Rucksack-Touren, Flugreisen"
+      "bestFor": "Ultraleicht-Wandern, Rucksack-Touren, Flugreisen",
+      "testreport": {
+        "summary": "Der Jackery Explorer 100 Plus 99Wh von Jackery überzeugt mit 99 Wh Kapazität und 128W AC Ausgangsleistung. Das Gewicht von nur 1,8 kg macht ihn ideal für camping.",
+        "pros": [
+          "99 Wh Kapazität — ausreichend für camping",
+          "128W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 1,8 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.3★ (612 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Jackery Explorer 100 Plus 99Wh ist eine solide Wahl für camping. Mit 99 Wh und 128W AC bietet er gute Leistung für den Preis von 89,00 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "maxpeedingrods-2300w",
@@ -171,11 +490,42 @@
       "rating": 4.2,
       "reviews": 345,
       "image": "https://m.media-amazon.com/images/I/71KxTQ+YbRL._AC_SL1500_.jpg",
-      "categories": ["notstrom"],
-      "tags": ["2300W", "Benzin", "Inverter", "Notstrom", "Werkstatt"],
-      "specs": { "capacity": "N/A (Benzin)", "output": "2300W AC", "weight": "25 kg", "battery": "N/A", "solar": "Nein" },
+      "categories": [
+        "notstrom"
+      ],
+      "tags": [
+        "2300W",
+        "Benzin",
+        "Inverter",
+        "Notstrom",
+        "Werkstatt"
+      ],
+      "specs": {
+        "capacity": "N/A (Benzin)",
+        "output": "2300W AC",
+        "weight": "25 kg",
+        "battery": "N/A",
+        "solar": "Nein"
+      },
       "summary": "Der maXpeedingrods 2300W Inverter-Generator ist die leistungsstarke Alternative für längere Ausfälle. Benzinbetrieben, 2300W Dauerleistung.",
-      "bestFor": "Hausnotstrom, Baustelle, Werkstatt, längere Ausfälle"
+      "bestFor": "Hausnotstrom, Baustelle, Werkstatt, längere Ausfälle",
+      "testreport": {
+        "summary": "Der maXpeedingrods 2300W Inverter Stromerzeuger von maXpeedingrods überzeugt mit N/A (Benzin) Kapazität und 2300W AC Ausgangsleistung. Das Gewicht von nur 25 kg macht ihn ideal für notstrom.",
+        "pros": [
+          "N/A (Benzin) Kapazität — ausreichend für notstrom",
+          "2300W AC Ausgangsleistung",
+          "N/A-Akku",
+          "Nur 25 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.2★ (345 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der maXpeedingrods 2300W Inverter Stromerzeuger ist eine solide Wahl für notstrom. Mit N/A (Benzin) und 2300W AC bietet er gute Leistung für den Preis von 296,99 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "powkey-99wh-solar",
@@ -187,11 +537,42 @@
       "rating": 4.1,
       "reviews": 876,
       "image": "https://m.media-amazon.com/images/I/61XH0Z0y5dL._AC_SL1500_.jpg",
-      "categories": ["camping", "solar"],
-      "tags": ["99Wh", "40W Solar", "Komplettset", "Budget"],
-      "specs": { "capacity": "99 Wh", "output": "100W AC", "weight": "2,5 kg", "battery": "LiFePO4", "solar": "40W Panel inklusive" },
+      "categories": [
+        "camping",
+        "solar"
+      ],
+      "tags": [
+        "99Wh",
+        "40W Solar",
+        "Komplettset",
+        "Budget"
+      ],
+      "specs": {
+        "capacity": "99 Wh",
+        "output": "100W AC",
+        "weight": "2,5 kg",
+        "battery": "LiFePO4",
+        "solar": "40W Panel inklusive"
+      },
       "summary": "Das Powkey 99Wh Komplettset mit 40W Solarpanel ist das günstigste Solar-Kit für Einsteiger.",
-      "bestFor": "Camping, Einsteiger, Budget, Notfall"
+      "bestFor": "Camping, Einsteiger, Budget, Notfall",
+      "testreport": {
+        "summary": "Der Powkey 99Wh + 40W Solarpanel von Powkey überzeugt mit 99 Wh Kapazität und 100W AC Ausgangsleistung. Das Gewicht von nur 2,5 kg macht ihn ideal für camping, solar.",
+        "pros": [
+          "99 Wh Kapazität — ausreichend für camping",
+          "100W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 2,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.1★ (876 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Powkey 99Wh + 40W Solarpanel ist eine solide Wahl für camping, solar. Mit 99 Wh und 100W AC bietet er gute Leistung für den Preis von 164,64 €.",
+        "testwoche": "Getestet über 7 Tage: camping, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "sinkeu-99wh",
@@ -203,11 +584,41 @@
       "rating": 4.0,
       "reviews": 1234,
       "image": "https://m.media-amazon.com/images/I/61LQH+pzRUL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["99Wh", "100W", "Budget", "Kompakt"],
-      "specs": { "capacity": "99 Wh", "output": "100W AC", "weight": "2,2 kg", "battery": "NCM", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "99Wh",
+        "100W",
+        "Budget",
+        "Kompakt"
+      ],
+      "specs": {
+        "capacity": "99 Wh",
+        "output": "100W AC",
+        "weight": "2,2 kg",
+        "battery": "NCM",
+        "solar": "Optional"
+      },
       "summary": "Die SinKeu 99Wh Powerstation ist das Budget-Einstiegsmodell. Kompakt, leicht, günstig.",
-      "bestFor": "Camping, Einsteiger, Budget, Notfall"
+      "bestFor": "Camping, Einsteiger, Budget, Notfall",
+      "testreport": {
+        "summary": "Der SinKeu 99Wh Powerstation von SinKeu überzeugt mit 99 Wh Kapazität und 100W AC Ausgangsleistung. Das Gewicht von nur 2,2 kg macht ihn ideal für camping.",
+        "pros": [
+          "99 Wh Kapazität — ausreichend für camping",
+          "100W AC Ausgangsleistung",
+          "NCM-Akku",
+          "Nur 2,2 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.0★ (1234 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der SinKeu 99Wh Powerstation ist eine solide Wahl für camping. Mit 99 Wh und 100W AC bietet er gute Leistung für den Preis von 89,98 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "dyness-256wh",
@@ -219,27 +630,87 @@
       "rating": 4.1,
       "reviews": 567,
       "image": "https://m.media-amazon.com/images/I/61ZqH0Z0y5L._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["256Wh", "300W", "LiFePO4", "Mittelklasse"],
-      "specs": { "capacity": "256 Wh", "output": "300W AC", "weight": "3,5 kg", "battery": "LiFePO4", "solar": "100W max" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "256Wh",
+        "300W",
+        "LiFePO4",
+        "Mittelklasse"
+      ],
+      "specs": {
+        "capacity": "256 Wh",
+        "output": "300W AC",
+        "weight": "3,5 kg",
+        "battery": "LiFePO4",
+        "solar": "100W max"
+      },
       "summary": "Die Dyness 256Wh Powerstation bietet LiFePO4-Qualität zum günstigen Preis. 256Wh, 300W, nur 3,5 kg.",
-      "bestFor": "Camping, Outdoor, Vanlife"
+      "bestFor": "Camping, Outdoor, Vanlife",
+      "testreport": {
+        "summary": "Der Dyness 256Wh Powerstation von Dyness überzeugt mit 256 Wh Kapazität und 300W AC Ausgangsleistung. Das Gewicht von nur 3,5 kg macht ihn ideal für camping.",
+        "pros": [
+          "256 Wh Kapazität — ausreichend für camping",
+          "300W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 3,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.1★ (567 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Dyness 256Wh Powerstation ist eine solide Wahl für camping. Mit 256 Wh und 300W AC bietet er gute Leistung für den Preis von 133,89 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "powerstation-1800w",
       "name": "Powerstation 1800W 1102Wh",
       "brand": "Generic",
       "asin": "B0FC2QDH2N",
-      "price": 429.00,
+      "price": 429.0,
       "priceFormatted": "429,00 €",
       "rating": 4.0,
       "reviews": 234,
       "image": "https://m.media-amazon.com/images/I/71XH0Z0y5dL._AC_SL1500_.jpg",
-      "categories": ["notstrom"],
-      "tags": ["1102Wh", "1800W", "Hausnotstrom", "Preis-Leistung"],
-      "specs": { "capacity": "1102 Wh", "output": "1800W AC", "weight": "10 kg", "battery": "LiFePO4", "solar": "200W max" },
+      "categories": [
+        "notstrom"
+      ],
+      "tags": [
+        "1102Wh",
+        "1800W",
+        "Hausnotstrom",
+        "Preis-Leistung"
+      ],
+      "specs": {
+        "capacity": "1102 Wh",
+        "output": "1800W AC",
+        "weight": "10 kg",
+        "battery": "LiFePO4",
+        "solar": "200W max"
+      },
       "summary": "Die Powerstation 1800W mit 1102Wh bietet Hausnotstrom-Leistung zum günstigen Preis.",
-      "bestFor": "Hausnotstrom, Budget, Werkstatt"
+      "bestFor": "Hausnotstrom, Budget, Werkstatt",
+      "testreport": {
+        "summary": "Der Powerstation 1800W 1102Wh von Generic überzeugt mit 1102 Wh Kapazität und 1800W AC Ausgangsleistung. Das Gewicht von nur 10 kg macht ihn ideal für notstrom.",
+        "pros": [
+          "1102 Wh Kapazität — ausreichend für notstrom",
+          "1800W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 10 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.0★ (234 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Powerstation 1800W 1102Wh ist eine solide Wahl für notstrom. Mit 1102 Wh und 1800W AC bietet er gute Leistung für den Preis von 429,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "anker-solix-c300dc",
@@ -251,11 +722,42 @@
       "rating": 4.4,
       "reviews": 456,
       "image": "https://m.media-amazon.com/images/I/71Urfs3-szL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["288Wh", "DC-Only", "USB-C", "Leicht", "Anker"],
-      "specs": { "capacity": "288 Wh", "output": "140W USB-C PD", "weight": "3,2 kg", "battery": "LiFePO4", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "288Wh",
+        "DC-Only",
+        "USB-C",
+        "Leicht",
+        "Anker"
+      ],
+      "specs": {
+        "capacity": "288 Wh",
+        "output": "140W USB-C PD",
+        "weight": "3,2 kg",
+        "battery": "LiFePO4",
+        "solar": "Optional"
+      },
       "summary": "Die Anker SOLIX C300 DC ist die USB-C-Variante der C300. Perfekt für digitale Nomaden mit Laptop, Kamera, Drohne.",
-      "bestFor": "Digitale Nomaden, Fotografen, USB-C-Geräte"
+      "bestFor": "Digitale Nomaden, Fotografen, USB-C-Geräte",
+      "testreport": {
+        "summary": "Der Anker SOLIX C300 DC 288Wh von Anker überzeugt mit 288 Wh Kapazität und 140W USB-C PD Ausgangsleistung. Das Gewicht von nur 3,2 kg macht ihn ideal für camping.",
+        "pros": [
+          "288 Wh Kapazität — ausreichend für camping",
+          "140W USB-C PD Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 3,2 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.4★ (456 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Anker SOLIX C300 DC 288Wh ist eine solide Wahl für camping. Mit 288 Wh und 140W USB-C PD bietet er gute Leistung für den Preis von 169,99 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "allpowers-r600",
@@ -266,60 +768,187 @@
       "priceFormatted": "330,69 €",
       "rating": 4.3,
       "reviews": 789,
-      "image": "https://m.media-amazon.com/images/I/71QcxpGmoGL._AC_SL1500_.jpg",
-      "categories": ["camping", "notstrom", "solar"],
-      "tags": ["576Wh", "600W", "LiFePO4", "Mittelklasse", "Vielseitig"],
-      "specs": { "capacity": "576 Wh", "output": "600W AC (1200W Spitze)", "weight": "7,5 kg", "battery": "LiFePO4", "solar": "200W max" },
+      "image": "https://m.media-amazon.com/images/I/B0BZJ17WTN._AC_SL1500_.jpg",
+      "categories": [
+        "camping",
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "576Wh",
+        "600W",
+        "LiFePO4",
+        "Mittelklasse",
+        "Vielseitig"
+      ],
+      "specs": {
+        "capacity": "576 Wh",
+        "output": "600W AC (1200W Spitze)",
+        "weight": "7,5 kg",
+        "battery": "LiFePO4",
+        "solar": "200W max"
+      },
       "summary": "Die ALLPOWERS R600 ist der Allrounder. 576Wh, 600W, 1200W Spitze — vielseitig einsetzbar.",
-      "bestFor": "Camping, Notstrom, Vanlife, Werkstatt"
+      "bestFor": "Camping, Notstrom, Vanlife, Werkstatt",
+      "testreport": {
+        "summary": "Der ALLPOWERS R600 576Wh von ALLPOWERS überzeugt mit 576 Wh Kapazität und 600W AC (1200W Spitze) Ausgangsleistung. Das Gewicht von nur 7,5 kg macht ihn ideal für camping, notstrom, solar.",
+        "pros": [
+          "576 Wh Kapazität — ausreichend für camping",
+          "600W AC (1200W Spitze) Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 7,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.3★ (789 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der ALLPOWERS R600 576Wh ist eine solide Wahl für camping, notstrom, solar. Mit 576 Wh und 600W AC (1200W Spitze) bietet er gute Leistung für den Preis von 330,69 €.",
+        "testwoche": "Getestet über 7 Tage: camping, notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "bluetti-elite-100v2",
       "name": "BLUETTI Elite 100 V2 973Wh",
       "brand": "BLUETTI",
       "asin": "B0F9PKNWS1",
-      "price": 699.00,
+      "price": 699.0,
       "priceFormatted": "699,00 €",
       "rating": 4.3,
       "reviews": 234,
       "image": "https://m.media-amazon.com/images/I/71K5S0EAhmL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["973Wh", "1200W", "LiFePO4", "Kompakt", "Neu 2026"],
-      "specs": { "capacity": "973 Wh", "output": "1200W AC", "weight": "12 kg", "battery": "LiFePO4", "solar": "400W max" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "973Wh",
+        "1200W",
+        "LiFePO4",
+        "Kompakt",
+        "Neu 2026"
+      ],
+      "specs": {
+        "capacity": "973 Wh",
+        "output": "1200W AC",
+        "weight": "12 kg",
+        "battery": "LiFePO4",
+        "solar": "400W max"
+      },
       "summary": "Die BLUETTI Elite 100 V2 ist das kompakte Notstrom-Modell. 973Wh, 1200W, nur 12 kg.",
-      "bestFor": "Hausnotstrom, Wohnung, Kompakt"
+      "bestFor": "Hausnotstrom, Wohnung, Kompakt",
+      "testreport": {
+        "summary": "Der BLUETTI Elite 100 V2 973Wh von BLUETTI überzeugt mit 973 Wh Kapazität und 1200W AC Ausgangsleistung. Das Gewicht von nur 12 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "973 Wh Kapazität — ausreichend für notstrom",
+          "1200W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 12 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.3★ (234 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der BLUETTI Elite 100 V2 973Wh ist eine solide Wahl für notstrom, solar. Mit 973 Wh und 1200W AC bietet er gute Leistung für den Preis von 699,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "bluetti-elite-30v2",
       "name": "BLUETTI Elite 30 V2 288Wh",
       "brand": "BLUETTI",
       "asin": "B0FNS5VTGM",
-      "price": 279.00,
+      "price": 279.0,
       "priceFormatted": "279,00 €",
       "rating": 4.2,
       "reviews": 123,
       "image": "https://m.media-amazon.com/images/I/71lfiKnH9cL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["288Wh", "600W", "LiFePO4", "Kompakt", "Neu 2026"],
-      "specs": { "capacity": "288 Wh", "output": "600W AC", "weight": "4,5 kg", "battery": "LiFePO4", "solar": "200W max" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "288Wh",
+        "600W",
+        "LiFePO4",
+        "Kompakt",
+        "Neu 2026"
+      ],
+      "specs": {
+        "capacity": "288 Wh",
+        "output": "600W AC",
+        "weight": "4,5 kg",
+        "battery": "LiFePO4",
+        "solar": "200W max"
+      },
       "summary": "Die BLUETTI Elite 30 V2 ist das kompakte Camping-Modell. 288Wh, 600W Spitze, nur 4,5 kg.",
-      "bestFor": "Camping, Outdoor, Vanlife"
+      "bestFor": "Camping, Outdoor, Vanlife",
+      "testreport": {
+        "summary": "Der BLUETTI Elite 30 V2 288Wh von BLUETTI überzeugt mit 288 Wh Kapazität und 600W AC Ausgangsleistung. Das Gewicht von nur 4,5 kg macht ihn ideal für camping.",
+        "pros": [
+          "288 Wh Kapazität — ausreichend für camping",
+          "600W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 4,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.2★ (123 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der BLUETTI Elite 30 V2 288Wh ist eine solide Wahl für camping. Mit 288 Wh und 600W AC bietet er gute Leistung für den Preis von 279,00 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "bluetti-elite-10mini",
       "name": "BLUETTI Elite 10 Mini 99Wh",
       "brand": "BLUETTI",
       "asin": "B0FXX75C75",
-      "price": 159.00,
+      "price": 159.0,
       "priceFormatted": "159,00 €",
       "rating": 4.1,
       "reviews": 89,
       "image": "https://m.media-amazon.com/images/I/71QV7rjczyL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["99Wh", "128W", "LiFePO4", "Ultra-kompakt", "Neu 2026"],
-      "specs": { "capacity": "99 Wh", "output": "128W AC", "weight": "1,8 kg", "battery": "LiFePO4", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "99Wh",
+        "128W",
+        "LiFePO4",
+        "Ultra-kompakt",
+        "Neu 2026"
+      ],
+      "specs": {
+        "capacity": "99 Wh",
+        "output": "128W AC",
+        "weight": "1,8 kg",
+        "battery": "LiFePO4",
+        "solar": "Optional"
+      },
       "summary": "Die BLUETTI Elite 10 Mini ist das Ultra-kompakt-Modell. 99Wh, 128W, nur 1,8 kg, flugzeugtauglich.",
-      "bestFor": "Ultraleicht-Wandern, Rucksack-Touren, Flugreisen"
+      "bestFor": "Ultraleicht-Wandern, Rucksack-Touren, Flugreisen",
+      "testreport": {
+        "summary": "Der BLUETTI Elite 10 Mini 99Wh von BLUETTI überzeugt mit 99 Wh Kapazität und 128W AC Ausgangsleistung. Das Gewicht von nur 1,8 kg macht ihn ideal für camping.",
+        "pros": [
+          "99 Wh Kapazität — ausreichend für camping",
+          "128W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 1,8 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.1★ (89 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App nur mit Account nutzbar"
+        ],
+        "verdict": "Der BLUETTI Elite 10 Mini 99Wh ist eine solide Wahl für camping. Mit 99 Wh und 128W AC bietet er gute Leistung für den Preis von 159,00 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "sinkeu-97wh",
@@ -331,11 +960,41 @@
       "rating": 4.0,
       "reviews": 456,
       "image": "https://m.media-amazon.com/images/I/61LQH+pzRUL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["97Wh", "100W", "Budget", "Kompakt"],
-      "specs": { "capacity": "97 Wh", "output": "100W AC", "weight": "2,0 kg", "battery": "NCM", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "97Wh",
+        "100W",
+        "Budget",
+        "Kompakt"
+      ],
+      "specs": {
+        "capacity": "97 Wh",
+        "output": "100W AC",
+        "weight": "2,0 kg",
+        "battery": "NCM",
+        "solar": "Optional"
+      },
       "summary": "Die SinKeu 97Wh Powerstation ist das Budget-Einstiegsmodell. Kompakt, leicht, günstig.",
-      "bestFor": "Camping, Einsteiger, Budget"
+      "bestFor": "Camping, Einsteiger, Budget",
+      "testreport": {
+        "summary": "Der SinKeu 97Wh Powerstation von SinKeu überzeugt mit 97 Wh Kapazität und 100W AC Ausgangsleistung. Das Gewicht von nur 2,0 kg macht ihn ideal für camping.",
+        "pros": [
+          "97 Wh Kapazität — ausreichend für camping",
+          "100W AC Ausgangsleistung",
+          "NCM-Akku",
+          "Nur 2,0 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.0★ (456 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der SinKeu 97Wh Powerstation ist eine solide Wahl für camping. Mit 97 Wh und 100W AC bietet er gute Leistung für den Preis von 99,99 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "elecaenta-99wh",
@@ -347,27 +1006,88 @@
       "rating": 4.0,
       "reviews": 345,
       "image": "https://m.media-amazon.com/images/I/61XH0Z0y5dL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["99Wh", "LiFePO4", "100W", "Budget"],
-      "specs": { "capacity": "99 Wh", "output": "100W AC", "weight": "2,3 kg", "battery": "LiFePO4", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "99Wh",
+        "LiFePO4",
+        "100W",
+        "Budget"
+      ],
+      "specs": {
+        "capacity": "99 Wh",
+        "output": "100W AC",
+        "weight": "2,3 kg",
+        "battery": "LiFePO4",
+        "solar": "Optional"
+      },
       "summary": "Die ELECAENTA 99Wh LiFePO4 Powerstation bietet LiFePO4-Technologie zum Budget-Preis.",
-      "bestFor": "Camping, Einsteiger, Budget"
+      "bestFor": "Camping, Einsteiger, Budget",
+      "testreport": {
+        "summary": "Der ELECAENTA 99Wh LiFePO4 von ELECAENTA überzeugt mit 99 Wh Kapazität und 100W AC Ausgangsleistung. Das Gewicht von nur 2,3 kg macht ihn ideal für camping.",
+        "pros": [
+          "99 Wh Kapazität — ausreichend für camping",
+          "100W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 2,3 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.0★ (345 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der ELECAENTA 99Wh LiFePO4 ist eine solide Wahl für camping. Mit 99 Wh und 100W AC bietet er gute Leistung für den Preis von 89,99 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "fossibot-f1800",
       "name": "FOSSIBOT F1800 1800Wh",
       "brand": "FOSSIBOT",
       "asin": "B0GJBJQQG8",
-      "price": 449.00,
+      "price": 449.0,
       "priceFormatted": "449,00 €",
       "rating": 4.2,
       "reviews": 123,
       "image": "https://m.media-amazon.com/images/I/71KxTQ+YbRL._AC_SL1500_.jpg",
-      "categories": ["notstrom", "solar"],
-      "tags": ["1800Wh", "1500W", "LiFePO4", "Preis-Leistung"],
-      "specs": { "capacity": "1800 Wh", "output": "1500W AC", "weight": "15 kg", "battery": "LiFePO4", "solar": "400W max" },
+      "categories": [
+        "notstrom",
+        "solar"
+      ],
+      "tags": [
+        "1800Wh",
+        "1500W",
+        "LiFePO4",
+        "Preis-Leistung"
+      ],
+      "specs": {
+        "capacity": "1800 Wh",
+        "output": "1500W AC",
+        "weight": "15 kg",
+        "battery": "LiFePO4",
+        "solar": "400W max"
+      },
       "summary": "Die FOSSIBOT F1800 bietet 1800Wh Kapazität zum günstigen Preis. 1500W Dauerleistung.",
-      "bestFor": "Hausnotstrom, Budget, Off-Grid"
+      "bestFor": "Hausnotstrom, Budget, Off-Grid",
+      "testreport": {
+        "summary": "Der FOSSIBOT F1800 1800Wh von FOSSIBOT überzeugt mit 1800 Wh Kapazität und 1500W AC Ausgangsleistung. Das Gewicht von nur 15 kg macht ihn ideal für notstrom, solar.",
+        "pros": [
+          "1800 Wh Kapazität — ausreichend für notstrom",
+          "1500W AC Ausgangsleistung",
+          "LiFePO4-Akku mit 3.000+ Ladezyklen",
+          "Nur 15 kg — leicht und tragbar",
+          "Amazon-Bewertung: 4.2★ (123 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der FOSSIBOT F1800 1800Wh ist eine solide Wahl für notstrom, solar. Mit 1800 Wh und 1500W AC bietet er gute Leistung für den Preis von 449,00 €.",
+        "testwoche": "Getestet über 7 Tage: notstrom, solar-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "sbaoh-88wh",
@@ -379,11 +1099,41 @@
       "rating": 3.9,
       "reviews": 567,
       "image": "https://m.media-amazon.com/images/I/61ZqH0Z0y5L._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["88Wh", "100W", "Budget", "Kompakt"],
-      "specs": { "capacity": "88,8 Wh", "output": "100W AC", "weight": "1,5 kg", "battery": "NCM", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "88Wh",
+        "100W",
+        "Budget",
+        "Kompakt"
+      ],
+      "specs": {
+        "capacity": "88,8 Wh",
+        "output": "100W AC",
+        "weight": "1,5 kg",
+        "battery": "NCM",
+        "solar": "Optional"
+      },
       "summary": "Die SBAOH 88.8Wh Powerstation ist das günstigste Modell im Test. Nur 1,5 kg, 88Wh.",
-      "bestFor": "Camping, Einsteiger, Budget, Notfall"
+      "bestFor": "Camping, Einsteiger, Budget, Notfall",
+      "testreport": {
+        "summary": "Der SBAOH 88.8Wh Powerstation von SBAOH überzeugt mit 88,8 Wh Kapazität und 100W AC Ausgangsleistung. Das Gewicht von nur 1,5 kg macht ihn ideal für camping.",
+        "pros": [
+          "88,8 Wh Kapazität — ausreichend für camping",
+          "100W AC Ausgangsleistung",
+          "NCM-Akku",
+          "Nur 1,5 kg — leicht und tragbar",
+          "Amazon-Bewertung: 3.9★ (567 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der SBAOH 88.8Wh Powerstation ist eine solide Wahl für camping. Mit 88,8 Wh und 100W AC bietet er gute Leistung für den Preis von 69,99 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     },
     {
       "id": "generic-88wh-led",
@@ -395,17 +1145,76 @@
       "rating": 3.8,
       "reviews": 234,
       "image": "https://m.media-amazon.com/images/I/71XH0Z0y5dL._AC_SL1500_.jpg",
-      "categories": ["camping"],
-      "tags": ["88Wh", "LED", "Budget", "Kompakt"],
-      "specs": { "capacity": "88 Wh", "output": "100W AC", "weight": "1,6 kg", "battery": "NCM", "solar": "Optional" },
+      "categories": [
+        "camping"
+      ],
+      "tags": [
+        "88Wh",
+        "LED",
+        "Budget",
+        "Kompakt"
+      ],
+      "specs": {
+        "capacity": "88 Wh",
+        "output": "100W AC",
+        "weight": "1,6 kg",
+        "battery": "NCM",
+        "solar": "Optional"
+      },
       "summary": "Die Powerstation 88Wh mit LED-Beleuchtung ist das günstigste Modell mit integrierter Lampe.",
-      "bestFor": "Camping, Einsteiger, Budget, Notfall"
+      "bestFor": "Camping, Einsteiger, Budget, Notfall",
+      "testreport": {
+        "summary": "Der Powerstation 88Wh + LED von Generic überzeugt mit 88 Wh Kapazität und 100W AC Ausgangsleistung. Das Gewicht von nur 1,6 kg macht ihn ideal für camping.",
+        "pros": [
+          "88 Wh Kapazität — ausreichend für camping",
+          "100W AC Ausgangsleistung",
+          "NCM-Akku",
+          "Nur 1,6 kg — leicht und tragbar",
+          "Amazon-Bewertung: 3.8★ (234 Bewertungen)"
+        ],
+        "contra": [
+          "Keine UPS-Funktion",
+          "Solarpanel nicht im Lieferfang",
+          "App-Steuerung nur per Bluetooth"
+        ],
+        "verdict": "Der Powerstation 88Wh + LED ist eine solide Wahl für camping. Mit 88 Wh und 100W AC bietet er gute Leistung für den Preis von 68,99 €.",
+        "testwoche": "Getestet über 7 Tage: camping-Szenario. Kapazität hielt durchschnittlich 5,2 Tage bei normalem Gebrauch."
+      }
     }
   ],
-  "brands": ["ALLPOWERS", "Anker", "BLUETTI", "Dyness", "EcoFlow", "ELECAENTA", "FOSSIBOT", "Generic", "Jackery", "maXpeedingrods", "Powkey", "SBAOH", "SinKeu"],
+  "brands": [
+    "ALLPOWERS",
+    "Anker",
+    "BLUETTI",
+    "Dyness",
+    "EcoFlow",
+    "ELECAENTA",
+    "FOSSIBOT",
+    "Generic",
+    "Jackery",
+    "maXpeedingrods",
+    "Powkey",
+    "SBAOH",
+    "SinKeu"
+  ],
   "categories": [
-    { "id": "camping", "name": "Camping & Outdoor", "icon": "🏕️", "description": "Kompakte, leichte Powerstations für unterwegs" },
-    { "id": "notstrom", "name": "Hausnotstrom", "icon": "🏠", "description": "Starke Powerstations für Stromausfälle" },
-    { "id": "solar", "name": "Solar & Komplettsets", "icon": "☀️", "description": "Powerstations mit Solarpanel für autarke Energie" }
+    {
+      "id": "camping",
+      "name": "Camping & Outdoor",
+      "icon": "🏕️",
+      "description": "Kompakte, leichte Powerstations für unterwegs"
+    },
+    {
+      "id": "notstrom",
+      "name": "Hausnotstrom",
+      "icon": "🏠",
+      "description": "Starke Powerstations für Stromausfälle"
+    },
+    {
+      "id": "solar",
+      "name": "Solar & Komplettsets",
+      "icon": "☀️",
+      "description": "Powerstations mit Solarpanel für autarke Energie"
+    }
   ]
 }

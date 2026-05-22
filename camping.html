@@ -228,7 +228,7 @@
     function renderProductCard(p){
       var stars = '★'.repeat(Math.round(p.rating)) + '☆'.repeat(5-Math.round(p.rating));
       var specs = p.specs || {};
-      return '<article class="product-card">'+
+      return '<a href="/produkt.html?id='+p.id+'" class="product-card">'+
         '<div class="product-image-wrap">'+
           (p.image ? '<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">' : '')+
         '</div>'+
@@ -248,7 +248,7 @@
             '<a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a>'+
           '</div>'+
         '</div>'+
-      '</article>';
+      '</a>';
     }
 
     function renderProducts(){
