@@ -511,7 +511,7 @@
       "priceFormatted": "296,99 €",
       "rating": 4.2,
       "reviews": 345,
-      "image": "/img/maxpeedingrods-2300w.svg",
+      "image": "/img/maxpeedingrods-2300w.jpg",
       "categories": [
         "notstrom"
       ],
@@ -558,7 +558,7 @@
       "priceFormatted": "164,64 €",
       "rating": 4.1,
       "reviews": 876,
-      "image": "/img/powkey-99wh-solar.svg",
+      "image": "/img/powkey-99wh-solar.jpg",
       "categories": [
         "camping",
         "solar"
@@ -605,7 +605,7 @@
       "priceFormatted": "89,98 €",
       "rating": 4.0,
       "reviews": 1234,
-      "image": "/img/sinkeu-99wh.svg",
+      "image": "/img/sinkeu-99wh.jpg",
       "categories": [
         "camping"
       ],
@@ -651,7 +651,7 @@
       "priceFormatted": "133,89 €",
       "rating": 4.1,
       "reviews": 567,
-      "image": "/img/dyness-256wh.svg",
+      "image": "/img/dyness-256wh.jpg",
       "categories": [
         "camping"
       ],
@@ -697,7 +697,7 @@
       "priceFormatted": "429,00 €",
       "rating": 4.0,
       "reviews": 234,
-      "image": "/img/powerstation-1800w.svg",
+      "image": "/img/powerstation-1800w.jpg",
       "categories": [
         "notstrom"
       ],
@@ -790,7 +790,7 @@
       "priceFormatted": "330,69 €",
       "rating": 4.3,
       "reviews": 789,
-      "image": "/img/allpowers-r600.svg",
+      "image": "/img/allpowers-r600.jpg",
       "categories": [
         "camping",
         "notstrom",
@@ -981,7 +981,7 @@
       "priceFormatted": "99,99 €",
       "rating": 4.0,
       "reviews": 456,
-      "image": "/img/sinkeu-97wh.svg",
+      "image": "/img/sinkeu-97wh.jpg",
       "categories": [
         "camping"
       ],
@@ -1027,7 +1027,7 @@
       "priceFormatted": "89,99 €",
       "rating": 4.0,
       "reviews": 345,
-      "image": "/img/elecaenta-99wh.svg",
+      "image": "/img/elecaenta-99wh.jpg",
       "categories": [
         "camping"
       ],
@@ -1073,7 +1073,7 @@
       "priceFormatted": "449,00 €",
       "rating": 4.2,
       "reviews": 123,
-      "image": "/img/fossibot-f1800.svg",
+      "image": "/img/fossibot-f1800.jpg",
       "categories": [
         "notstrom",
         "solar"
@@ -1120,7 +1120,7 @@
       "priceFormatted": "69,99 €",
       "rating": 3.9,
       "reviews": 567,
-      "image": "/img/sbaoh-88wh.svg",
+      "image": "/img/sbaoh-88wh.jpg",
       "categories": [
         "camping"
       ],
@@ -1166,7 +1166,7 @@
       "priceFormatted": "68,99 €",
       "rating": 3.8,
       "reviews": 234,
-      "image": "/img/generic-88wh-led.svg",
+      "image": "/img/generic-88wh-led.jpg",
       "categories": [
         "camping"
       ],
