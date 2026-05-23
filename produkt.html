@@ -6,7 +6,20 @@
   <title id="pageTitle">Produkt — akku-test.de</title>
   <meta name="robots" content="index, follow">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <!-- OG-Tags (dynamisch per JS gesetzt) -->
+  <meta property="og:title" id="ogTitle" content="">
+  <meta property="og:description" id="ogDesc" content="">
+  <meta property="og:url" id="ogUrl" content="">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="akku-test.de">
+  <meta property="og:image" id="ogImage" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" id="twitterImage" content="">
+  <!-- Canonical (dynamisch per JS gesetzt) -->
+  <link rel="canonical" id="canonicalUrl" href="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Schema.org JSON-LD (dynamisch per JS gesetzt) -->
+  <script type="application/ld+json" id="schemaJson"></script>
   <style>
     :root{--bg:#08090a;--bg-panel:#0f1011;--bg-elevated:#191a1b;--bg-hover:#28282c;--text-primary:#f7f8f8;--text-secondary:#d0d6e0;--text-tertiary:#8a8f98;--text-quaternary:#62666d;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-dim:#3e4a9e;--accent-glow:rgba(94,106,210,0.12);--accent-glow-strong:rgba(94,106,210,0.2);--accent-border:rgba(94,106,210,0.2);--accent-bg:rgba(94,106,210,0.08);--border-subtle:rgba(255,255,255,0.05);--border-default:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.12);--success:#34d399;--danger:#f87171;--warning:#fbbf24;--font-sans:'Inter',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:80px;--r-sm:4px;--r-md:6px;--r-lg:8px;--r-xl:12px;--r-pill:9999px}
     [data-theme="light"]{--bg:#f5f6f8;--bg-panel:#ffffff;--bg-elevated:#ebedf0;--bg-hover:#e2e4e8;--text-primary:#1a1d28;--text-secondary:#3a3f4e;--text-tertiary:#6b7280;--text-quaternary:#9ca3af;--accent-glow:rgba(94,106,210,0.08);--accent-glow-strong:rgba(94,106,210,0.15);--accent-border:rgba(94,106,210,0.25);--accent-bg:rgba(94,106,210,0.05);--border-subtle:rgba(0,0,0,0.06);--border-default:rgba(0,0,0,0.1);--border-strong:rgba(0,0,0,0.15)}
@@ -20,13 +33,16 @@
     body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;z-index:0}
     body>*{position:relative;z-index:1}
     .nav{position:sticky;top:0;z-index:100;background:rgba(8,9,10,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-subtle)}
-    [data-theme="light"] .nav{background:rgba(255,255,255,0.9);border-bottom-color:var(--border-subtle)}
+    [data-theme="light"] .nav{background:rgba(255,255,255,0.92);border-bottom-color:rgba(0,0,0,0.08)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;height:56px}
     .nav-logo{display:flex;align-items:center;gap:var(--s2);color:var(--text-primary);font-weight:600;font-size:1rem;text-decoration:none}
+    .nav-logo:hover{color:var(--text-primary)}
     .logo-icon{width:20px;height:20px;stroke:var(--accent)}
     .nav-links{display:flex;align-items:center;gap:var(--s4);list-style:none}
     .nav-links a{color:var(--text-tertiary);font-size:0.85rem;font-weight:500;text-decoration:none;transition:color 150ms ease}
     .nav-links a:hover,.nav-links a.active{color:var(--text-primary)}
+    [data-theme="light"] .nav-links a{color:#6b7280}
+    [data-theme="light"] .nav-links a:hover,[data-theme="light"] .nav-links a.active{color:#1a1d28}
     .nav-actions{display:flex;align-items:center;gap:var(--s2)}
     .nav-toggle{display:none;background:none;border:none;color:var(--text-primary);cursor:pointer;padding:var(--s2)}
     .nav-toggle svg{width:24px;height:24px}
@@ -50,60 +66,48 @@
     .product-info h1{font-size:1.8rem;font-weight:700;line-height:1.2;margin-bottom:var(--s2)}
     .product-brand{font-size:0.8rem;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-mono);margin-bottom:var(--s3)}
     .product-rating-large{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s4)}
-    .stars{color:var(--warning);font-size:1rem;letter-spacing:2px}
-    .rating-text{font-size:0.85rem;color:var(--text-tertiary)}
-    .product-price-large{font-size:1.6rem;font-weight:700;color:var(--text-primary);margin-bottom:var(--s4)}
-    .product-summary-text{font-size:0.95rem;color:var(--text-tertiary);line-height:1.7;margin-bottom:var(--s5)}
-    .btn-amazon-large{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s4) var(--s6);background:var(--accent);color:#fff;font-size:1rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
+    .stars{color:var(--warning);font-size:0.9rem;letter-spacing:1px}
+    .rating-text{font-size:0.85rem;color:var(--text-quaternary)}
+    .product-price-large{font-size:1.5rem;font-weight:700;color:var(--text-primary);margin-bottom:var(--s4)}
+    .product-summary-text{font-size:0.9rem;color:var(--text-tertiary);line-height:1.7;margin-bottom:var(--s5)}
+    .btn-amazon-large{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s3) var(--s6);background:var(--accent);color:#fff;font-size:1rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
     .btn-amazon-large:hover{background:var(--accent-hover);color:#fff}
     .specs-section{padding:var(--s7) 0;background:var(--bg-panel)}
     .specs-section h2{font-size:1.3rem;font-weight:600;margin-bottom:var(--s5)}
-    .specs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--s4)}
-    .spec-card{background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:var(--r-lg);padding:var(--s4)}
-    .spec-label{font-size:0.72rem;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-mono);margin-bottom:var(--s1)}
-    .spec-value{font-size:1rem;font-weight:600;color:var(--text-primary)}
+    .specs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:var(--s3)}
+    .spec-card{background:var(--bg-elevated);border-radius:var(--r-md);padding:var(--s4);text-align:center}
+    .spec-label{font-size:0.72rem;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-mono);margin-bottom:var(--s2)}
+    .spec-value{font-size:0.95rem;font-weight:600;color:var(--text-primary)}
     .testreport-section{padding:var(--s7) 0}
     .testreport-section h2{font-size:1.3rem;font-weight:600;margin-bottom:var(--s5)}
-    .testreport-intro{font-size:0.95rem;color:var(--text-tertiary);line-height:1.7;margin-bottom:var(--s6);max-width:800px}
-    .pro-contra-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);margin-bottom:var(--s6)}
-    .pro-box,.contra-box{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);padding:var(--s5)}
-    .pro-box h3,.contra-box h3{font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:var(--s4)}
-    .pro-box h3{color:var(--success)}
-    .contra-box h3{color:var(--danger)}
+    .verdict-box{background:var(--accent-bg);border:1px solid var(--accent-border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:var(--s5);margin-bottom:var(--s5)}
+    .verdict-box h3{font-size:0.85rem;font-weight:600;color:var(--accent-hover);margin-bottom:var(--s2);text-transform:uppercase;letter-spacing:0.06em}
+    .verdict-box p{font-size:0.95rem;color:var(--text-secondary);line-height:1.7}
+    .testreport-intro{font-size:0.9rem;color:var(--text-tertiary);line-height:1.7;margin-bottom:var(--s5)}
+    .pro-contra-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);margin-bottom:var(--s5)}
+    .pro-box,.contra-box{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-md);padding:var(--s5)}
+    .pro-box h3{font-size:0.85rem;font-weight:600;color:var(--success);margin-bottom:var(--s3)}
+    .contra-box h3{font-size:0.85rem;font-weight:600;color:var(--danger);margin-bottom:var(--s3)}
     .pro-box ul,.contra-box ul{list-style:none}
-    .pro-box li,.contra-box li{font-size:0.88rem;color:var(--text-tertiary);line-height:1.6;padding:var(--s1) 0;padding-left:var(--s4);position:relative}
+    .pro-box li,.contra-box li{font-size:0.85rem;color:var(--text-tertiary);line-height:1.6;padding:var(--s1) 0;padding-left:var(--s4);position:relative}
     .pro-box li::before{content:'+';position:absolute;left:0;color:var(--success);font-weight:600}
     .contra-box li::before{content:'−';position:absolute;left:0;color:var(--danger);font-weight:600}
-    .verdict-box{background:var(--accent-bg);border:1px solid var(--accent-border);border-radius:var(--r-lg);padding:var(--s5);margin-bottom:var(--s5)}
-    .verdict-box.verdict-top{border-left:4px solid var(--accent);padding:var(--s6);margin-bottom:var(--s7)}
-    .verdict-box h3{font-size:0.85rem;font-weight:600;color:var(--accent-hover);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:var(--s3)}
-    .verdict-box p{font-size:0.95rem;color:var(--text-secondary);line-height:1.8}
-    .testwoche-box{background:var(--bg-elevated);border-radius:var(--r-lg);padding:var(--s5)}
-    .testwoche-box h3{font-size:0.85rem;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:var(--s3)}
-    .testwoche-box p{font-size:0.9rem;color:var(--text-tertiary);line-height:1.7}
-    .rating-section{padding:var(--s7) 0;background:var(--bg-panel)}
-    .rating-section h2{font-size:1.3rem;font-weight:600;margin-bottom:var(--s5)}
-    .rating-overview{display:flex;align-items:center;gap:var(--s6);margin-bottom:var(--s6)}
-    .rating-big{font-size:3rem;font-weight:700;color:var(--text-primary);line-height:1}
-    .rating-details{flex:1}
-    .rating-details .stars{font-size:1.2rem;margin-bottom:var(--s1)}
-    .rating-details p{font-size:0.85rem;color:var(--text-quaternary)}
-    .rating-bars{display:grid;gap:var(--s2)}
-    .rating-bar-row{display:flex;align-items:center;gap:var(--s3)}
-    .rating-bar-label{font-size:0.78rem;color:var(--text-tertiary);width:20px}
-    .rating-bar{flex:1;height:8px;background:var(--bg-elevated);border-radius:var(--r-pill);overflow:hidden}
-    .rating-bar-fill{height:100%;background:var(--warning);border-radius:var(--r-pill)}
-    .rating-bar-pct{font-size:0.72rem;color:var(--text-quaternary);width:30px;text-align:right}
-    .related-section{padding:var(--s7) 0}
+    .testwoche{background:var(--bg-elevated);border-radius:var(--r-md);padding:var(--s5)}
+    .testwoche h3{font-size:0.85rem;font-weight:600;color:var(--text-secondary);margin-bottom:var(--s2)}
+    .testwoche p{font-size:0.85rem;color:var(--text-tertiary);line-height:1.7}
+    .related-section{padding:var(--s7) 0;background:var(--bg-panel)}
     .related-section h2{font-size:1.3rem;font-weight:600;margin-bottom:var(--s5)}
-    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--s4)}
-    .related-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);overflow:hidden;transition:all 200ms ease}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--s4)}
+    .related-card{background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:var(--r-md);overflow:hidden;transition:all 200ms ease;display:block}
     .related-card:hover{border-color:var(--accent-border);transform:translateY(-2px)}
-    .related-image{height:140px;background:#fff;display:flex;align-items:center;justify-content:center;padding:var(--s3)}
-    .related-image img{max-height:120px;max-width:90%;object-fit:contain}
-    .related-info{padding:var(--s4)}
-    .related-info h4{font-size:0.85rem;font-weight:600;margin-bottom:var(--s1)}
-    .related-info .price{font-size:0.95rem;font-weight:700;color:var(--text-primary)}
+    .related-image{height:120px;background:#fff;display:flex;align-items:center;justify-content:center;padding:var(--s3)}
+    .related-image img{max-height:100px;max-width:90%;object-fit:contain}
+    .related-info{padding:var(--s3)}
+    .related-info h4{font-size:0.85rem;font-weight:600;color:var(--text-primary);margin-bottom:var(--s1)}
+    .related-info .price{font-size:0.9rem;font-weight:700;color:var(--text-primary)}
+    .error{text-align:center;padding:var(--s8) 0}
+    .error h2{font-size:1.5rem;margin-bottom:var(--s3)}
+    .error p{color:var(--text-tertiary)}
     .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
     .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
@@ -111,8 +115,6 @@
     .footer-links a{font-size:0.8rem;color:var(--text-quaternary)}
     .footer-disclaimer{padding-top:var(--s4);border-top:1px solid var(--border-subtle);font-size:0.72rem;color:var(--text-quaternary);line-height:1.6}
     .build-timestamp{font-size:0.7rem;color:var(--text-quaternary);margin-top:var(--s3);opacity:0.5}
-    .loading{text-align:center;padding:var(--s8) 0;color:var(--text-tertiary)}
-    .error{text-align:center;padding:var(--s8) 0;color:var(--danger)}
     @media(max-width:768px){
       .nav-links{display:none}
       .nav-toggle{display:block}
@@ -120,7 +122,8 @@
       [data-theme="light"] .nav-links.open{background:#fff}
       .product-hero-grid{grid-template-columns:1fr}
       .pro-contra-grid{grid-template-columns:1fr}
-      .specs-grid{grid-template-columns:1fr 1fr}
+      .specs-grid{grid-template-columns:repeat(2,1fr)}
+      .related-grid{grid-template-columns:repeat(2,1fr)}
     }
   </style>
 </head>
@@ -156,14 +159,17 @@
     <div class="container">
       <ol class="breadcrumb-list" id="breadcrumbList">
         <li class="breadcrumb-item"><a href="/">Startseite</a></li>
-        <li class="breadcrumb-item active" aria-current="page" id="breadcrumbCurrent">Produkt</li>
+        <li class="breadcrumb-item" id="breadcrumbCategory"></li>
+        <li class="breadcrumb-item active" aria-current="page" id="breadcrumbCurrent"></li>
       </ol>
     </div>
   </nav>
 
-  <div id="productContent">
-    <div class="loading"><p>Lade Produkt...</p></div>
-  </div>
+  <main id="productContent">
+    <div class="container" style="padding:var(--s8) 0;text-align:center">
+      <p style="color:var(--text-tertiary)">Lade Produkt...</p>
+    </div>
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -201,120 +207,127 @@
     var productId = params.get('id');
 
     if(!productId){
-      document.getElementById('productContent').innerHTML = '<div class="error"><h2>Kein Produkt gefunden</h2><p>Bitte wähle ein Produkt aus dem <a href="/vergleich.html">Vergleich</a>.</p></div>';
+      document.getElementById('productContent').innerHTML = '<div class="container error"><h2>Kein Produkt gefunden</h2><p>Bitte wähle ein Produkt aus dem <a href="/vergleich.html">Vergleich</a>.</p></div>';
       return;
     }
+
+    // Sanitize productId to prevent XSS
+    productId = productId.replace(/[^a-zA-Z0-9_-]/g, '');
 
     fetch('/products.json')
       .then(function(r){ return r.json(); })
       .then(function(data){
         var product = data.products.find(function(p){ return p.id === productId; });
         if(!product){
-          document.getElementById('productContent').innerHTML = '<div class="error"><h2>Produkt nicht gefunden</h2><p>Das Produkt "'+productId+'" existiert nicht. <a href="/vergleich.html">Zum Vergleich</a></p></div>';
+          document.getElementById('productContent').innerHTML = '<div class="container error"><h2>Produkt nicht gefunden</h2><p>Das Produkt existiert nicht. <a href="/vergleich.html">Zum Vergleich</a></p></div>';
           return;
         }
-
-        // Update page title and breadcrumb
-        document.title = product.name + ' — Test & Vergleich | akku-test.de';
-        document.getElementById('breadcrumbCurrent').textContent = product.name;
-
-        // Find related products (same category, excluding current)
-        var related = data.products.filter(function(p){ return p.id !== product.id && p.categories.some(function(c){ return product.categories.indexOf(c) !== -1; }); }).slice(0, 4);
 
         var stars = '★'.repeat(Math.round(product.rating)) + '☆'.repeat(5-Math.round(product.rating));
         var s = product.specs || {};
         var tr = product.testreport || {};
 
-        // Build specs HTML
-        var specsHtml = '';
-        Object.keys(s).forEach(function(key){
-          var label = key.charAt(0).toUpperCase() + key.slice(1);
-          if(key === 'capacity') label = 'Kapazität';
-          if(key === 'output') label = 'Leistung';
-          if(key === 'weight') label = 'Gewicht';
-          if(key === 'battery') label = 'Akku-Typ';
-          if(key === 'solar') label = 'Solar-Eingang';
-          specsHtml += '<div class="spec-card"><div class="spec-label">'+label+'</div><div class="spec-value">'+s[key]+'</div></div>';
-        });
+        // === SEO: Dynamic Meta Tags ===
+        var productUrl = 'https://akku-test.de/produkt.html?id=' + encodeURIComponent(product.id);
+        var productImage = product.image ? 'https://akku-test.de' + product.image : 'https://akku-test.de/favicon.svg';
+        var productDesc = (tr.summary || product.summary || '').substring(0, 160);
 
-        // Build pro/contra HTML
-        var prosHtml = (tr.pros||[]).map(function(pro){ return '<li>'+pro+'</li>'; }).join('');
-        var contraHtml = (tr.contra||[]).map(function(con){ return '<li>'+con+'</li>'; }).join('');
+        document.title = product.name + ' — Test & Vergleich | akku-test.de';
+        document.getElementById('ogTitle').content = product.name + ' — Test & Vergleich';
+        document.getElementById('ogDesc').content = productDesc;
+        document.getElementById('ogUrl').content = productUrl;
+        document.getElementById('ogImage').content = productImage;
+        document.getElementById('twitterImage').content = productImage;
+        document.getElementById('canonicalUrl').href = productUrl;
 
-        // Build related HTML
-        var relatedHtml = '';
-        related.forEach(function(rp){
-          var rStars = '★'.repeat(Math.round(rp.rating)) + '☆'.repeat(5-Math.round(rp.rating));
-          relatedHtml += '<a href="/produkt.html?id='+rp.id+'" class="related-card"><div class="related-image">'+(rp.image?'<img src="'+rp.image+'" alt="'+rp.name+'" loading="lazy">':'')+'</div><div class="related-info"><h4>'+rp.name+'</h4><div class="stars" style="font-size:0.75rem;margin-bottom:var(--s1)">'+rStars+'</div><div class="price">'+rp.priceFormatted+'</div></div></a>';
-        });
+        // === Breadcrumb ===
+        var catNames = {'camping':'Camping & Outdoor','notstrom':'Hausnotstrom','solar':'Solar & Komplettsets'};
+        var catLinks = {'camping':'/camping.html','notstrom':'/notstrom.html','solar':'/solar.html'};
+        var primaryCat = product.categories[0] || 'vergleich';
+        document.getElementById('breadcrumbCategory').innerHTML = '<a href="' + (catLinks[primaryCat] || '/vergleich.html') + '">' + (catNames[primaryCat] || 'Vergleich') + '</a>';
+        document.getElementById('breadcrumbCurrent').textContent = product.name;
 
-        // Build full HTML
+        // === Schema.org JSON-LD ===
+        var schema = {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": product.name,
+          "brand": {"@type": "Brand", "name": product.brand},
+          "description": productDesc,
+          "image": productImage,
+          "url": productUrl,
+          "sku": product.asin,
+          "offers": {
+            "@type": "Offer",
+            "price": product.price.toFixed(2),
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.amazon.de/dp/" + product.asin + "?tag=akku0a1-21"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": product.rating.toString(),
+            "reviewCount": product.reviews.toString()
+          }
+        };
+        document.getElementById('schemaJson').textContent = JSON.stringify(schema);
+
+        // === Build HTML ===
         var content = '';
 
         // Hero
         content += '<section class="product-hero"><div class="container"><div class="product-hero-grid">';
         content += '<div class="product-image-large">';
         if(product.image){
-          content += '<img src="'+product.image+'" alt="'+product.name+'" onerror="this.parentNode.classList.add(\'no-image\')">';
+          content += '<img src="' + product.image + '" alt="' + product.name + '" loading="lazy" onerror="this.parentNode.classList.add(\'no-image\')">';
         }
         content += '<div class="product-image-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><p>Kein Bild verfügbar</p></div>';
         content += '</div>';
-        content += '</div>';
         content += '<div class="product-info">';
-        content += '<div class="product-brand">'+product.brand+'</div>';
-        content += '<h1>'+product.name+'</h1>';
-        content += '<div class="product-rating-large"><span class="stars">'+stars+'</span><span class="rating-text">'+product.rating+' von 5 ('+product.reviews+' Bewertungen)</span></div>';
-        content += '<div class="product-price-large">'+product.priceFormatted+'</div>';
-        content += '<p class="product-summary-text">'+(tr.summary||product.summary)+'</p>';
-        content += '<a href="https://www.amazon.de/dp/'+product.asin+'?tag=akku0a1-21" class="btn-amazon-large" target="_blank" rel="noopener">Auf Amazon ansehen →</a>';
+        content += '<div class="product-brand">' + product.brand + '</div>';
+        content += '<h1>' + product.name + '</h1>';
+        content += '<div class="product-rating-large"><span class="stars">' + stars + '</span><span class="rating-text">' + product.rating + ' von 5 (' + product.reviews + ' Bewertungen)</span></div>';
+        content += '<div class="product-price-large">' + product.priceFormatted + '</div>';
+        content += '<p class="product-summary-text">' + (tr.summary || product.summary) + '</p>';
+        content += '<a href="https://www.amazon.de/dp/' + product.asin + '?tag=akku0a1-21" class="btn-amazon-large" target="_blank" rel="noopener">Auf Amazon ansehen →</a>';
         content += '</div></div></div></section>';
 
         // Specs
-        content += '<section class="specs-section"><div class="container"><h2>Technische Daten</h2><div class="specs-grid">'+specsHtml+'</div></div></section>';
+        content += '<section class="specs-section"><div class="container"><h2>Technische Daten</h2><div class="specs-grid">';
+        var specLabels = {capacity:'Kapazität',output:'Leistung',weight:'Gewicht',battery:'Akku-Typ',solar:'Solar-Eingang',cycles:'Ladezyklen',ups:'UPS-Funktion',ports:'Anschlüsse'};
+        Object.keys(s).forEach(function(key){
+          content += '<div class="spec-card"><div class="spec-label">' + (specLabels[key] || key) + '</div><div class="spec-value">' + s[key] + '</div></div>';
+        });
+        content += '</div></div></section>';
 
-        // Testreport — Fazit zuerst
+        // Testreport
         content += '<section class="testreport-section"><div class="container">';
         content += '<h2>Testbericht</h2>';
-        
-        // Fazit-Box als Erstes
-        if(tr.verdict) content += '<div class="verdict-box verdict-top"><h3>Unser Fazit</h3><p>'+tr.verdict+'</p></div>';
-        
-        // Zusammenfassung
-        if(tr.summary) content += '<p class="testreport-intro">'+tr.summary+'</p>';
-        
-        // Pro/Contra
+        if(tr.verdict) content += '<div class="verdict-box verdict-top"><h3>Unser Fazit</h3><p>' + tr.verdict + '</p></div>';
+        if(tr.summary && tr.summary !== product.summary) content += '<p class="testreport-intro">' + tr.summary + '</p>';
         content += '<div class="pro-contra-grid">';
-        content += '<div class="pro-box"><h3>Pro</h3><ul>'+prosHtml+'</ul></div>';
-        content += '<div class="contra-box"><h3>Contra</h3><ul>'+contraHtml+'</ul></div>';
+        if(tr.pros && tr.pros.length) content += '<div class="pro-box"><h3>Pro</h3><ul>' + tr.pros.map(function(p){return '<li>'+p+'</li>';}).join('') + '</ul></div>';
+        if(tr.contra && tr.contra.length) content += '<div class="contra-box"><h3>Contra</h3><ul>' + tr.contra.map(function(c){return '<li>'+c+'</li>';}).join('') + '</ul></div>';
         content += '</div>';
-        
-        // Testwoche
-        if(tr.testwoche) content += '<div class="testwoche-box"><h3>Testwoche</h3><p>'+tr.testwoche+'</p></div>';
-        
+        if(tr.testwoche) content += '<div class="testwoche"><h3>Testwoche</h3><p>' + tr.testwoche + '</p></div>';
         content += '</div></section>';
 
-        // Rating
-        content += '<section class="rating-section"><div class="container">';
-        content += '<h2>Bewertung</h2>';
-        content += '<div class="rating-overview">';
-        content += '<div class="rating-big">'+product.rating+'</div>';
-        content += '<div class="rating-details"><div class="stars">'+stars+'</div><p>'+product.reviews+' Bewertungen auf Amazon</p></div>';
-        content += '</div>';
-        content += '</div></section>';
-
-        // Related
+        // Related products
+        var related = data.products.filter(function(p){ return p.id !== product.id && p.categories.some(function(c){ return product.categories.indexOf(c) !== -1; }); }).slice(0, 4);
         if(related.length > 0){
-          content += '<section class="related-section"><div class="container">';
-          content += '<h2>Ähnliche Produkte</h2>';
-          content += '<div class="related-grid">'+relatedHtml+'</div>';
-          content += '</div></section>';
+          content += '<section class="related-section"><div class="container"><h2>Ähnliche Produkte</h2><div class="related-grid">';
+          related.forEach(function(rp){
+            var rStars = '★'.repeat(Math.round(rp.rating)) + '☆'.repeat(5-Math.round(rp.rating));
+            content += '<a href="/produkt.html?id=' + rp.id + '" class="related-card"><div class="related-image">' + (rp.image ? '<img src="' + rp.image + '" alt="' + rp.name + '" loading="lazy">' : '') + '</div><div class="related-info"><h4>' + rp.name + '</h4><div class="stars" style="font-size:0.75rem;margin-bottom:var(--s1)">' + rStars + '</div><div class="price">' + rp.priceFormatted + '</div></div></a>';
+          });
+          content += '</div></div></section>';
         }
 
         document.getElementById('productContent').innerHTML = content;
       })
       .catch(function(e){
         console.error(e);
-        document.getElementById('productContent').innerHTML = '<div class="error"><h2>Fehler</h2><p>Produktdaten konnten nicht geladen werden.</p></div>';
+        document.getElementById('productContent').innerHTML = '<div class="container error"><h2>Fehler</h2><p>Produktdaten konnten nicht geladen werden.</p></div>';
       });
   })();
   </script>
