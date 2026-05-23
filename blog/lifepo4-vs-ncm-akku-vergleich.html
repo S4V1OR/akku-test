@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiFePO4 vs NCM — Welcher Akku-Typ ist besser? | akku-test.de</title>
+  <meta name="description" content="Der große Batterie-Vergleich: LiFePO4 und NCM im direkten Vergleich. Lebensdauer, Sicherheit, Gewicht, Kosten — alles was du wissen musst.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href="https://akku-test.de/blog/lifepo4-vs-ncm-akku-vergleich.html">
+  <meta property="og:title" content="LiFePO4 vs NCM — Welcher Akku-Typ ist besser?">
+  <meta property="og:description" content="Der große Batterie-Vergleich: LiFePO4 und NCM im direkten Vergleich.">
+  <meta property="og:url" content="https://akku-test.de/blog/lifepo4-vs-ncm-akku-vergleich.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="akku-test.de">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"LiFePO4 vs NCM — Welcher Akku-Typ ist besser?","datePublished":"2026-05-23","publisher":{"@type":"Organization","name":"akku-test.de"}}</script>
+  <style>
+    :root{--bg:#08090a;--bg-panel:#0f1011;--bg-elevated:#191a1b;--bg-hover:#28282c;--text-primary:#f7f8f8;--text-secondary:#d0d6e0;--text-tertiary:#8a8f98;--text-quaternary:#62666d;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-dim:#3e4a9e;--accent-glow:rgba(94,106,210,0.12);--accent-glow-strong:rgba(94,106,210,0.2);--accent-border:rgba(94,106,210,0.2);--accent-bg:rgba(94,106,210,0.08);--border-subtle:rgba(255,255,255,0.05);--border-default:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.12);--success:#34d399;--danger:#f87171;--warning:#fbbf24;--font-sans:'Inter',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:80px;--r-sm:4px;--r-md:6px;--r-lg:8px;--r-xl:12px;--r-pill:9999px}
+    [data-theme="light"]{--bg:#f5f6f8;--bg-panel:#ffffff;--bg-elevated:#ebedf0;--bg-hover:#e2e4e8;--text-primary:#1a1d28;--text-secondary:#3a3f4e;--text-tertiary:#6b7280;--text-quaternary:#9ca3af;--accent-glow:rgba(94,106,210,0.08);--accent-glow-strong:rgba(94,106,210,0.15);--accent-border:rgba(94,106,210,0.25);--accent-bg:rgba(94,106,210,0.05);--border-subtle:rgba(0,0,0,0.06);--border-default:rgba(0,0,0,0.1);--border-strong:rgba(0,0,0,0.15)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:var(--font-sans);background:var(--bg);color:var(--text-primary);line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none;transition:color 150ms ease}
+    a:hover{color:var(--accent-hover)}
+    .container{width:100%;max-width:800px;margin:0 auto;padding:0 var(--s5)}
+    body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;z-index:0}
+    body>*{position:relative;z-index:1}
+    .nav{position:sticky;top:0;z-index:100;background:rgba(8,9,10,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-subtle)}
+    [data-theme="light"] .nav{background:rgba(255,255,255,0.92)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:56px}
+    .nav-logo{display:flex;align-items:center;gap:var(--s2);color:var(--text-primary);font-weight:600;font-size:1rem;text-decoration:none}
+    .logo-icon{width:20px;height:20px;stroke:var(--accent)}
+    .nav-links{display:flex;align-items:center;gap:var(--s4);list-style:none}
+    .nav-links a{color:var(--text-tertiary);font-size:0.85rem;font-weight:500}
+    .nav-links a:hover,.nav-links a.active{color:var(--text-primary)}
+    .nav-actions{display:flex;align-items:center;gap:var(--s2)}
+    .nav-toggle{display:none;background:none;border:none;color:var(--text-primary);cursor:pointer;padding:var(--s2)}
+    .nav-toggle svg{width:24px;height:24px}
+    .theme-toggle{background:none;border:1px solid var(--border-default);color:var(--text-tertiary);cursor:pointer;padding:var(--s1);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;width:36px;height:36px}
+    .theme-toggle svg{width:18px;height:18px}
+    .article-header{padding:var(--s7) 0 var(--s5);border-bottom:1px solid var(--border-subtle);margin-bottom:var(--s6)}
+    .article-category{display:inline-block;background:var(--accent-bg);color:var(--accent);font-size:0.75rem;font-weight:600;padding:var(--s1) var(--s3);border-radius:var(--r-pill);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:var(--s3);font-family:var(--font-mono)}
+    .article-header h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;line-height:1.2;margin-bottom:var(--s3)}
+    .article-meta{font-size:0.85rem;color:var(--text-quaternary)}
+    .article-content{padding-bottom:var(--s8)}
+    .article-content h2{font-size:1.4rem;font-weight:600;margin:var(--s7) 0 var(--s4);color:var(--text-primary)}
+    .article-content h3{font-size:1.15rem;font-weight:600;margin:var(--s5) 0 var(--s3);color:var(--text-primary)}
+    .article-content p{margin-bottom:var(--s4);color:var(--text-secondary)}
+    .article-content ul{margin-bottom:var(--s4);padding-left:var(--s5)}
+    .article-content li{color:var(--text-secondary);margin-bottom:var(--s2)}
+    .article-content strong{color:var(--text-primary)}
+    .comparison-table{width:100%;border-collapse:collapse;margin:var(--s5) 0;font-size:0.9rem}
+    .comparison-table th{text-align:left;padding:var(--s3) var(--s4);background:var(--bg-elevated);color:var(--text-tertiary);font-family:var(--font-mono);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;border-bottom:1px solid var(--border-subtle)}
+    .comparison-table td{padding:var(--s3) var(--s4);border-bottom:1px solid var(--border-subtle);color:var(--text-secondary)}
+    .comparison-table tr:last-child td{border-bottom:none}
+    .comparison-table .winner{color:var(--success);font-weight:600}
+    .verdict-box{background:var(--accent-bg);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:var(--s5);margin:var(--s6) 0}
+    .verdict-box h3{font-size:0.85rem;font-weight:600;color:var(--accent-hover);margin-bottom:var(--s3);text-transform:uppercase;letter-spacing:0.06em;font-family:var(--font-mono)}
+    .verdict-box p{color:var(--text-secondary);line-height:1.8;margin-bottom:var(--s3)}
+    .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
+    .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
+    .footer-links{display:flex;gap:var(--s4);list-style:none}
+    .footer-links a{font-size:0.8rem;color:var(--text-quaternary)}
+    .footer-disclaimer{padding-top:var(--s4);border-top:1px solid var(--border-subtle);font-size:0.72rem;color:var(--text-quaternary);line-height:1.6}
+    .build-timestamp{font-size:0.7rem;color:var(--text-quaternary);margin-top:var(--s3);opacity:0.5}
+    @media(max-width:768px){.nav-links{display:none}.nav-toggle{display:block}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:56px;left:0;right:0;background:var(--bg-panel);border-bottom:1px solid var(--border-subtle);padding:var(--s4);gap:var(--s3)}.comparison-table{font-size:0.8rem}}
+  </style>
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo"><svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>akku-test.de</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Startseite</a></li>
+          <li><a href="/blog.html" class="active">Blog</a></li>
+          <li><a href="/vergleich.html">Vergleich</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten"><svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
+          <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <header class="article-header container">
+      <span class="article-category">Wissen</span>
+      <h1>LiFePO4 vs NCM — Welcher Akku-Typ ist besser?</h1>
+      <p class="article-meta">23. Mai 2026 · 9 Min. Lesezeit · von akku-test.de</p>
+    </header>
+
+    <div class="article-content container">
+      <p>Beim Kauf einer Powerstation ist der Akku-Typ einer der wichtigsten Entscheidungsfaktoren. Die beiden gängigsten Technologien sind <strong>LiFePO4</strong> (Lithium-Eisen-Phosphat) und <strong>NCM</strong> (Lithium-Nickel-Cobalt-Mangan). Beide haben Vor- und Nachteile — welche ist die richtige für dich?</p>
+
+      <h2>Technische Daten im Vergleich</h2>
+      <div style="overflow-x:auto">
+        <table class="comparison-table">
+          <tr><th>Merkmal</th><th>LiFePO4</th><th>NCM</th></tr>
+          <tr><td>Ladezyklen</td><td class="winner">3.000 - 6.000</td><td>500 - 1.000</td></tr>
+          <tr><td>Energiedichte</td><td>90-120 Wh/kg</td><td class="winner">150-250 Wh/kg</td></tr>
+          <tr><td>Gewicht (pro Wh)</td><td>Höher</td><td class="winner">Niedriger</td></tr>
+          <tr><td>Sicherheit</td><td class="winner">Sehr hoch (thermisch stabil)</td><td>Mittel (Thermal Runaway möglich)</td></tr>
+          <tr><td>Lebensdauer</td><td class="winner">8-10 Jahre</td><td>3-5 Jahre</td></tr>
+          <tr><td>Kosten (pro Wh)</td><td>Höher</td><td class="winner">Niedriger</td></tr>
+          <tr><td>Temperaturbereich</td><td class="winner">-20°C bis 60°C</td><td>0°C bis 45°C</td></tr>
+          <tr><td>Selbstentladung</td><td class="winner">~2% pro Monat</td><td>~5% pro Monat</td></tr>
+        </table>
+      </div>
+
+      <h2>LiFePO4 — Der Dauerläufer</h2>
+      <p>LiFePO4 (Lithium-Eisen-Phosphat) ist die modernere und sicherere Technologie. Der größte Vorteil: die <strong>extrem hohe Zyklenzahl</strong>. Eine LiFePO4-Batterie hält 3.000 bis 6.000 Ladezyklen — das entspricht bei täglichem Gebrauch 8-10 Jahren. Bei wöchentlichem Gebrauch sind es sogar 15+ Jahre.</p>
+      <p>Außerdem ist LiFePO4 <strong>thermisch sehr stabil</strong>. Im Gegensatz zu NCM kann es keinen "Thermal Runaway" (thermische Kettenreaktion) erfahren — das bedeutet: Kein Brandrisiko bei Überhitzung oder Beschädigung. Für den Einsatz im Haus oder Wohnmobil ist das ein entscheidender Sicherheitsvorteil.</p>
+      <p>Der Nachteil: LiFePO4 ist <strong>schwerer und teurer</strong> pro Wh. Eine LiFePO4-Powerstation mit 1.000 Wh wiegt ca. 2-3 kg mehr als ein NCM-Modell mit gleicher Kapazität.</p>
+
+      <h2>NCM — Der Leichtgewicht-Champion</h2>
+      <p>NCM (Lithium-Nickel-Cobalt-Mangan) ist die ältere, aber immer noch weit verbreitete Technologie. Der größte Vorteil: die <strong>hohe Energiedichte</strong>. NCM-Akkus speichern mehr Energie pro Kilogramm — ideal für leichte, kompakte Powerstations.</p>
+      <p>Der größte Nachteil: die <strong>kurze Lebensdauer</strong>. Mit 500-1.000 Ladezyklen hält ein NCM-Akku bei täglichem Gebrauch nur 2-3 Jahre. Danach ist die Kapazität deutlich reduziert (unter 80% der Originalkapazität).</p>
+      <p>Aus Sicherheitssicht ist NCM <strong>kritischer</strong>. Bei Überhitzung, Überladung oder mechanischer Beschädigung kann es zum "Thermal Runaway" kommen — ein sich selbst verstärkender Temperaturanstieg, der zum Brand führen kann. Moderne Powerstations haben Schutzschaltungen, aber das Risiko ist höher als bei LiFePO4.</p>
+
+      <h2>Welcher Akku-Typ für welchen Einsatzzweck?</h2>
+      <ul>
+        <li><strong>Regelmäßiger Einsatz (täglich/mehrmals pro Woche):</strong> LiFePO4 — die höhere Investition amortisiert sich durch die längere Lebensdauer.</li>
+        <li><strong>Gelegentlicher Einsatz (1-2x pro Monat):</strong> Beide möglich — NCM ist günstiger in der Anschaffung.</li>
+        <li><strong>Camping/Outdoor (Gewicht wichtig):</strong> NCM — leichter für Transport.</li>
+        <li><strong>Hausnotstrom (Sicherheit wichtig):</strong> LiFePO4 — sicherer im Innenbereich.</li>
+        <li><strong>Wohnmobil (Temperaturschwankungen):</strong> LiFePO4 — besserer Temperaturbereich.</li>
+      </ul>
+
+      <h2>Kostenvergleich über 10 Jahre</h2>
+      <p>Am Ende zählt der Gesamtpreis über die Lebensdauer. Hier ein Beispiel für eine 1.000 Wh Powerstation:</p>
+      <ul>
+        <li><strong>LiFePO4:</strong> ~600 € Anschaffung + 0 € Ersatz = <strong>600 € über 10 Jahre</strong></li>
+        <li><strong>NCM:</strong> ~400 € Anschaffung + ~400 € Ersatz (nach 3-4 Jahren) = <strong>800 € über 10 Jahre</strong></li>
+      </ul>
+      <p>LiFePO4 ist langfristig <strong>günstiger</strong>, obwohl die Anschaffungskosten höher sind.</p>
+
+      <div class="verdict-box">
+        <h3>Unser Fazit</h3>
+        <p><strong>LiFePO4 ist die bessere Wahl für die meisten.</strong> Es ist sicherer, langlebiger und langfristig günstiger. Die höheren Anschaffungskosten amortieren sich innerhalb von 2-3 Jahren. Nur wenn Gewicht die oberste Priorität hat (z.B. Wandercamping), ist NCM eine sinnvolle Alternative.</p>
+        <p>Immer mehr Hersteller (EcoFlow, BLUETTI, Anker) setzen mittlerweile standardmäßig auf LiFePO4 — das zeigt die Richtung.</p>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 akku-test.de</span>
+        <ul class="footer-links">
+          <li><a href="/ueber-uns.html">Über uns</a></li>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a href="/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
+      <div class="build-timestamp">Build: 23.05.2026 13:58 CEST
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if(navToggle && navLinks){ navToggle.addEventListener('click', function(){ navLinks.classList.toggle('open'); }); }
+    var html = document.documentElement;
+    var themeToggleBtn = document.getElementById('themeToggle');
+    var iconDark = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-dark') : null;
+    var iconLight = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-light') : null;
+    var savedTheme = localStorage.getItem('theme');
+    if(savedTheme === 'light'){ html.setAttribute('data-theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; }
+    if(themeToggleBtn){ themeToggleBtn.addEventListener('click', function(){ var isLight = html.getAttribute('data-theme')==='light'; if(isLight){ html.removeAttribute('data-theme'); localStorage.removeItem('theme'); if(iconDark) iconDark.style.display='block'; if(iconLight) iconLight.style.display='none'; }else{ html.setAttribute('data-theme','light'); localStorage.setItem('theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; } }); }
+  })();
+  </script>
+</body>
+</html>
