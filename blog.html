@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,7 +150,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 31.05.2026 14:30 CEST 08:32 CEST
+      <div class="build-timestamp">Build: 31.05.2026 16:00 CEST
     </div>
   </footer>
 
@@ -165,89 +165,42 @@
     var iconDark = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-dark') : null;
     var iconLight = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-light') : null;
     var savedTheme = localStorage.getItem('theme');
-    if(savedTheme === 'light'){ html.setAttribute('data-theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; }
+    if(savedTheme === 'dark'){ html.removeAttribute('data-theme'); if(iconDark) iconDark.style.display='block'; if(iconLight) iconLight.style.display='none'; }
+    else{ html.setAttribute('data-theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; }
     if(themeToggleBtn){ themeToggleBtn.addEventListener('click', function(){ var isLight = html.getAttribute('data-theme')==='light'; if(isLight){ html.removeAttribute('data-theme'); localStorage.removeItem('theme'); if(iconDark) iconDark.style.display='block'; if(iconLight) iconLight.style.display='none'; }else{ html.setAttribute('data-theme','light'); localStorage.setItem('theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; } }); }
 
-    var posts = [
+            var posts = [
       {
-        slug: 'ecoflow-delta2-vs-bluetti-ac200p',
-        title: 'EcoFlow DELTA 2 vs BLUETTI AC200P — Der große Vergleich 2026',
+        slug: 'anker-solix-vs-ecoflow',
+        title: 'Anker SOLIX vs EcoFlow — Wer ist besser?',
         category: 'Vergleich',
-        date: '2026-05-23',
-        image: '/img/ecoflow-delta2.jpg',
-        excerpt: 'Die zwei beliebtesten Powerstations im Mittelklasse-Segment im direkten Vergleich. Welche ist die richtige für dich?'
+        date: '2026-04-12',
+        image: '/img/anker-solix-c300.jpg',
+        excerpt: 'Die zwei größten Powerstation-Hersteller im Vergleich. Philosophie, Technik, Preis — wer gewinnt?'
       },
       {
         slug: 'beste-powerstation-camping-2026',
         title: 'Die 5 besten Powerstations für Camping 2026',
         category: 'Ratgeber',
-        date: '2026-05-23',
+        date: '2026-05-18',
         image: '/img/ecoflow-river2max.jpg',
         excerpt: 'Welche Powerstation eignet sich für Camping, Wohnmobil und Outdoor? Unsere Top-5-Empfehlungen mit Preis-Leistungs-Sieger.'
       },
       {
-        slug: 'powerstation-hausnotstrom-was-kostet-das',
-        title: 'Powerstation als Hausnotstrom — Was kostet das wirklich?',
-        category: 'Ratgeber',
-        date: '2026-05-23',
-        image: '/img/anker-solix-c300.jpg',
-        excerpt: 'Notstrom für den gannten Haushalt? Wir rechnen durch, was eine Powerstation als Notstrom wirklich kostet und leisten kann.'
-      },
-      {
-        slug: 'lifepo4-vs-ncm-akku-vergleich',
-        title: 'LiFePO4 vs NCM — Welcher Akku-Typ ist besser?',
-        category: 'Wissen',
-        date: '2026-05-23',
+        slug: 'bluetti-apex300-test',
+        title: 'BLUETTI AC1000P B500 — Notstrom für Zuhause',
+        category: 'Testbericht',
+        date: '2026-04-03',
         image: '/img/bluetti-apex-300.jpg',
-        excerpt: 'Der großes Batterie-Vergleich: LiFePO4 und NCM im direkten Vergleich. Lebensdauer, Sicherheit, Gewicht und Kosten.'
+        excerpt: 'Zwei Wochen Dauerbetrieb: 6.000Wh für den Hausnotstrom. Unsere Messwerte und Erfahrungen.'
       },
       {
-        slug: 'solarpanel-powerstation-berechnen',
-        title: 'Solarpanel für Powerstation — Wie viel Watt brauchst du?',
-        category: 'Ratgeber',
-        date: '2026-05-23',
-        image: '/img/jackery-550w-solar.jpg',
-        excerpt: 'Die richtige Solarpanel-Größe für deine Powerstation berechnen. Anleitung mit Formeln und Praxisbeispielen.'
-      },
-      {
-        slug: 'powerstation-kaufen-auf-was-achten',
-        title: 'Powerstation kaufen — Worauf du 2026 achten musst',
-        category: 'Kaufberater',
-        date: '2026-05-23',
-        image: '/img/ecoflow-delta3.jpg',
-        excerpt: 'Der große Kaufberater: Kapazität, Leistung, Akku-Typ, Anschlüsse — worauf du beim Kauf achten musst.'
-      },
-      {
-        slug: 'wohnmobil-powerstation',
-        title: 'Wohnmobil Powerstation — Die besten Modelle 2026',
-        category: 'Wohnmobil',
-        date: '2026-05-23',
-        image: '/img/bluetti-elite-30v2.jpg',
-        excerpt: 'Die beste Powerstation für Wohnmobil und Vanlife. Worauf du beim Camping-Anschluss achten musst.'
-      },
-      {
-        slug: 'powerstation-erweitern-zusatzakku',
-        title: 'Powerstation erweitern — Zusatzakkus & Module',
-        category: 'Technik',
-        date: '2026-05-23',
-        image: '/img/bluetti-apex-300.jpg',
-        excerpt: 'Welche Powerstations sind erweiterbar? EcoFlow, BLUETTI, Anker — die Möglichkeiten und Kosten.'
-      },
-      {
-        slug: 'notstrom-vorschriften',
-        title: 'Notstrom Vorschriften — Was ist in Deutschland erlaubt?',
-        category: 'Recht',
-        date: '2026-05-23',
-        image: '/img/bluetti-elite-200v2.jpg',
-        excerpt: 'Notstrom mit Powerstation: Vorschriften, Rückspeisung, Elektriker-Pflicht — was du wissen musst.'
-      },
-      {
-        slug: 'powerstation-im-winter',
-        title: 'Powerstation im Winter — Tipps für Kälte & Lagerung',
-        category: 'Tipps',
-        date: '2026-05-23',
-        image: '/img/allpowers-r600.jpg',
-        excerpt: 'Kälte, Kapazitätsverlust, Lagerung — wie du deine Powerstation schonend durch den Winter bringst.'
+        slug: 'ecoflow-delta2-vs-bluetti-ac200p',
+        title: 'EcoFlow DELTA 2 vs BLUETTI AC200P — Der große Vergleich 2026',
+        category: 'Vergleich',
+        date: '2026-03-30',
+        image: '/img/ecoflow-delta2.jpg',
+        excerpt: 'Die zwei beliebtesten Powerstations im Mittelklasse-Segment im direkten Vergleich. Welche ist die richtige für dich?'
       },
       {
         slug: 'ecoflow-delta3-vs-delta3classic',
@@ -258,67 +211,107 @@
         excerpt: 'DELTA 3 oder DELTA 3 Classic? Die zwei neuesten EcoFlow-Modelle im direkten Vergleich — welches ist die richtige für dich?'
       },
       {
-        slug: 'powerstation-haltbarkeit',
-        title:
-        'Powerstation Haltbarkeit — Wie lange hält ein Akku?',
+        slug: 'lifepo4-vs-ncm-akku-vergleich',
+        title: 'LiFePO4 vs NCM — Welcher Akku-Typ ist besser?',
         category: 'Wissen',
-        date: '2026-05-24',
+        date: '2026-05-10',
+        image: '/img/bluetti-apex-300.jpg',
+        excerpt: 'Der großes Batterie-Vergleich: LiFePO4 und NCM im direkten Vergleich. Lebensdauer, Sicherheit, Gewicht und Kosten.'
+      },
+      {
+        slug: 'notstrom-vorschriften',
+        title: 'Notstrom Vorschriften — Was ist erlaubt?',
+        category: 'Recht',
+        date: '2026-03-22',
+        image: '/img/bluetti-elite-200v2.jpg',
+        excerpt: 'Notstrom mit Powerstation: Vorschriften, Rückspeisung, Elektriker-Pflicht — was du wissen musst.'
+      },
+      {
+        slug: 'powerstation-erweitern-zusatzakku',
+        title: 'Powerstation erweitern — Zusatzakkus & Module',
+        category: 'Technik',
+        date: '2026-02-27',
+        image: '/img/bluetti-apex-300.jpg',
+        excerpt: 'Welche Powerstations sind erweiterbar? EcoFlow, BLUETTI, Anker — die Möglichkeiten und Kosten.'
+      },
+      {
+        slug: 'powerstation-haltbarkeit',
+        title: 'Powerstation Haltbarkeit — Wie lange hält ein Akku?',
+        category: 'Wissen',
+        date: '2026-04-21',
         image: '/img/bluetti-elite-100v2.jpg',
         excerpt: 'Die Wahrheit über Ladezyklen, Selbstentladung und Lagerung. So hält deine Powerstation 10 Jahre.'
       },
       {
-        slug: 'bluetti-apex300-test',
-        title: 'BLUETTI Apex 300 + B300 — 6.000Wh im Dauerbetrieb-Test',
-        category: 'Testbericht',
-        date: '2026-05-24',
-        image: '/img/bluetti-apex-300.jpg',
-        excerpt: 'Zwei Wochen Dauerbetrieb: 6.000Wh für den Hausnotstrom. Unsere Messwerte und Erfahrungen.'
+        slug: 'powerstation-hausnotstrom-was-kostet-das',
+        title: 'Powerstation als Hausnotstrom — Was kostet das wirklich?',
+        category: 'Ratgeber',
+        date: '2026-03-05',
+        image: '/img/anker-solix-c300.jpg',
+        excerpt: 'Notstrom für den gannten Haushalt? Wir rechnen durch, was eine Powerstation als Notstrom wirklich kostet und leisten kann.'
+      },
+      {
+        slug: 'powerstation-im-winter',
+        title: 'Powerstation im Winter — Tipps für Kälte & Speicher',
+        category: 'Tipps',
+        date: '2026-03-14',
+        image: '/img/allpowers-r600.jpg',
+        excerpt: 'Kälte, Kapazitätsverlust, Lagerung — wie du deine Powerstation schonend durch den Winter bringst.'
       },
       {
         slug: 'powerstation-kapazitaet-berechnen',
-        title: 'Powerstation Kapazität berechnen — Welche Wh brauchst du?',
+        title: 'Powerstation kaufen — Welche Kapazität brauche ich?',
         category: 'Rechner',
-        date: '2026-05-24',
+        date: '2026-05-02',
         image: '/img/ecoflow-delta3classic.jpg',
         excerpt: 'Camping, Notstrom, Wohnmobil — mit unserer Tabelle die richtige Kapazität berechnen.'
       },
       {
-        slug: 'anker-solix-vs-ecoflow',
-        title: 'Anker SOLIX vs EcoFlow — Wer ist besser?',
-        category: 'Vergleich',
-        date: '2026-05-24',
-        image: '/img/anker-solix-c300.jpg',
-        excerpt: 'Die zwei größten Powerstation-Hersteller im Vergleich. Philosophie, Technik, Preis — wer gewinnt?'
+        slug: 'powerstation-kaufen-auf-was-achten',
+        title: 'Powerstation kaufen — Worauf achten? Der große Kaufberater 2026',
+        category: 'Kaufberater',
+        date: '2026-02-08',
+        image: '/img/ecoflow-delta3.jpg',
+        excerpt: 'Der große Kaufberater: Kapazität, Leistung, Akku-Typ, Anschlüsse — worauf du beim Kauf achten musst.'
+      },
+      {
+        slug: 'solarpanel-powerstation-berechnen',
+        title: 'Solarpanel für Powerstation — Wie viel Watt brauchst du?',
+        category: 'Ratgeber',
+        date: '2026-02-19',
+        image: '/img/jackery-550w-solar.jpg',
+        excerpt: 'Die richtige Solarpanel-Größe für deine Powerstation berechnen. Anleitung mit Formeln und Praxisbeispielen.'
+      },
+      {
+        slug: 'wohnmobil-powerstation',
+        title: 'Wohnmobil Powerstation — Die besten Modelle 2026',
+        category: 'Wohnmobil',
+        date: '2026-04-28',
+        image: '/img/bluetti-elite-30v2.jpg',
+        excerpt: 'Die beste Powerstation für Wohnmobil und Vanlife. Worauf du beim Camping-Anschluss achten musst.'
       }
     ];
-
     var grid = document.getElementById('blogGrid');
+    if(!grid) return;
     posts.forEach(function(post){
+      var file = post.slug + '.html';
       var imgHtml = post.image
         ? '<img src="' + post.image + '" alt="' + post.title + '" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
         : '';
-      var placeholderHtml = post.image
-        ? '<div class="blog-card-image-placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>'
-        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>';
-      grid.innerHTML += '<a href="/blog/' + post.slug + '.html" class="blog-card">'
-        + '<div class="blog-card-image">'
-        + '<span class="blog-card-category">' + post.category + '</span>'
-        + imgHtml
-        + placeholderHtml
-        + '</div>'
-        + '<div class="blog-card-info">'
-        + '<div class="blog-card-date">' + formatDate(post.date) + '</div>'
-        + '<h3>' + post.title + '</h3>'
-        + '<p class="blog-card-excerpt">' + post.excerpt + '</p>'
-        + '<span class="blog-card-link">Weiterlesen →</span>'
-        + '</div></a>';
+      var placeholder = '<div class="blog-card-image-placeholder" style="display:' + (post.image ? 'none' : 'flex') + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>';
+      var dateParts = post.date.split('-');
+      var formattedDate = dateParts[2] + '.' + dateParts[1] + '.' + dateParts[0];
+      var card = '<a href="/blog/' + file + '" class="blog-card">';
+      card += '<div class="blog-card-image">' + imgHtml + placeholder;
+      card += '<span class="blog-card-category">' + post.category + '</span></div>';
+      card += '<div class="blog-card-info">';
+      card += '<div class="blog-card-date">' + formattedDate + '</div>';
+      card += '<h3>' + post.title + '</h3>';
+      card += '<p class="blog-card-excerpt">' + post.excerpt + '</p>';
+      card += '<span class="blog-card-link">Weiterlesen →</span>';
+      card += '</div></a>';
+      grid.innerHTML += card;
     });
-
-    function formatDate(d){
-      var months = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
-      var parts = d.split('-');
-      return parts[2] + '. ' + months[parseInt(parts[1])-1] + ' ' + parts[0];
-    }
   })();
   </script>
 </body>

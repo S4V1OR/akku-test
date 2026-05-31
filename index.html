@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -231,7 +231,8 @@
     var iconDark = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-dark') : null;
     var iconLight = themeToggleBtn ? themeToggleBtn.querySelector('.theme-icon-light') : null;
     var savedTheme = localStorage.getItem('theme');
-    if(savedTheme === 'light'){ html.setAttribute('data-theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; }
+    if(savedTheme === 'dark'){ html.removeAttribute('data-theme'); if(iconDark) iconDark.style.display='block'; if(iconLight) iconLight.style.display='none'; }
+    else{ html.setAttribute('data-theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; }
     if(themeToggleBtn){ themeToggleBtn.addEventListener('click', function(){ var isLight = html.getAttribute('data-theme')==='light'; if(isLight){ html.removeAttribute('data-theme'); localStorage.setItem('theme','dark'); if(iconDark) iconDark.style.display='block'; if(iconLight) iconLight.style.display='none'; }else{ html.setAttribute('data-theme','light'); localStorage.setItem('theme','light'); if(iconDark) iconDark.style.display='none'; if(iconLight) iconLight.style.display='block'; } }); }
 
     function renderProductCard(p){
