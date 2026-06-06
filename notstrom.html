@@ -197,7 +197,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 19:13 CEST
+      <div class="build-timestamp">Build: 06.06.2026 19:36 CEST
     </div>
   </footer>
   <script>
@@ -216,7 +216,7 @@
     function renderProductCard(p){
       var stars = '★'.repeat(Math.round(p.rating))+'☆'.repeat(5-Math.round(p.rating));
       var s = p.specs||{};
-      return '<article class="product-card"><div class="product-image-wrap">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy" loading="lazy">':'')+'</div><div class="product-info"><div class="product-brand">'+p.brand+'</div><h3 class="product-name"><a href="/produkte/'+p.id+'.html" class="product-name-link">'+p.name+'</a></h3><div class="product-rating"><span class="stars">'+stars+'</span><span class="rating-text">'+p.rating+' ('+p.reviews+')</span></div><div class="product-specs"><div class="spec"><strong>Kapazität:</strong> '+(s.capacity||'—')+'</div><div class="spec"><strong>Leistung:</strong> '+(s.output||'—')+'</div><div class="spec"><strong>Gewicht:</strong> '+(s.weight||'—')+'</div><div class="spec"><strong>Akku:</strong> '+(s.battery||'—')+'</div></div><p class="product-summary">'+p.summary+'</p><div class="product-footer"><div class="product-price">'+p.priceFormatted+'</div><div class="product-actions"><a href="/produkte/'+p.id+'.html" class="btn-secondary">Details</a><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a></div></div></div></article>';
+      return '<article class="product-card"><div class="product-image-wrap">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':'')+'</div><div class="product-info"><div class="product-brand">'+p.brand+'</div><h3 class="product-name"><a href="/produkte/'+p.id+'.html" class="product-name-link">'+p.name+'</a></h3><div class="product-rating"><span class="stars">'+stars+'</span><span class="rating-text">'+p.rating+' ('+p.reviews+' Bewertungen)</span></div><div class="product-specs"><div class="spec"><strong>Kapazität:</strong> '+(s.capacity||'—')+'</div><div class="spec"><strong>Leistung:</strong> '+(s.output||'—')+'</div><div class="spec"><strong>Gewicht:</strong> '+(s.weight||'—')+'</div><div class="spec"><strong>Akku:</strong> '+(s.battery||'—')+'</div></div><p class="product-summary">'+p.summary+'</p><div class="product-footer"><div class="product-price">'+p.priceFormatted+'</div><div class="product-actions"><a href="/produkte/'+p.id+'.html" class="btn-secondary">Details</a><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a></div></div></div></article>';
     }
     function renderProducts(){
       var grid = document.getElementById('productGrid'); if(!grid) return;
