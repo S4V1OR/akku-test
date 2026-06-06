@@ -19,7 +19,7 @@
   <meta name="twitter:description" content="Ratgeber, Vergleiche und Praxiswissen zu Powerstations, Solargeneratoren, Camping und Hausnotstrom.">
   <meta name="twitter:image" content="https://akku-test.de/img/ecoflow-delta3.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Blog — Powerstation Ratgeber","url":"https://akku-test.de/blog.html","description":"Ratgeber und Vergleiche rund um Powerstations und Solargeneratoren"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Blog — Powerstation Ratgeber","url":"https://akku-test.de/blog.html","description":"Ratgeber und Vergleiche rund um Powerstations und Solargeneratoren","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://akku-test.de/blog/ecoflow-delta2-vs-bluetti-ac200p.html"},{"@type":"ListItem","position":2,"url":"https://akku-test.de/blog/beste-powerstation-camping-2026.html"},{"@type":"ListItem","position":3,"url":"https://akku-test.de/blog/powerstation-hausnotstrom-was-kostet-das.html"},{"@type":"ListItem","position":4,"url":"https://akku-test.de/blog/lifepo4-vs-ncm-akku-vergleich.html"},{"@type":"ListItem","position":5,"url":"https://akku-test.de/blog/solarpanel-powerstation-berechnen.html"}]}}</script>
   <style>
     :root{--bg:#08090a;--bg-panel:#0f1011;--bg-elevated:#191a1b;--bg-hover:#28282c;--text-primary:#f7f8f8;--text-secondary:#d0d6e0;--text-tertiary:#8a8f98;--text-quaternary:#62666d;--accent:#5e6ad2;--accent-hover:#7170ff;--accent-dim:#3e4a9e;--accent-glow:rgba(94,106,210,0.12);--accent-glow-strong:rgba(94,106,210,0.2);--accent-border:rgba(94,106,210,0.2);--accent-bg:rgba(94,106,210,0.08);--border-subtle:rgba(255,255,255,0.05);--border-default:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.12);--success:#34d399;--danger:#f87171;--warning:#fbbf24;--font-sans:'Inter',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;--font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:80px;--r-sm:4px;--r-md:6px;--r-lg:8px;--r-xl:12px;--r-pill:9999px}
     [data-theme="light"]{--bg:#f5f6f8;--bg-panel:#ffffff;--bg-elevated:#ebedf0;--bg-hover:#e2e4e8;--text-primary:#1a1d28;--text-secondary:#3a3f4e;--text-tertiary:#6b7280;--text-quaternary:#9ca3af;--accent-glow:rgba(94,106,210,0.08);--accent-glow-strong:rgba(94,106,210,0.15);--accent-border:rgba(94,106,210,0.25);--accent-bg:rgba(94,106,210,0.05);--border-subtle:rgba(0,0,0,0.06);--border-default:rgba(0,0,0,0.1);--border-strong:rgba(0,0,0,0.15)}
@@ -53,7 +53,8 @@
     .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:-0.03em;margin-bottom:var(--s4);background:linear-gradient(135deg,var(--text-primary) 0%,var(--text-secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .hero-subtitle{font-size:1.1rem;color:var(--text-tertiary);max-width:640px;margin:0 auto;line-height:1.7}
     .blog-section{padding:var(--s8) 0}
-    .blog-section h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:var(--s6)}
+    .blog-section h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:var(--s4)}
+    .blog-section-intro{max-width:760px;margin:0 auto var(--s6);color:var(--text-tertiary);font-size:0.95rem;line-height:1.7;text-align:center}
     .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:var(--s5)}
     .blog-card{background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg);overflow:hidden;transition:all 200ms ease;display:block}
     .blog-card:hover{border-color:var(--accent-border);transform:translateY(-2px)}
@@ -132,6 +133,7 @@
   <section class="blog-section">
     <div class="container">
       <h2>Alle Artikel</h2>
+      <p class="blog-section-intro">Hier findest du unsere aktuellen, redaktionell gepflegten Ratgeber zu Powerstations, Solargeneratoren, Notstrom und Camping — mit klaren Empfehlungen und praxisnahen Vergleichen.</p>
       <div class="blog-grid" id="blogGrid"></div>
     </div>
   </section>
