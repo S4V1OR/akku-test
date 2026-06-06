@@ -235,7 +235,7 @@
       var catUrls = { camping:'/camping.html', notstrom:'/notstrom.html', solar:'/solar.html' };
       var catName = catNames[product.categories[0]] || 'Produkte';
       var catUrl = catUrls[product.categories[0]] || '/vergleich.html';
-      document.getElementById('breadcrumbCategory').innerHTML = '<a href="'+catUrl+'>'+catName+'</a>';
+      document.getElementById('breadcrumbCategory').innerHTML = '<a href="'+catUrl+'">'+catName+'</a>';
 
       // Specs
       var specsHtml = '';
@@ -255,7 +255,7 @@
       // Hero
       c += '<section class="product-hero"><div class="container"><div class="product-hero-grid">';
       c += '<div class="product-image-large">';
-      if(product.image){ c += '<img src="'+product.image+' alt="'+product.name+' onerror="this.parentNode.classList.add(\'no-image\')">'; }
+      if(product.image){ c += '<img src="'+product.image+'" alt="'+product.name+'" onerror="this.parentNode.classList.add(\'no-image\')">'; }
       c += '<div class="product-image-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>';
       c += '</div>';
       c += '<div class="product-info">';
