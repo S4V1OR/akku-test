@@ -117,6 +117,14 @@
     .faq-item.open .faq-icon{transform:rotate(180deg)}
     .faq-answer{max-height:0;overflow:hidden;transition:max-height 300ms ease;color:var(--text-tertiary);font-size:0.9rem;line-height:1.7;padding:0}
     .faq-item.open .faq-answer{max-height:500px;padding-bottom:var(--s5)}
+    .crawl-links{margin-top:var(--s6);padding:var(--s5);background:linear-gradient(180deg,var(--accent-bg) 0%,rgba(255,255,255,0.02) 100%);border:1px solid var(--accent-border);border-radius:var(--r-xl);box-shadow:0 18px 48px rgba(0,0,0,0.12)}
+    .crawl-links h3{font-size:1rem;font-weight:600;letter-spacing:-0.01em;margin-bottom:var(--s2)}
+    .crawl-links-copy{color:var(--text-tertiary);font-size:0.88rem;line-height:1.7;max-width:760px;margin-bottom:var(--s4)}
+    .crawl-link-list{display:flex;flex-wrap:wrap;gap:var(--s2);list-style:none}
+    .crawl-link-list li{margin:0}
+    .crawl-link-list a{display:inline-flex;align-items:center;gap:var(--s2);padding:10px 14px;border-radius:var(--r-pill);border:1px solid var(--border-default);background:var(--bg-panel);color:var(--text-secondary);font-size:0.82rem;font-weight:500;line-height:1.3;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:transform 150ms ease,border-color 150ms ease,color 150ms ease,background 150ms ease}
+    .crawl-link-list a::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px var(--accent-glow)}
+    .crawl-link-list a:hover{transform:translateY(-1px);border-color:var(--accent-border);color:var(--text-primary);background:var(--bg-elevated)}
     .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
     .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
@@ -185,8 +193,8 @@
       <h2>Top-Produkte im Überblick</h2>
       <div class="products-grid" id="topProducts"></div>
       <div class="crawl-links" aria-label="Statische Produktlinks">
-        <h3>Beliebte Powerstations direkt aufrufen</h3>
-        <p class="crawl-links-copy">Für schnelle Orientierung und bessere interne Verlinkung findest du hier die wichtigsten Produktseiten direkt als HTML-Links.</p>
+        <h3>Schnellzugriff auf beliebte Powerstations</h3>
+        <p class="crawl-links-copy">Die wichtigsten Produktseiten auf einen Blick — kompakt, unaufdringlich und ohne den Lesefluss zu stören.</p>
         <ul class="crawl-link-list"><li><a href="/produkte/ecoflow-delta2.html">EcoFlow DELTA 2 1024Wh</a></li><li><a href="/produkte/bluetti-apex-300.html">BLUETTI Apex 300 2765Wh + 2200W Solar</a></li><li><a href="/produkte/ecoflow-river2max.html">EcoFlow RIVER 2 MAX 512Wh</a></li><li><a href="/produkte/anker-solix-c300.html">Anker SOLIX C300 288Wh</a></li><li><a href="/produkte/ecoflow-delta3.html">EcoFlow DELTA 3 1024Wh</a></li><li><a href="/produkte/bluetti-elite-300.html">BLUETTI Elite 300 3014Wh</a></li><li><a href="/produkte/ecoflow-delta3classic.html">EcoFlow DELTA 3 Classic 1024Wh</a></li><li><a href="/produkte/anker-solix-c300dc.html">Anker SOLIX C300 DC 288Wh</a></li><li><a href="/produkte/jackery-550w-solar.html">Jackery Explorer 550W + Solarpanel 100W</a></li><li><a href="/produkte/bluetti-elite-200v2.html">BLUETTI Elite 200 V2 2073Wh + Solarpanel</a></li></ul>
       </div>
     </div>
@@ -258,7 +266,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 18:53 CEST
+      <div class="build-timestamp">Build: 06.06.2026 19:13 CEST
     </div>
   </footer>
 

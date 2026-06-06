@@ -100,6 +100,14 @@
     .pagination-btn{background:var(--bg-elevated);border:1px solid var(--border-default);color:var(--text-secondary);padding:var(--s2) var(--s3);border-radius:var(--r-md);font-size:0.85rem;cursor:pointer}
     .pagination-btn:hover{border-color:var(--text-tertiary);color:var(--text-primary)}
     .pagination-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .crawl-links{margin-top:var(--s6);padding:var(--s5);background:linear-gradient(180deg,var(--accent-bg) 0%,rgba(255,255,255,0.02) 100%);border:1px solid var(--accent-border);border-radius:var(--r-xl);box-shadow:0 18px 48px rgba(0,0,0,0.12)}
+    .crawl-links h3{font-size:1rem;font-weight:600;letter-spacing:-0.01em;margin-bottom:var(--s2)}
+    .crawl-links-copy{color:var(--text-tertiary);font-size:0.88rem;line-height:1.7;max-width:760px;margin-bottom:var(--s4)}
+    .crawl-link-list{display:flex;flex-wrap:wrap;gap:var(--s2);list-style:none}
+    .crawl-link-list li{margin:0}
+    .crawl-link-list a{display:inline-flex;align-items:center;gap:var(--s2);padding:10px 14px;border-radius:var(--r-pill);border:1px solid var(--border-default);background:var(--bg-panel);color:var(--text-secondary);font-size:0.82rem;font-weight:500;line-height:1.3;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:transform 150ms ease,border-color 150ms ease,color 150ms ease,background 150ms ease}
+    .crawl-link-list a::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px var(--accent-glow)}
+    .crawl-link-list a:hover{transform:translateY(-1px);border-color:var(--accent-border);color:var(--text-primary);background:var(--bg-elevated)}
     .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
     .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
@@ -116,6 +124,8 @@
       .filter-bar{flex-direction:column;align-items:stretch}
       .results-count{margin-left:0;text-align:center}
       .products-grid{grid-template-columns:1fr}
+      .crawl-links{padding:var(--s4)}
+      .crawl-link-list a{width:100%;justify-content:space-between}
     }
   </style>
   <script type="application/ld+json" data-akku-itemlist="1">{"@context":"https://schema.org","@type":"ItemList","name":"Powerstation Vergleich 2026","itemListElement":[{"@type":"ListItem","position":1,"name":"EcoFlow DELTA 3 1024Wh","url":"https://akku-test.de/produkte/ecoflow-delta3.html"},{"@type":"ListItem","position":2,"name":"EcoFlow DELTA 2 1024Wh","url":"https://akku-test.de/produkte/ecoflow-delta2.html"},{"@type":"ListItem","position":3,"name":"BLUETTI Elite 100 V2 973Wh","url":"https://akku-test.de/produkte/bluetti-elite-100v2.html"},{"@type":"ListItem","position":4,"name":"ALLPOWERS R600 576Wh","url":"https://akku-test.de/produkte/allpowers-r600.html"},{"@type":"ListItem","position":5,"name":"Jackery Explorer 100 Plus 99Wh","url":"https://akku-test.de/produkte/jackery-explorer-100plus.html"}]}</script>
@@ -211,8 +221,8 @@
         <p>Versuche andere Filtereinstellungen</p>
       </div>
       <div class="crawl-links" aria-label="Statischer Produktindex">
-        <h3>Produktindex: alle Modelle direkt aufrufen</h3>
-        <p class="crawl-links-copy">Der Vergleich wird dynamisch gefiltert. Für Crawler und Besucher stehen hier zusätzlich alle Produktdetailseiten als direkte HTML-Links bereit.</p>
+        <h3>Schnellzugriff auf alle Modelle</h3>
+        <p class="crawl-links-copy">Wenn du direkt in einzelne Produktdetails springen willst, findest du hier alle Modelle als kompakte Schnellzugriffe.</p>
         <ul class="crawl-link-list"><li><a href="/produkte/ecoflow-delta2.html">EcoFlow DELTA 2 1024Wh</a></li><li><a href="/produkte/bluetti-apex-300.html">BLUETTI Apex 300 2765Wh + 2200W Solar</a></li><li><a href="/produkte/ecoflow-river2max.html">EcoFlow RIVER 2 MAX 512Wh</a></li><li><a href="/produkte/anker-solix-c300.html">Anker SOLIX C300 288Wh</a></li><li><a href="/produkte/ecoflow-delta3.html">EcoFlow DELTA 3 1024Wh</a></li><li><a href="/produkte/bluetti-elite-300.html">BLUETTI Elite 300 3014Wh</a></li><li><a href="/produkte/ecoflow-delta3classic.html">EcoFlow DELTA 3 Classic 1024Wh</a></li><li><a href="/produkte/anker-solix-c300dc.html">Anker SOLIX C300 DC 288Wh</a></li><li><a href="/produkte/jackery-550w-solar.html">Jackery Explorer 550W + Solarpanel 100W</a></li><li><a href="/produkte/bluetti-elite-200v2.html">BLUETTI Elite 200 V2 2073Wh + Solarpanel</a></li><li><a href="/produkte/allpowers-r600.html">ALLPOWERS R600 576Wh</a></li><li><a href="/produkte/jackery-explorer-100plus.html">Jackery Explorer 100 Plus 99Wh</a></li><li><a href="/produkte/bluetti-elite-100v2.html">BLUETTI Elite 100 V2 973Wh</a></li><li><a href="/produkte/maxpeedingrods-2300w.html">maXpeedingrods 2300W Inverter Stromerzeuger</a></li><li><a href="/produkte/bluetti-elite-30v2.html">BLUETTI Elite 30 V2 288Wh</a></li><li><a href="/produkte/fossibot-f1800.html">FOSSIBOT F1800 1800Wh</a></li><li><a href="/produkte/powkey-99wh-solar.html">Powkey 99Wh + 40W Solarpanel</a></li><li><a href="/produkte/dyness-256wh.html">Dyness 256Wh Powerstation</a></li><li><a href="/produkte/bluetti-elite-10mini.html">BLUETTI Elite 10 Mini 99Wh</a></li><li><a href="/produkte/sinkeu-99wh.html">SinKeu 99Wh Powerstation</a></li><li><a href="/produkte/sinkeu-97wh.html">SinKeu 97Wh Powerstation</a></li><li><a href="/produkte/elecaenta-99wh.html">ELECAENTA 99Wh LiFePO4</a></li><li><a href="/produkte/powerstation-1800w.html">Powerstation 1800W 1102Wh</a></li><li><a href="/produkte/sbaoh-88wh.html">SBAOH 88.8Wh Powerstation</a></li><li><a href="/produkte/generic-88wh-led.html">Powerstation 88Wh + LED</a></li></ul>
       </div>
       <div id="pagination"></div>
@@ -230,7 +240,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 18:53 CEST
+      <div class="build-timestamp">Build: 06.06.2026 19:13 CEST
     </div>
   </footer>
   <script>

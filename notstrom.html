@@ -94,6 +94,14 @@
     .pagination-btn{background:var(--bg-elevated);border:1px solid var(--border-default);color:var(--text-secondary);padding:var(--s2) var(--s3);border-radius:var(--r-md);font-size:0.85rem;cursor:pointer}
     .pagination-btn:hover{border-color:var(--text-tertiary);color:var(--text-primary)}
     .pagination-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .crawl-links{margin-top:var(--s6);padding:var(--s5);background:linear-gradient(180deg,var(--accent-bg) 0%,rgba(255,255,255,0.02) 100%);border:1px solid var(--accent-border);border-radius:var(--r-xl);box-shadow:0 18px 48px rgba(0,0,0,0.12)}
+    .crawl-links h3{font-size:1rem;font-weight:600;letter-spacing:-0.01em;margin-bottom:var(--s2)}
+    .crawl-links-copy{color:var(--text-tertiary);font-size:0.88rem;line-height:1.7;max-width:760px;margin-bottom:var(--s4)}
+    .crawl-link-list{display:flex;flex-wrap:wrap;gap:var(--s2);list-style:none}
+    .crawl-link-list li{margin:0}
+    .crawl-link-list a{display:inline-flex;align-items:center;gap:var(--s2);padding:10px 14px;border-radius:var(--r-pill);border:1px solid var(--border-default);background:var(--bg-panel);color:var(--text-secondary);font-size:0.82rem;font-weight:500;line-height:1.3;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:transform 150ms ease,border-color 150ms ease,color 150ms ease,background 150ms ease}
+    .crawl-link-list a::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px var(--accent-glow)}
+    .crawl-link-list a:hover{transform:translateY(-1px);border-color:var(--accent-border);color:var(--text-primary);background:var(--bg-elevated)}
     .footer{padding:var(--s7) 0 var(--s5);border-top:1px solid var(--border-subtle)}
     .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s3);margin-bottom:var(--s4)}
     .footer-copy{font-size:0.8rem;color:var(--text-quaternary)}
@@ -108,6 +116,8 @@
       [data-theme="light"] .nav-links.open{background:#fff}
       .hero h1{font-size:1.6rem}
       .products-grid{grid-template-columns:1fr}
+      .crawl-links{padding:var(--s4)}
+      .crawl-link-list a{width:100%;justify-content:space-between}
     }
   </style>
   <script type="application/ld+json" data-akku-itemlist="1">{"@context":"https://schema.org","@type":"ItemList","name":"Notstrom-Powerstations 2026","itemListElement":[{"@type":"ListItem","position":1,"name":"BLUETTI Apex 300 2765Wh + 2200W Solar","url":"https://akku-test.de/produkte/bluetti-apex-300.html"},{"@type":"ListItem","position":2,"name":"EcoFlow DELTA 2 1024Wh","url":"https://akku-test.de/produkte/ecoflow-delta2.html"},{"@type":"ListItem","position":3,"name":"EcoFlow DELTA 3 1024Wh","url":"https://akku-test.de/produkte/ecoflow-delta3.html"},{"@type":"ListItem","position":4,"name":"FOSSIBOT F1800 1800Wh","url":"https://akku-test.de/produkte/fossibot-f1800.html"},{"@type":"ListItem","position":5,"name":"Powerstation 1800W 1102Wh","url":"https://akku-test.de/produkte/powerstation-1800w.html"}]}</script>
@@ -168,8 +178,8 @@
       <h2 style="font-size:1.3rem;font-weight:600;margin-bottom:var(--s5)">Alle Notstrom-Powerstations</h2>
       <div class="products-grid" id="productGrid"></div>
       <div class="crawl-links" aria-label="Statische Notstrom-Produktlinks">
-        <h3>Beliebte Notstrom-Modelle direkt aufrufen</h3>
-        <p class="crawl-links-copy">Hier sind die wichtigsten Hausnotstrom-Powerstations direkt verlinkt — ohne JavaScript-Abhängigkeit.</p>
+        <h3>Schnellzugriff auf beliebte Notstrom-Modelle</h3>
+        <p class="crawl-links-copy">Die relevantesten Hausnotstrom-Modelle als kompakte Schnellzugriffe — passend für Router, Kühlschrank und Reservebetrieb.</p>
         <ul class="crawl-link-list"><li><a href="/produkte/ecoflow-delta2.html">EcoFlow DELTA 2 1024Wh</a></li><li><a href="/produkte/bluetti-apex-300.html">BLUETTI Apex 300 2765Wh + 2200W Solar</a></li><li><a href="/produkte/ecoflow-delta3.html">EcoFlow DELTA 3 1024Wh</a></li><li><a href="/produkte/bluetti-elite-300.html">BLUETTI Elite 300 3014Wh</a></li><li><a href="/produkte/ecoflow-delta3classic.html">EcoFlow DELTA 3 Classic 1024Wh</a></li></ul>
       </div>
       <div id="pagination"></div>
@@ -187,7 +197,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 18:53 CEST
+      <div class="build-timestamp">Build: 06.06.2026 19:13 CEST
     </div>
   </footer>
   <script>
