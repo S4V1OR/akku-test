@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="pageTitle">Produkt — akku-test.de</title>
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://akku-test.de/vergleich.html">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -178,7 +179,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 12:07 CEST
+      <div class="build-timestamp">Build: 06.06.2026 12:19 CEST
     </div>
   </footer>
 
@@ -225,7 +226,7 @@
       var catUrls = { camping:'/camping.html', notstrom:'/notstrom.html', solar:'/solar.html' };
       var catName = catNames[product.categories[0]] || 'Produkte';
       var catUrl = catUrls[product.categories[0]] || '/vergleich.html';
-      document.getElementById('breadcrumbCategory').innerHTML = '<a href="'+catUrl+'">'+catName+'</a>';
+      document.getElementById('breadcrumbCategory').innerHTML = '<a href="'+catUrl+'>'+catName+'</a>';
 
       // Specs
       var specsHtml = '';
@@ -245,7 +246,7 @@
       // Hero
       c += '<section class="product-hero"><div class="container"><div class="product-hero-grid">';
       c += '<div class="product-image-large">';
-      if(product.image){ c += '<img src="'+product.image+'" alt="'+product.name+'" onerror="this.parentNode.classList.add(\'no-image\')">'; }
+      if(product.image){ c += '<img src="'+product.image+' alt="'+product.name+' onerror="this.parentNode.classList.add(\'no-image\')">'; }
       c += '<div class="product-image-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>';
       c += '</div>';
       c += '<div class="product-info">';
@@ -297,7 +298,7 @@
         relatedSection.style.display = 'block';
         related.forEach(function(rp){
           var rStars = '★'.repeat(Math.round(rp.rating)) + '☆'.repeat(5-Math.round(rp.rating));
-          relatedGrid.innerHTML += '<a href="/produkt.html?id='+rp.id+'" class="related-card"><div class="related-image">'+(rp.image?'<img src="'+rp.image+'" alt="'+rp.name+'" loading="lazy">':'')+'</div><div class="related-info"><h4>'+rp.name+'</h4><div class="stars">'+rStars+'</div><div class="price">'+rp.priceFormatted+'</div></div></a>';
+          relatedGrid.innerHTML += '<a href="/produkte/'+rp.id+'.html" class="related-card"><div class="related-image">'+(rp.image?'<img src="'+rp.image+'" alt="'+rp.name+'" loading="lazy">':'')+'</div><div class="related-info"><h4>'+rp.name+'</h4><div class="stars">'+rStars+'</div><div class="price">'+rp.priceFormatted+'</div></div></a>';
         });
       }
     }).catch(function(e){

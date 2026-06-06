@@ -207,7 +207,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 12:07 CEST
+      <div class="build-timestamp">Build: 06.06.2026 12:19 CEST
     </div>
   </footer>
 
@@ -230,7 +230,7 @@
       relatedIds.forEach(function(id){
         var p = data.products.find(function(x){ return x.id === id; });
         if(p){
-          grid.innerHTML += '<a href="/produkt.html?id='+p.id+'" class="related-card"><div class="related-image">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':'')+'</div><div class="related-info"><h4>'+p.name+'</h4></div></a>';
+          grid.innerHTML += '<a href="/produkte/'+p.id+'.html" class="related-card"><div class="related-image">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':'')+'</div><div class="related-info"><h4>'+p.name+'</h4></div></a>';
         }
       });
     }).catch(function(){});
