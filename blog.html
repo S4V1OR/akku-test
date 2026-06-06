@@ -152,7 +152,7 @@
         </ul>
       </div>
       <div class="footer-disclaimer"><strong>Hinweis:</strong> akku-test.de ist Teilnehmer des Partnerprogramms von Amazon Europe S.à.r.l.</div>
-      <div class="build-timestamp">Build: 06.06.2026 12:27 CEST
+      <div class="build-timestamp">Build: 06.06.2026 12:30 CEST
     </div>
   </footer>
 
@@ -298,7 +298,7 @@
     posts.forEach(function(post){
       var file = post.slug + '.html';
       var imgHtml = post.image
-        ? '<img src="' + post.image + '" alt="' + post.title + '" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
+        ? '<img src="' + post.image + '" alt="' + post.title + '" loading="lazy" decoding="async" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'
         : '';
       var placeholder = '<div class="blog-card-image-placeholder" style="display:' + (post.image ? 'none' : 'flex') + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>';
       var dateParts = post.date.split('-');

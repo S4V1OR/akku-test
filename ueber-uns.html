@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de" data-theme="light">
-<head><!-- Build: 06.06.2026 12:27 CEST
+<head><!-- Build: 06.06.2026 12:30 CEST -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Über uns — akku-test.de | Unabhängige Solargenerator-Tests</title>
@@ -103,17 +103,15 @@
     <ul class="nav-links" id="navLinks"><li><a href="/">Startseite</a></li><li><a href="/camping.html">Camping</a></li><li><a href="/notstrom.html">Notstrom</a></li><li><a href="/solar.html">Solar</a></li><li><a href="/vergleich.html">Vergleich</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/ueber-uns.html">Über uns</a></li><li><a href="/faq.html">FAQ</a></li>
 </ul>
     <button class="nav-toggle" aria-label="Menü öffnen" id="navToggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-  </div>          <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten" title="Dark/Light Mode">
+          <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten" title="Dark/Light Mode">
             <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           </button>
+  </div>
 </nav>
   <div class="mobile-menu" id="mobileMenu"><a href="/" onclick="closeMobileMenu()">Vergleich</a><a href="/#kategorien" onclick="closeMobileMenu()">Kategorien</a><a href="/#faq" onclick="closeMobileMenu()">FAQ</a><a href="https://www.amazon.de" class="nav-cta" rel="noopener" target="_blank">Auf Amazon ansehen →</a></div>
 
-  <nav class="breadcrumbs" aria-label="Breadcrumb-Navigation"><div class="container"><ol class="breadcrumb-list"><li class="breadcrumb-item"><a href="/">Startseite</a></li><li class="breadcrumb-item active" aria-current="page">Über uns</li></ol></div>          <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten" title="Dark/Light Mode">
-            <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          </button>
+  <nav class="breadcrumbs" aria-label="Breadcrumb-Navigation"><div class="container"><ol class="breadcrumb-list"><li class="breadcrumb-item"><a href="/">Startseite</a></li><li class="breadcrumb-item active" aria-current="page">Über uns</li></ol></div>
 </nav>
 
   <header class="hero"><div class="container">
@@ -217,14 +215,12 @@
     function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('open');}
     document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',closeMobileMenu));
   </script>
-
-  // Theme Toggle
+<script>
   (function(){
     var html = document.documentElement;
     var btn = document.getElementById("themeToggle");
     var iconDark = btn ? btn.querySelector(".theme-icon-dark") : null;
     var iconLight = btn ? btn.querySelector(".theme-icon-light") : null;
-    // Default: light (from data-theme="light" on <html>)
     if(iconDark) iconDark.style.display = "none";
     if(iconLight) iconLight.style.display = "block";
     if(btn){
@@ -244,5 +240,6 @@
       });
     }
   })();
+</script>
 </body>
 </html>
