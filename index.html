@@ -85,6 +85,16 @@
     .cta-section p{color:var(--text-tertiary);margin-bottom:var(--s5);max-width:500px;margin-left:auto;margin-right:auto}
     .btn-primary{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s3) var(--s6);background:var(--accent);color:#fff;font-size:1rem;font-weight:500;border-radius:var(--r-md);text-decoration:none;transition:background 150ms ease}
     .btn-primary:hover{background:var(--accent-hover);color:#fff}
+    .newsletter-section{padding:0 0 var(--s8)}
+    .newsletter-card{max-width:760px;margin:0 auto;padding:var(--s6);background:var(--bg-panel);border:1px solid var(--border-subtle);border-radius:var(--r-lg)}
+    .newsletter-card h2{font-size:1.35rem;font-weight:600;margin-bottom:var(--s3);text-align:center}
+    .newsletter-card p{color:var(--text-tertiary);margin-bottom:var(--s5);text-align:center;line-height:1.7}
+    .newsletter-form{display:grid;grid-template-columns:1fr auto;gap:var(--s3)}
+    .newsletter-form input{width:100%;min-height:48px;padding:0 var(--s4);border:1px solid var(--border-subtle);border-radius:var(--r-md);background:var(--bg-elevated);color:var(--text-primary);font:inherit}
+    .newsletter-form button{min-height:48px;padding:0 var(--s5);border:0;border-radius:var(--r-md);background:var(--accent);color:#fff;font:inherit;font-weight:600;cursor:pointer;transition:background 150ms ease,opacity 150ms ease}
+    .newsletter-form button:hover:not(:disabled){background:var(--accent-hover)}
+    .newsletter-form button:disabled{opacity:0.7;cursor:not-allowed}
+    .newsletter-note{margin-top:var(--s3);font-size:0.85rem;color:var(--text-quaternary);text-align:center;line-height:1.6}
     .faq-section{padding:var(--s8) 0;background:var(--bg-panel)}
     .faq-section h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:var(--s6)}
     .faq-list{max-width:800px;margin:0 auto}
@@ -203,6 +213,20 @@
     </div>
   </section>
 
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-card">
+        <h2>Powerstation-Update per Mail</h2>
+        <p>Trage dich für gelegentliche Kauf- und Vergleichs-Updates ein. Vormerkungen landen in einem öffentlichen Demo-Write-Target und werden lokal gespiegelt.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input id="newsletter-email" type="email" placeholder="E-Mail für Updates" aria-label="E-Mail-Adresse" required />
+          <button type="submit">Eintragen</button>
+        </form>
+        <div id="newsletter-status" class="newsletter-note">Noch keine Versandautomatisierung im eigenen Backend — der Lead-Flow wird aktuell über das Demo-Write-Target verifiziert.</div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -239,6 +263,65 @@
       var stars = '★'.repeat(Math.round(p.rating))+'☆'.repeat(5-Math.round(p.rating));
       var s = p.specs||{};
       return '<a href="/produkt.html?id='+p.id+'" class="product-card"><div class="product-image-wrap">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy" loading="lazy">':'')+'</div><div class="product-info"><div class="product-brand">'+p.brand+'</div><h3 class="product-name">'+p.name+'</h3><div class="product-rating"><span class="stars">'+stars+'</span><span class="rating-text">'+p.rating+' ('+p.reviews+' Bewertungen)</span></div><div class="product-specs"><div class="spec"><strong>Kapazität:</strong> '+(s.capacity||'—')+'</div><div class="spec"><strong>Leistung:</strong> '+(s.output||'—')+'</div><div class="spec"><strong>Gewicht:</strong> '+(s.weight||'—')+'</div><div class="spec"><strong>Akku:</strong> '+(s.battery||'—')+'</div></div><p class="product-summary">'+p.summary+'</p><div class="product-footer"><div class="product-price">'+p.priceFormatted+'</div><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a></div></div></article>';
+    }
+
+    var newsletterForm = document.getElementById('newsletter-form');
+    if(newsletterForm){
+      var newsletterEmail = document.getElementById('newsletter-email');
+      var newsletterStatus = document.getElementById('newsletter-status');
+      var newsletterButton = newsletterForm.querySelector('button[type="submit"]');
+      var newsletterStorageKey = 'akku_test_newsletter_demo';
+      var newsletterTargetUrl = 'https://webhook.site/d5adfa5a-d21d-4832-9db4-4fabf7f4b75a';
+
+      function loadNewsletterEntries(){
+        try { return JSON.parse(localStorage.getItem(newsletterStorageKey) || '[]'); }
+        catch (error) { return []; }
+      }
+
+      function saveNewsletterEntry(value){
+        var entries = loadNewsletterEntries();
+        if(entries.indexOf(value) === -1){
+          entries.push(value);
+          localStorage.setItem(newsletterStorageKey, JSON.stringify(entries));
+        }
+      }
+
+      newsletterForm.addEventListener('submit', async function(event){
+        event.preventDefault();
+        var value = newsletterEmail.value.trim();
+        if(!value || value.indexOf('@') === -1){
+          newsletterStatus.textContent = 'Bitte eine gültige E-Mail-Adresse eingeben.';
+          return;
+        }
+
+        newsletterButton.disabled = true;
+        newsletterStatus.textContent = 'Sende Eintrag an das öffentliche Demo-Write-Target...';
+
+        var payload = {
+          email: value,
+          source: 'akku-test-newsletter',
+          capturedAt: new Date().toISOString()
+        };
+
+        try {
+          var response = await fetch(newsletterTargetUrl, {
+            method: 'POST',
+            mode: 'cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          saveNewsletterEntry(value);
+          if(!response.ok){ throw new Error('Webhook returned ' + response.status); }
+          newsletterStatus.textContent = 'Eintrag gesendet. Das öffentliche Demo-Write-Target hat den Lead erhalten.';
+          newsletterForm.reset();
+        } catch (error) {
+          saveNewsletterEntry(value);
+          newsletterStatus.textContent = 'Senden fehlgeschlagen, lokale Kopie gespeichert. Demo-Write-Target bitte prüfen.';
+          console.warn('Newsletter submit failed', error);
+        } finally {
+          newsletterButton.disabled = false;
+        }
+      });
     }
 
     fetch('/products.json').then(function(r){return r.json();}).then(function(data){
