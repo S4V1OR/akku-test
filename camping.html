@@ -285,6 +285,15 @@
       '</article>';
     }
 
+    var featuredProductIds = ['bluetti-eb3a','jackery-300pro','ecoflow-river2','jackery-240pro','bluetti-ac200p','anker-solix-c1000','ecoflow-delta2max','ecoflow-river2pro','bluetti-eb55','bluetti-ac60'];
+    function featuredRank(p){ var i = featuredProductIds.indexOf(p.id); return i === -1 ? 999 : i; }
+    function sortFrontProducts(a,b){
+      var fa = featuredRank(a), fb = featuredRank(b);
+      if(fa !== fb) return fa - fb;
+      if(b.rating !== a.rating) return b.rating - a.rating;
+      return a.name.localeCompare(b.name, 'de');
+    }
+
     function renderProducts(){
       var grid = document.getElementById('productGrid');
       if(!grid) return;
@@ -327,7 +336,7 @@
     fetch('/products.json')
       .then(function(r){ return r.json(); })
       .then(function(data){
-        currentProducts = data.products.filter(function(p){ return p.categories.indexOf('camping') !== -1; });
+        currentProducts = data.products.filter(function(p){ return p.categories.indexOf('camping') !== -1; }).sort(sortFrontProducts);
         currentPage = 1;
         renderProducts();
         renderPagination();

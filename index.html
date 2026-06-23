@@ -295,6 +295,16 @@
       return '<article class="product-card"><div class="product-image-wrap">'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy" decoding="async">':'')+'</div><div class="product-info"><div class="product-brand">'+p.brand+'</div><h3 class="product-name"><a href="/produkte/'+p.id+'.html" class="product-name-link">'+p.name+'</a></h3><div class="product-rating"><span class="stars">'+stars+'</span><span class="rating-text">'+p.rating+' ('+p.reviews+' Bewertungen)</span></div><div class="product-specs"><div class="spec"><strong>Kapazität:</strong> '+(s.capacity||'—')+'</div><div class="spec"><strong>Leistung:</strong> '+(s.output||'—')+'</div><div class="spec"><strong>Gewicht:</strong> '+(s.weight||'—')+'</div><div class="spec"><strong>Akku:</strong> '+(s.battery||'—')+'</div></div><p class="product-summary">'+p.summary+'</p><div class="product-footer"><div class="product-price">'+p.priceFormatted+'</div><div class="product-actions"><a href="/produkte/'+p.id+'.html" class="btn-secondary">Details</a><a href="https://www.amazon.de/dp/'+p.asin+'?tag=akku0a1-21" class="btn-amazon" target="_blank" rel="noopener">Auf Amazon →</a></div></div></div></article>';
     }
 
+
+    var featuredProductIds = ['bluetti-eb3a','jackery-300pro','ecoflow-river2','jackery-240pro','bluetti-ac200p','anker-solix-c1000','ecoflow-delta2max','ecoflow-river2pro','bluetti-eb55','bluetti-ac60'];
+    function featuredRank(p){ var i = featuredProductIds.indexOf(p.id); return i === -1 ? 999 : i; }
+    function sortFrontProducts(a,b){
+      var fa = featuredRank(a), fb = featuredRank(b);
+      if(fa !== fb) return fa - fb;
+      if(b.rating !== a.rating) return b.rating - a.rating;
+      return a.name.localeCompare(b.name, 'de');
+    }
+
     var newsletterForm = document.getElementById('newsletter-form');
     if(newsletterForm){
       var newsletterEmail = document.getElementById('newsletter-email');
@@ -337,7 +347,7 @@
       // Render top 9 products
       var topProducts = document.getElementById('topProducts');
       if(topProducts){
-        var sorted = products.slice().sort(function(a,b){ return b.rating - a.rating; }).slice(0, 9);
+        var sorted = products.slice().sort(sortFrontProducts).slice(0, 10);
         sorted.forEach(function(p){ topProducts.innerHTML += renderProductCard(p); });
       }
     }).catch(function(e){ console.error(e); });

@@ -269,6 +269,16 @@
 
     function parseNum(str){ if(!str) return 0; var m = str.match(/(\d+)/); return m ? parseInt(m[1]) : 0; }
 
+
+    var featuredProductIds = ['bluetti-eb3a','jackery-300pro','ecoflow-river2','jackery-240pro','bluetti-ac200p','anker-solix-c1000','ecoflow-delta2max','ecoflow-river2pro','bluetti-eb55','bluetti-ac60'];
+    function featuredRank(p){ var i = featuredProductIds.indexOf(p.id); return i === -1 ? 999 : i; }
+    function sortFrontProducts(a,b){
+      var fa = featuredRank(a), fb = featuredRank(b);
+      if(fa !== fb) return fa - fb;
+      if(b.rating !== a.rating) return b.rating - a.rating;
+      return a.name.localeCompare(b.name, 'de');
+    }
+
     function renderProductCard(p){
       var stars = '★'.repeat(Math.round(p.rating))+'☆'.repeat(5-Math.round(p.rating));
       var s = p.specs||{};
@@ -310,7 +320,7 @@
       if(category) filteredProducts = filteredProducts.filter(function(p){ return p.categories.indexOf(category) !== -1; });
       if(capacity) filteredProducts = filteredProducts.filter(function(p){ var wh=parseNum(p.specs&&p.specs.capacity); if(capacity==='0-100') return wh<100; if(capacity==='100-300') return wh>=100&&wh<300; if(capacity==='300-600') return wh>=300&&wh<600; if(capacity==='600+') return wh>=600; return true; });
       if(output) filteredProducts = filteredProducts.filter(function(p){ var w=parseNum(p.specs&&p.specs.output); if(output==='0-300') return w<300; if(output==='300-600') return w>=300&&w<600; if(output==='600-1000') return w>=600&&w<1000; if(output==='1000+') return w>=1000; return true; });
-      if(sortBy==='rating') filteredProducts.sort(function(a,b){ return b.rating-a.rating; });
+      if(sortBy==='rating') filteredProducts.sort(sortFrontProducts);
       else if(sortBy==='price-asc') filteredProducts.sort(function(a,b){ return a.price-b.price; });
       else if(sortBy==='price-desc') filteredProducts.sort(function(a,b){ return b.price-a.price; });
       else if(sortBy==='reviews') filteredProducts.sort(function(a,b){ return b.reviews-a.reviews; });
@@ -330,7 +340,7 @@
     };
 
     fetch('/products.json').then(function(r){return r.json();}).then(function(data){
-      allProducts = data.products;
+      allProducts = data.products.slice().sort(sortFrontProducts);
       filteredProducts = allProducts.slice();
       // Populate brand filter
       var brandSelect = document.getElementById('filterBrand');
