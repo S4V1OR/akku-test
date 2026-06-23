@@ -86,7 +86,7 @@ Die **Anker 535 PowerCore** (PowerCore 20K) ist die ideale **Powerstation mit So
 
 Ankers bewährte PowerCore-Serie ist seit Jahren ein vertrauenswürdiger Name im Bereich tragbare Energiespeicher. Die 535 PowerCore punktet mit einer robusten Verarbeitung, dem intuitiven LCD-Display und einem durchdachten Port-Layout mit AC-, USB-C-, USB-A- und DC-Anschlüssen.
 
-**Vorteile:** Gute Kapazität für den Preis (ab 330,69 €), 1000W Ausgangsleistung, 150W USB-C PD, 3000+ Zyklen, gut strukturierte Anschlüsse.
+**Vorteile:** Gute Kapazität für den Preis (ab 299,99 €), 1000W Ausgangsleistung, 150W USB-C PD, 3000+ Zyklen, gut strukturierte Anschlüsse.
 **Nachteile:** Kein USV-Modus, etwas schwer für die Klasse (ca. 12,7 kg), langsames Solarauffladen ohne separates Panel.
 **Zielgruppe:** Mittelklasse-Camper, Wohnmobilfahrer, Outdoor-Freunde, Pendler mit Notstrombedarf.
 **Fazit:** Die Anker 535 PowerCore ist ein solider **Solargenerator für den mittleren Preisbereich** und bietet eine gute Balance zwischen Kapazität und Handlichkeit.

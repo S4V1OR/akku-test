@@ -113,7 +113,7 @@ Mit 2400Wh, 2000W und 140W USB-C PD ist die Anker 757 der leistungsstärkste und
 
 2048Wh, 4800W, erweiterbar auf 6144Wh — der **Solargenerator für Zuhause** schlechthin. Ideal für **Notstromversorgung** und Off-Grid-Wohnen.
 
-### Platz 6: Anker 535 PowerCore — Bester mittlere Klasse (ab 330,69 €)
+### Platz 6: Anker 535 PowerCore — Bester mittlere Klasse (ab 299,99 €)
 
 1056Wh, 1000W, 150W USB-C PD — der ausgewogene **Solargenerator für den mittleren Preisbereich**.
 
@@ -129,7 +129,7 @@ Mit 2400Wh, 2000W und 140W USB-C PD ist die Anker 757 der leistungsstärkste und
 
 1040Wh, 2000W — der einfache, zuverlässige **Solargenerator** für Gelegenheit-Camper.
 
-### Platz 10: Jackery Explorer 500 V2 — Bester kleiner Solargenerator (ab 164,64 €)
+### Platz 10: Jackery Explorer 500 V2 — Bester kleiner Solargenerator (ab 173,99 €)
 
 518Wh, 500W — der perfekte **Solargenerator für Reisen** und Kurztrips.
 
@@ -234,7 +234,7 @@ Die **Solargenerator Preise** variieren stark je nach Kapazität und Ausstattung
 
 - **Budget (unter 100 €):** Solar-Powerbanks, kleine Stationen wie der BLUETTI AC50S (ab 69,99 €)
 - **Einsteiger (100-300 €):** Kompakte Modelle wie der BLUETTI EB3A (ab 199,99 €) oder Jackery Explorer 500 V2
-- **Mittelklasse (300-700 €):** Ausgewogene Modelle wie die Anker 535 PowerCore (ab 330,69 €) oder EcoFlow DELTA 2 (ab 521,00 €)
+- **Mittelklasse (300-700 €):** Ausgewogene Modelle wie die Anker 535 PowerCore (ab 299,99 €) oder EcoFlow DELTA 2 (ab 521,00 €)
 - **High-End (700-1000 €):** Leistungstarke Modelle wie die BLUETTI AC200MAX (ab 999,99 €)
 - **Premium (über 1000 €):** Home-Backup-Systeme wie die EcoFlow DELTA Pro oder OSCAL 3600W-Bundle
 
@@ -269,7 +269,7 @@ Camping ist die wohl häufigste Anwendung für einen **Solargenerator**. Bei der
 
 **Unsere Top-Empfehlungen:**
 - **BLUETTI EB3A** (268Wh, 3,6 kg, ab 199,99 €) — Perfekt für Weekend-Trips
-- **Jackery Explorer 500 V2** (518Wh, 6 kg, ab 164,64 €) — Ideal für Familien-Camping
+- **Jackery Explorer 500 V2** (518Wh, 6 kg, ab 173,99 €) — Ideal für Familien-Camping
 - **EcoFlow River 2 Pro** (768Wh, 8 kg, ab 579,00 €) — Für längere Trips
 
 **Tipp:** Kombinieren Sie die Powerstation mit einem faltbaren **Solarladegerät**, um während Ihres Camping-Aufenthalts komplett autark zu sein. Die BigBlue 60W oder das BLUETTI PV120 sind hervorragende Partner.
@@ -322,7 +322,7 @@ Auf dem **Boot** gelten besondere Anforderungen: Lautlosigkeit, Sicherheit und W
 | Ladung | Solar + 12V Bootsbordnetz |
 
 **Unsere Top-Empfehlungen:**
-- **Jackery Explorer 500 V2** (518Wh, ab 164,64 €) — Sicher, leise, leicht
+- **Jackery Explorer 500 V2** (518Wh, ab 173,99 €) — Sicher, leise, leicht
 - **BLUETTI EB3A** (268Wh, ab 199,99 €) — Kompakt und sicher
 - **BLUETTI PV120** (120W Solarpanel) — Als Ergänzung für dauerhafte Aufladung
 
