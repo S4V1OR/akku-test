@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title>Powerstation Platzhalter</title>
+  <desc>Generische Illustration für neue Produktkarten</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5e6ad2"/>
+      <stop offset="100%" stop-color="#8b8fff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="64" fill="#0f1011"/>
+  <rect x="132" y="136" width="248" height="240" rx="28" fill="none" stroke="url(#g)" stroke-width="18"/>
+  <rect x="188" y="92" width="136" height="56" rx="18" fill="url(#g)" opacity=".9"/>
+  <rect x="168" y="186" width="176" height="28" rx="14" fill="#f7f8f8" opacity=".2"/>
+  <rect x="168" y="242" width="176" height="28" rx="14" fill="#f7f8f8" opacity=".2"/>
+  <rect x="168" y="298" width="124" height="28" rx="14" fill="#f7f8f8" opacity=".2"/>
+  <circle cx="336" cy="314" r="28" fill="url(#g)"/>
+  <path d="M336 294v40M316 314h40" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+</svg>
