@@ -317,7 +317,7 @@
     },
     {
       "id": "jackery-550w-solar",
-      "name": "Jackery Explorer 550W + Solarpanel 100W",
+      "name": "Jackery Explorer 500 V2 + Solarpanel 100W",
       "brand": "Jackery",
       "asin": "B0DSK9YGY7",
       "price": 949,
@@ -331,35 +331,35 @@
         "notstrom"
       ],
       "tags": [
-        "550W",
+        "500W",
         "Solarpanel 100W",
         "Komplettset",
         "LiFePO4"
       ],
       "specs": {
-        "capacity": "550 Wh",
+        "capacity": "512 Wh",
         "output": "500W AC (1000W Spitze)",
         "weight": "6,5 kg",
         "battery": "LiFePO4",
         "solar": "100W Panel inklusive"
       },
-      "summary": "Das Jackery Explorer 550W Komplettset mit 100W Solarpanel ist die All-in-One-Lösung für autarke Energieversorgung.",
+      "summary": "Das Jackery Explorer 500 V2 Komplettset mit 100W Solarpanel ist die All-in-One-Lösung für autarke Energieversorgung.",
       "bestFor": "Camping, Vanlife, Notstrom, Off-Grid",
       "testreport": {
-        "intro": "Die Jackery Explorer 550W + 100W Solarpanel ist das Komplettset-Einsteigermodell von Jackery. Mit 550Wh Kapazität und dem im Lieferumfang enthaltenen 100W-Solarpanel bietet es eine sofort einsatzbereite Lösung.",
+        "intro": "Die Jackery Explorer 500 V2 + 100W Solarpanel ist das Komplettset-Einsteigermodell von Jackery. Mit 512Wh Kapazität und dem im Lieferumfang enthaltenen 100W-Solarpanel bietet es eine sofort einsatzbereite Lösung.",
         "pros": [
           "Komplettset mit 100W Solarpanel",
           "Jackery-Zuverlässigkeit — bewährte Marke",
           "Intuitive Bedienung — Ein-Klick-Betrieb",
-          "550Wh für 2 Tage Camping",
+          "512Wh für 2 Tage Camping",
           "500W mit 1.000W Spitze"
         ],
         "contra": [
-          "Kein LiFePO4 — NCM mit nur 500 Zyklen",
+          "LiFePO4 mit deutlich mehr Zyklen",
           "Langsame Solar-Ladung — 8-10 Stunden",
           "Teures Jackery-Zubehör"
         ],
-        "verdict": "Die Jackery Explorer 550W + Solar ist die ideale Worry-Free-Lösung für Outdoor-Neulinge mit sofort einsatzbereitem Komplettset.",
+        "verdict": "Die Jackery Explorer 500 V2 + Solar ist die ideale Worry-Free-Lösung für Outdoor-Neulinge mit sofort einsatzbereitem Komplettset.",
         "testwoche": "Am Campingplatz — 3 Tage: Gesamtverbrauch ca. 300Wh. Solar-Nachladung des 100W-Panels bei Bewölkung ca. 7 Stunden."
       }
     },
