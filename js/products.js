@@ -2,7 +2,7 @@ const PRODUCTS = {
   "bluetti-eb3a": {
     id: "bluetti-eb3a",
     name: "BLUETTI EB3A",
-    asin: "B0FM3G66WW",
+    asin: "B0B5RJSPD6",
     brand: "BLUETTI",
     price: "199,99",
     rating: 4.1,
@@ -21,7 +21,7 @@ const PRODUCTS = {
   "jackery-300pro": {
     id: "jackery-300pro",
     name: "Jackery Explorer 300 Pro",
-    asin: "B09VB33H4G",
+    asin: "B0C27VWNM7",
     brand: "Jackery",
     price: "279,00",
     rating: 4.4,
@@ -40,7 +40,7 @@ const PRODUCTS = {
   "ecoflow-river2": {
     id: "ecoflow-river2",
     name: "EcoFlow River 2",
-    asin: "B09YL76V8N",
+    asin: "B0CMQYK2KW",
     brand: "EcoFlow",
     price: "199,00",
     rating: 4.1,
@@ -59,7 +59,7 @@ const PRODUCTS = {
   "jackery-240pro": {
     id: "jackery-240pro",
     name: "Jackery Explorer 240 Pro",
-    asin: "B0BTHL3W87",
+    asin: "B0CYLP7M8P",
     brand: "Jackery",
     price: "199,00",
     rating: 4.2,
@@ -116,7 +116,7 @@ const PRODUCTS = {
   "bluetti-ac200p": {
     id: "bluetti-ac200p",
     name: "BLUETTI AC200P",
-    asin: "B09H4GLZQC",
+    asin: "B09T37S3N3",
     brand: "BLUETTI",
     price: "1.299,00",
     rating: 4.2,
@@ -135,7 +135,7 @@ const PRODUCTS = {
   "anker-solix-c1000": {
     id: "anker-solix-c1000",
     name: "Anker SOLIX C1000",
-    asin: "B0CQN3F5MR",
+    asin: "B0CGQZ7XSB",
     brand: "Anker",
     price: "599,00",
     rating: 4.3,
@@ -154,7 +154,7 @@ const PRODUCTS = {
   "ecoflow-delta2max": {
     id: "ecoflow-delta2max",
     name: "EcoFlow Delta 2 Max",
-    asin: "B09SM67PMM",
+    asin: "B0C4F83WTX",
     brand: "EcoFlow",
     price: "1.499,00",
     rating: 4.4,
@@ -192,7 +192,7 @@ const PRODUCTS = {
   "ecoflow-river2pro": {
     id: "ecoflow-river2pro",
     name: "EcoFlow River 2 Pro",
-    asin: "B0GJC2M84T",
+    asin: "B0CZLHNSTH",
     brand: "EcoFlow",
     price: "579,00",
     rating: 4.3,
@@ -230,7 +230,7 @@ const PRODUCTS = {
   "bluetti-ac60": {
     id: "bluetti-ac60",
     name: "BLUETTI AC60",
-    asin: "B0C7V8BQX7",
+    asin: "B0C14CC8ZJ",
     brand: "BLUETTI",
     price: "349,00",
     rating: 4.2,
